@@ -1,63 +1,46 @@
+Hello! Thanks for taking the time to visit! My name is Theo Winter and I'm studying information science at HSR in Switzerland. This page interconnects my various online presences :) and shows my latest projects. Feel free to contact me if anything catches your eye.
 
+## Current Projects
 
-[Solo](http://solo.chibi.io) is a Jekyll theme that supports **single-page websites** only, but supports them well. Yes, it's responsive.
+* **ToxicTodo:** a fancy, server-based, multi-access todo list written in Java. The server application is multi-threaded, lightweight and runs perfectly on a raspberry.
+* **ghoul.io:** My Jekyll-based blog about tech & various awesome stuff that I find on the interwebs. It's still not publicly accessible yet.
 
-<iframe src="http://ghbtns.com/github-btn.html?user=chibicode&amp;repo=solo&amp;type=watch&amp;count=true&amp;size=large"
-  allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe><br/>
+## Links to social media and more
 
-## Solo is useful if...
+* **Google+:** [https://plus.google.com/+TheoWinterCH](https://plus.google.com/+TheoWinterCH)
+* **Github:** [https://github.com/aerobless](https://github.com/aerobless)
+* **Personal blog:** [http://ghoul.io](http://ghoul.io)
 
-* You want to create an "about me" page from a single markdown file and host it under a custom domain name.
-* You want to create a single-page website that's mostly text, like [Know Your Company](https://knowyourcompany.com/).
-* You want to share a single markdown file and tried GitHub Gist ([example](https://gist.github.com/dypsilon/5819504)), but would like something nicer-looking.
-* You want something like GitHub's [automatic page generator](http://pages.github.com/) for a non-code repository.
+## Contact me
+Feel free to send me an email at [theo@w1nter.com](mailto:theo@w1nter.com) or message me on [Google+](https://plus.google.com/+TheoWinterCH). Btw. if you want, you can even grab my public key and encrypt your mail with PGP. ;-)
 
-## Examples
-
-* This page itself is built with Solo. Try it out from [the github repo](https://github.com/chibicode/solo).
-* [My personal site](http://chibicode.com) is built with Solo. It's generated from [this markdown file](https://github.com/chibicode/chibicode.com/blob/gh-pages/_includes/index.md).
-* Two of my Japanese personal sites ([#1](http://j.chibicode.com/) and [#2](http://waza.chibicode.com/)) are also built with Solo.
-
-## Usage
-
-First, [install Jekyll](http://jekyllrb.com/docs/installation/). Then download Solo from its [GitHub Repository](https://github.com/poole/poole). Start Jekyll and you should see this page up and running.
-
-**The main file you'll be editing is `_includes/index.md`**. This becomes the content for the main `index.html`.
-
-### Other Files
-
-* Edit `_config.yml` to change the site title.
-* Edit `_includes/head.html` to add custom code to `<head>`.
-* Edit `_includes/scripts.html` to add custom code before `</body>`.
-* Edit `CNAME` to host on a custom domain.
-* Edit `README.md` before pushing your code.
-
-### Don't use `<h1>` tags
-
-Wthin `index.md`, do not use `<h1>` tags - `<h1>` is reserved for the site title.
-
-### Supported Tags
-
-Solo supports lists, `<hr>`s, `<table>`s,
-
-> blockquotes, and...
-
-~~~html
-<pre>code blocks with syntax highlighting.</pre>
-~~~
-
-### Keep Solo up to date
-
-Instead of downloading, you can [fork Solo](https://github.com/chibicode/solo/fork) and use the "upstream" strategy described on [this page](https://help.github.com/articles/fork-a-repo) to keep Solo up to date.
-
-## Author
-
-Shu Uesugi ([Twitter](http://twitter.com/chibicode)/[GitHub](http://github.com/chibicode)/[G+](https://plus.google.com/110325199858284431541?rel=author)).
-
-![Shu Uesugi](http://www.gravatar.com/avatar/b868d84bbe2ed30ec45c9253e1c1cefe.jpg?s=200)
-
-### License
-
-[MIT License](http://chibicode.mit-license.org/)
-
-<div class="github-fork-ribbon-wrapper right fixed" style="width: 150px;height: 150px;position: fixed;overflow: hidden;top: 0;z-index: 9999;pointer-events: none;right: 0;"><div class="github-fork-ribbon" style="position: absolute;padding: 2px 0;background-color: #333;background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));-webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);-moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);z-index: 9999;pointer-events: auto;top: 42px;right: -43px;-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);-ms-transform: rotate(45deg);-o-transform: rotate(45deg);transform: rotate(45deg);"><a href="https://github.com/chibicode/solo" style="font: 700 13px &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;color: #fff;text-decoration: none;text-shadow: 0 -1px rgba(0, 0, 0, 0.5);text-align: center;width: 200px;line-height: 20px;display: inline-block;padding: 2px 0;border-width: 1px 0;border-style: dotted;border-color: rgba(255, 255, 255, 0.7);">Fork me on GitHub</a></div></div>
+> -----BEGIN PGP PUBLIC KEY BLOCK-----  
+Version: GnuPG/MacGPG2 v2.0.22 (Darwin)  
+Comment: GPGTools - https://gpgtools.org
+mQENBFM5pvYBCACsXaDg7EHqFFoFeLFcajIj/3ycm2hKKOo5kI4C9NlRvTGOkn+N
+x/pdbQ+Zod7j9o7fzOSLfEy0nhWgMKll9K0yDCB7KFukqPs7/DoinESZzd6umgAW
+KQ9u1FqrpdHm4RpyGuQgeJo4a7PFdofQ1QD0LpCSEkvhtUJEmCAgY5Z9u4UCDY4U
+wLpxLjIPzgqZBBPTsVELQqqyJuhGturk6T9UE36gnl/noYXFjtycr8Ef1FTsYLmr
+cGtQWSvoUNHOKD2ud58YNhUc3uP99FdNq4eO4MqSEPDvt33O+onNp6aUBs9/aIK7
+6v0gCEV5xLJi4vauNAtn/tU05+CGWWlVdwmdABEBAAG0HVRoZW8gV2ludGVyIDx0
+aGVvQHcxbnRlci5jb20+iQE9BBMBCgAnBQJTOab2AhsDBQkHhh+ABQsJCAcDBRUK
+CQgLBRYCAwEAAh4BAheAAAoJEJiQD8qHNv9somoH/AutaGVQMNGxiEVqkWAcRSmr
+gpZctkVWk9XJeRjzVq2j1dbGIKRCIX9phzmqFDscUVhB2SMOMWN9H38zpEEVPNXm
+KJot4QqajZC8T8VTswsi7s3cuvBsapGouN3VV3z88EVgKbAbQTQAWHtZF8nuL2Xu
+hmwTNQbr6/NSQ8sJZeAp78k0b1bOMCxhcW8RU/FSayhPnwZtXZ0OwPpUnwo/q7cb
+J0CheR8UTvmlvPISVOwf+wd9d1u6cwWw/rmxonKkSrT3bI7wS3ciCE02jbXaEu2U
+tEMkYgU+LfakGC4Y387c3FoRyeRPpe3wsI3DeLtdYQrp6wKiuiwG1bMImHB/t/y5
+AQ0EUzmm9gEIAN+JqWFx5tIc7j0k2KeArv5g5dvWZs+C5IpETBfiLFoHybQfGw3J
+O8ihKtB98bEnXQ+FNg3OwQVQJRk/J+q8G8Jpmd+TlYvtFih3dQLYpkoU+1K5dzu3
+tMpNhVfzaI8dIVclSF0peKm2tkobx/bXkX5IBlxNKfgGutzEhFdECn3Z1Ys3akvl
+p5ZZA9fBKe6PpOqnzRXqNetqarBA0cZsYas9qrV2kwaey8IvprbLyNyxnrTRgiFw
+q66FBHWQsSYi5B+PF+gxp2rLIhLgQqLNUdrpKQ99UONbqCRM20taTgg1pipWWLzo
+DG1GIny3HiYRPNBjRloxGrbBv3UcU/zq9gcAEQEAAYkBJQQYAQoADwUCUzmm9gIb
+DAUJB4YfgAAKCRCYkA/Khzb/bBd5B/9Ufdx+0X/Uug2zXGGTnI7TjYIrlxJ0ck2M
+q0wAAieTfCl3PUsgL5vRDBUaM1warxCFpl/htWrhMMd35Sknf5UTVhSxymC5ri2L
+O5NwVE55eQidnBrysnC+qkN2MFCxLipeN9aLnoRCsDuedhH2sdIpSx4iO5fbHoaZ
+pP1IvHtU3ZwKvia7FCgyK11ZbsEsvpKDN2G2VS4Jz6o0VE7/nIN28kNlXi5UQzDn
+RJg9RhvUNhsynGIIqKmapwBpx1IwAsyaMDYZ+YkNtl06TuKQciXIVicsLZLIyiIC
+ANB7zAV04aEEZQuEgy8w7/KWXJraMMQ30A+0JqwByt3/MsFT6GW+
+=q6ui  
+-----END PGP PUBLIC KEY BLOCK-----
