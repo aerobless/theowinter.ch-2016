@@ -8,11 +8,12 @@ Hello! Thanks for taking the time to visit! My name is Theo Winter and I'm study
 ## Links to social media and more
 
 * **Google+:** [https://plus.google.com/+TheoWinterCH](https://plus.google.com/+TheoWinterCH)
-* **Github:** [https://github.com/aerobless](https://github.com/aerobless)
 * **Personal blog:** [http://ghoul.io](http://ghoul.io)
+* **Github:** [https://github.com/aerobless](https://github.com/aerobless)
+* **Jenkins CI:** [http://w1nter.net:8080](http://w1nter.net:8080)
 
 ## Contact me
-Feel free to send me an email at [theo@w1nter.com](mailto:theo@w1nter.com) or message me on [Google+](https://plus.google.com/+TheoWinterCH). Btw. if you want, you can even grab my public key and encrypt your mail with PGP. ;-)
+Feel free to send me an email at [theo@w1nter.com](mailto:theo@w1nter.com) or message me on [Google+](https://plus.google.com/+TheoWinterCH). If you want, you can even grab my public key and send me classified material ;-).
 
 > -----BEGIN PGP PUBLIC KEY BLOCK-----  
 Version: GnuPG/MacGPG2 v2.0.22 (Darwin)  
