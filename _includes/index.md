@@ -14,6 +14,10 @@ Hello! Thanks for taking the time to visit! My name is Theo Winter and I'm study
 * **Jenkins CI:** [http://w1nter.net:8080](http://w1nter.net:8080)
 * **SonarQube:** [http://sonar.w1nter.net](http://sonar.w1nter.net)
 
+##DropZone
+Be sure to inform me via email when you upload a file. All files in the DropZone get deleted automatically every few days.
+<form action="upload.php" class="dropzone"></form>
+
 ## Contact me
 Feel free to send me an email at [theo@w1nter.com](mailto:theo@w1nter.com) or message me on [Google+](https://plus.google.com/+TheoWinterCH). If you want, you can even grab my public key and send me classified material ;-).
 
