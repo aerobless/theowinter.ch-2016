@@ -4,6 +4,7 @@ Hello! Thanks for taking the time to visit! My name is Theo Winter and I'm study
 
 * **[ToxicTodo](https://github.com/aerobless/ToxicTodo):** a fancy, server-based, multi-access todo list written in Java. The server application is multi-threaded, lightweight and runs perfectly on a raspberry pi.
 * **[ghoul.io](http://ghoul.io):** My Jekyll-based blog about tech & various awesome stuff that I find on the interwebs. It's still not publicly accessible yet.
+* **[GitHubHistorian](https://github.com/aerobless/GitHubHistorian):** A lightweight python script that enables you to delete old GitHub-Repositories without losing your commit-history. 
 
 ## Links to social media and more
 
