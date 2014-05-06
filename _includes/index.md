@@ -2,8 +2,8 @@ Hello! Thanks for taking the time to visit! My name is Theo Winter and I'm study
 
 ## Current Projects
 
-* **ToxicTodo:** a fancy, server-based, multi-access todo list written in Java. The server application is multi-threaded, lightweight and runs perfectly on a raspberry.
-* **ghoul.io:** My Jekyll-based blog about tech & various awesome stuff that I find on the interwebs. It's still not publicly accessible yet.
+* **[ToxicTodo](https://github.com/aerobless/ToxicTodo):** a fancy, server-based, multi-access todo list written in Java. The server application is multi-threaded, lightweight and runs perfectly on a raspberry pi.
+* **[ghoul.io](http://ghoul.io):** My Jekyll-based blog about tech & various awesome stuff that I find on the interwebs. It's still not publicly accessible yet.
 
 ## Links to social media and more
 
@@ -11,6 +11,7 @@ Hello! Thanks for taking the time to visit! My name is Theo Winter and I'm study
 * **Personal blog:** [http://ghoul.io](http://ghoul.io)
 * **Github:** [https://github.com/aerobless](https://github.com/aerobless)
 * **Jenkins CI:** [http://w1nter.net:8080](http://w1nter.net:8080)
+* **SonarQube:** [http://sonar.w1nter.net](http://sonar.w1nter.net)
 
 ## Contact me
 Feel free to send me an email at [theo@w1nter.com](mailto:theo@w1nter.com) or message me on [Google+](https://plus.google.com/+TheoWinterCH). If you want, you can even grab my public key and send me classified material ;-).
