@@ -2,7 +2,7 @@
 layout: page
 permalink: /about/
 title: Hello
-tags: [about, Theo Winter, ghoul.io, website]
+tags: [about, Theo Winter, website]
 modified: 2014-03-26
 image:
   feature: switzerland.jpg
@@ -10,18 +10,18 @@ image:
   creditlink: http://theowinter.ch
 ---
 
-My name is [Theo Winter](http://theowinter.ch). I'm studying information science at [HSR](http://www.hsr.ch) in [Switzerland](http://www.admin.ch/). And this is my personal blog about all things that interest me.
+<div itemscope itemtype="http://schema.org/Person">
+My name is <span itemprop="givenName">Theo</span> <span itemprop="familyName">Winter</span>. I was born on <span itemprop="birthDate">15.09.1991</span> in Switzerland, so I'm of
+<span itemprop="nationality">swiss</span> nationality. I'm <span itemprop="gender">male</span> and approximately <span itemprop="height">183cm</span> tall.
+And I'm studying information science at <a href="http://www.hsr.ch" target="_blank">HSR</a>.
+</div>
+"Well that is oddly specific." you might think. It is. In fact this data is attributed with the correct [schema.org/Person](http://schema.org/Person)
+attributes. I'm hoping that Google eventually indexes me in it's knowledge graph ;-). So that you can type a query such as "What's the height of Theo Winter" and it
+will answer correctly.
+This page is my personal blog and place to show off some of my projects. :)
 
-Now you may be wondering why ghoul.io? It all came together pretty randomly, I've been on and off browsing for a cool new domain name for half a year. I wanted something short and easy to remember and if possible it should stand out from the crowd. Pretty standard if you think about it.. because who doesn't want a short and awesome domain name? So one day, when I was trying out various combinations on [shortdomainsearch.net](http://shortdomainsearch.net/), I saw ghoul.io. I thought that's actually a pretty cool domain and I could even use some random monster as mascot for the site. That'd be pretty unique. Being a fan of fantasy (books, films, games), I just had to buy the domain. And that's how ghoul.io was born.
-
-## Planned content for ghoul.io:
-
-* Commentary on tech news.
-* Various tutorials and tricks about the unix shell, programming and maybe even art & game design.
-* Cool programs and scripts that I've found in the depths of the net.
-* Small "hacks" and how to protect yourself against them.
-* Commentary on some of my personal projects.
-* Reviews of hardware I'm using. I won't be going out of my way to buy hardware just to review it, but if there's a piece of hardware that I'm passionate about I may write a short review. (Or to warn people because something's incredibly crappy.)
+## Contact
+Feel free to send me an email at [theo@w1nter.com](mailto://theo@w1nter.com) or add me on [Google+](https://plus.google.com/+TheoWinterCH).
 
 ## What software are you using?
 I created this site with [Vim](http://vim.sexy), [Git](http://git-scm.com/) and [Jekyll](http://jekyllrb.com/). Also I'm using [MinimalMistake](http://mademistakes.com/articles/minimal-mistakes-jekyll-theme/), a awesome & clean Jekyll theme made by Michael Rose.

@@ -1,10 +1,10 @@
-title:            ghoul.io
-description:      A ghoul is a folkloric monster or spirit associated with graveyards and consuming human flesh, often classified as undead. 
+title:            theowinter.ch
+description:      A computer science student from Switzerland who's passionate about programming and photography.
 logo:             site-logo.png
-disqus_shortname: ghoul
+disqus_shortname: theowinterch
 search:           true
 # Change url to your domain. Leave localhost server or blank when working locally.
-url:              http://ghoul.io
+url:              http://theowinter.ch
 
 # Owner/author information
 owner:
@@ -32,6 +32,8 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
+  - title: Photography
+    url: /photography/
   - title: About
     url: /about/
   - title: Articles
@@ -40,7 +42,7 @@ links:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Zurich
 future:      true
-highlighter:    true
+highlighter:    pygments
 markdown:    kramdown
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
