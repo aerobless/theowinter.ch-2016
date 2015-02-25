@@ -1,13 +1,70 @@
-markdown: redcarpet
-pygments: true
+title:            ghoul.io
+description:      A ghoul is a folkloric monster or spirit associated with graveyards and consuming human flesh, often classified as undead. 
+logo:             site-logo.png
+disqus_shortname: ghoul
+search:           true
+# Change url to your domain. Leave localhost server or blank when working locally.
+url:              http://ghoul.io
 
-title_tag_text: theowinter.ch
-h1_tag_text: theowinter.ch
+# Owner/author information
+owner:
+  name:           Theo Winter
+  avatar:         bio-photo.png
+  email:          theo@w1nter.ch
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        
+  facebook:       
+  github:         aerobless
+  stackexchange:  
+  linkedin:       
+  instagram:      
+  flickr:         
+  tumblr:         
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:    https://plus.google.com/+TheoWinterCH
 
-exclude: ["Procfile", "Gruntfile.js", "README.md", "package.json", "CNAME", "node_modules"]
+# Analytics and webmaster tools stuff goes here
+google_analytics:   UA-49753126-1
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:         
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: About
+    url: /about/
+  - title: Articles
+    url: /articles/
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Europe/Zurich
+future:      true
+highlighter:    true
+markdown:    kramdown
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+  coderay:
+    coderay_line_numbers: 
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
 
 #Upload with glynn
-ftp_host: 'ftp.theowinter.ch'
+ftp_host: 'ftp.ghoul.io'
 ftp_dir: '/'
 ftp_passive: false
-ftp_username: 'glynn@theowinter.ch' 
+ftp_username: 'ghoul@ghoul.io' 
