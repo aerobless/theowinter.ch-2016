@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4854873d-504e-4bba-915c-a0ded5150b6b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gallery-light.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photography.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/syntax.css" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_layouts/photo.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/js/_main.js" afterPath="$PROJECT_DIR$/_posts/_main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.md" afterPath="$PROJECT_DIR$/about.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photography.html" afterPath="$PROJECT_DIR$/photography.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="theowinter.ch.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,31 +30,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21656536" vertical-offset="0" max-vertical-offset="1316">
-              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1155">
+              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articles.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/articles.html">
+      <file leaf-file-name="scripts.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/scripts.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="270">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="photography.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/_main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+              <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="photography.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/photography.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="180">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.21052632" vertical-offset="13" max-vertical-offset="1650">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="photo.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_layouts/photo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="690">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/head.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="960">
+              <caret line="36" column="51" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -68,16 +99,6 @@
           </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="495">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gallery-light.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gallery-light.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="4485">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -125,8 +146,8 @@
         <option value="$PROJECT_DIR$/about.md" />
         <option value="$PROJECT_DIR$/photography.md" />
         <option value="$PROJECT_DIR$/_layouts/photo.html" />
-        <option value="$PROJECT_DIR$/photography.html" />
         <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/photography.html" />
       </list>
     </option>
   </component>
@@ -199,7 +220,53 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photoswipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theowinter.ch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theowinter.ch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theowinter.ch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theowinter.ch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="_layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theowinter.ch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theowinter.ch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -215,11 +282,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_layouts" />
       <recent name="$PROJECT_DIR$/photography" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/_layouts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
+      <recent name="$PROJECT_DIR$/_posts" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/photography" />
     </key>
   </component>
@@ -400,12 +470,12 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="3225">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1424902803000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424902803000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424902803000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424902803000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424902803000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424902803000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424938856000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424938856000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424938856000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424938856000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424938856000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424938856000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -447,12 +517,12 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1545" max-vertical-offset="3315">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <marker date="1424902803000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424902803000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424902803000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424902803000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424902803000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424902803000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424938856000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424938856000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424938856000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424938856000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424938856000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424938856000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -497,14 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photography.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="180">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/about.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -516,10 +578,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/scripts.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1316">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/_main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="960">
+          <caret line="36" column="51" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21656536" vertical-offset="0" max-vertical-offset="1316">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1155">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/photo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="690">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photography.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21052632" vertical-offset="13" max-vertical-offset="1650">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
