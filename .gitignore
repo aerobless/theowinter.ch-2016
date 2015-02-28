@@ -1,1 +1,9 @@
+## Site Output directory
 _site
+
+## Directory-based project format:
+.idea/
+
+## Specific files:
+site-logo.psd
+
