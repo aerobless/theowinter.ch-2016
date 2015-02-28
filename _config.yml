@@ -34,10 +34,10 @@ bing_verify:
 links:
   - title: Photography
     url: /photography/
+  - title: Blog
+    url: /articles/
   - title: About
     url: /about/
-  - title: Articles
-    url: /articles/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Zurich
