@@ -4,7 +4,7 @@ theowinter.ch
 This repo contains the source files of my personal blog. It is made with [Jekyll](http://jekyllrb.com/), an awesome, static site
 generator for programmers. As basline template I'm using [Minimal Mistake](https://github.com/mmistakes/minimal-mistakes) by Michael Rose.
 
-#Incomplete of tools used:
+#Incomplete list of tools used:
  + [Jekyll](http://jekyllrb.com/)
  + [Minimal Mistake](https://github.com/mmistakes/minimal-mistakes)
  + [Swipebox](http://brutaldesign.github.io/swipebox/)
