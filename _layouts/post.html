@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
@@ -61,7 +61,24 @@
   </footer>
 </div><!-- /.footer-wrapper -->
 
-{% include scripts.html %}	        
+{% include scripts.html %}
+
+<!-- Schema.org Snippet -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": "{{ site.owner.name }}",
+  "name": "{{ page.title }}",
+  "description": "{{ page.description }}",
+  "dateCreated": "{{ page.date | date_to_xmlschema }}", //todo specify concrete schema
+  "dateModified": "{{ page.modified }}", //todo integrate
+  "inLanguage": "en-US",
+  "isFamilyFriendly": true,
+  "keywords": "{{ page.tags | join: ', ' }}",
+  "image": "{{ site.url }}/images/{{ page.image.feature }}"
+}
+</script>
 
 </body>
 </html>

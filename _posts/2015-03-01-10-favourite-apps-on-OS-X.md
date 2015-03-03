@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My top 10 favourite apps on OS X Yosemite
-description: "Hello this is a test."
+description: "A list of my 10 favourite applications on Mac OS X Yosemite."
 category: articles
 tags: [OS X, Apps, Software, Programs, top 10]
 image:
