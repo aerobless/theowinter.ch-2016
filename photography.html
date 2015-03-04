@@ -33,13 +33,73 @@ photo-list:
       img: IMG_5449
     - title: Hazy valley
       img: IMG_4805-Edit
+    - title: Connected..
+      img: IMG_4801
+    - title: Color in a rainy day
+      img: IMG_1029
+    - title: Laufenburg, Switzerland
+      img: IMG_0910
+    - title: Golden crops
+      img: IMG_9243
+    - title: Mr. Stork
+      img: IMG_7537-Edit
+    - title: Chur, Switzerland
+      img: IMG_7075_ps
+    - title: EMS Chemie, Domat Ems
+      img: IMG_7035_ps
+    - title: Blue Horizon
+      img: IMG_7011_ps
+    - title: Dry riverbed
+      img: IMG_6994_ps
+    - title: Over the mountain
+      img: IMG_6991_ps
+    - title: Path over the mountain
+      img: IMG_6986_ps
+    - title: Caumasee, Switzerland
+      img: IMG_6960_ps
+    - title: Rhein, Switzerland
+      img: IMG_6956_ps
+    - title: Waterways
+      img: IMG_6349
+    - title: Gotthard Mountain Pass, Switzerland
+      img: IMG_5994
+    - title: Piazza Duomo, Milan
+      img: IMG_5373-Edit
+    - title: Sforzesco Castello - Watchtower, Italy
+      img: IMG_5064
+    - title: Duomo di Milano, Italy
+      img: IMG_4940-Edit
+    - title: Verzasca, Ticino
+      img: IMG_4601-Edit
+    - title: Lugano at dusk
+      img: IMG_4444-Edit
+    - title: Skyline Amsterdam
+      img: IMG_4133
+    - title: Google Nexus One
+      img: IMG_3982
+    - title: Sunset over the canals of Amsterdam
+      img: IMG_3788-Edit
+    - title: Crooked Amsterdam
+      img: IMG_3680
+    - title: Les Collons
+      img: pano_snow_hut
+    - title: Sion
+      img: IMG_2154-Edit
+    - title: Golden chalice
+      img: IMG_1222
+    - title: Big Ben, London
+      img: DSCN1526
+    - title: Worthing Pier Amusements, United Kingdom
+      img: DSCN1023
+    - title: Arundel, United Kingdom
+      img: DSCN0866
 ---
 
 <div id="gallery" style="display:none;">
     {% for photo in page.photo-list %}
     <div itemscope itemtype="http://schema.org/Photograph">
         <a itemprop="image" class="swipebox" title="{{ photo.title }}" href="/images/photography/{{ photo.img }}.jpg">
-            <img alt="{{ photo.title }}" itemprop="thumbnailUrl" src="/images/photography/{{ photo.thumb }}_thumb.jpg"/>
+            <img alt="{{ photo.title }}" itemprop="thumbnailUrl" src="/images/photography/{{ photo.img }}_thumb.jpg"/>
             <meta itemprop="name" content="{{ photo.title }}" />
             <meta itemprop="isFamilyFriendly" content="true" />
             <meta itemprop="dateCreated" content="{% exiftag date_time_original,, %}{{ photo.img }}.jpg{% endexiftag %}"/>
@@ -51,99 +111,6 @@ photo-list:
         </a>
     </div>
     {% endfor %}
-    <a class="swipebox" title="Hazy valley" href="/images/photography/IMG_4805-Edit.jpg">
-        <img alt="Hazy valley" src="/images/photography/IMG_4805-Edit_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Connected.." href="/images/photography/IMG_4801.jpg">
-        <img alt="Connected.." src="/images/photography/IMG_4801_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Color in a rainy day" href="/images/photography/IMG_1029.jpg">
-        <img alt="Color in a rainy day" src="/images/photography/IMG_1029_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Laufenburg, Switzerland" href="/images/photography/IMG_0910.jpg">
-        <img alt="Laufenburg, Switzerland" src="/images/photography/IMG_0910_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Golden crops" href="/images/photography/IMG_9243.jpg">
-        <img alt="Golden crops" src="/images/photography/IMG_9243_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Mr. Stork" href="/images/photography/IMG_7537-Edit.jpg">
-        <img alt="Mr. Stork" src="/images/photography/IMG_7537-Edit_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Chur, Switzerland" href="/images/photography/IMG_7075_ps.jpg">
-        <img alt="Chur, Switzerland" src="/images/photography/IMG_7075_ps_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="EMS Chemie, Domat Ems" href="/images/photography/IMG_7035_ps.jpg">
-        <img alt="EMS Chemie, Domat Ems" src="/images/photography/IMG_7035_ps_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Blue Horizon" href="/images/photography/IMG_7011_ps.jpg">
-        <img alt="Blue Horizon" src="/images/photography/IMG_7011_ps_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Dry riverbed" href="/images/photography/IMG_6994_ps.jpg">
-        <img alt="Dry riverbed" src="/images/photography/IMG_6994_ps_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Over the mountain" href="/images/photography/IMG_6991_ps.jpg">
-        <img alt="Over the mountain" src="/images/photography/IMG_6991_ps_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Path over the mountain" href="/images/photography/IMG_6986_ps.jpg">
-        <img alt="Path over the mountain" src="/images/photography/IMG_6986_ps_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Caumasee, Switzerland" href="/images/photography/IMG_6960_ps.jpg">
-        <img alt="Caumasee, Switzerland" src="/images/photography/IMG_6960_ps_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Rhein, Switzerland" href="/images/photography/IMG_6956_ps.jpg">
-        <img alt="Rhein, Switzerland" src="/images/photography/IMG_6956_ps_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Waterways" href="/images/photography/IMG_6349.jpg">
-        <img alt="Waterways" src="/images/photography/IMG_6349_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Gotthard Mountain Pass, Switzerland" href="/images/photography/IMG_5994.jpg">
-        <img alt="Gotthard Mountain Pass, Switzerland" src="/images/photography/IMG_5994_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Piazza Duomo, Milan" href="/images/photography/IMG_5373-Edit.jpg">
-        <img alt="Piazza Duomo, Milan" src="/images/photography/IMG_5373-Edit_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Sforzesco Castello - Watchtower, Italy" href="/images/photography/IMG_5064.jpg">
-        <img alt="Sforzesco Castello - Watchtower, Italy" src="/images/photography/IMG_5064_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Duomo di Milano, Italy" href="/images/photography/IMG_4940-Edit.jpg">
-        <img alt="Duomo di Milano, Italy" src="/images/photography/IMG_4940-Edit_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Verzasca, Ticino" href="/images/photography/IMG_4601-Edit.jpg">
-        <img alt="Verzasca, Ticino" src="/images/photography/IMG_4601-Edit_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Lugano at dusk" href="/images/photography/IMG_4444-Edit.jpg">
-        <img alt="Lugano at dusk" src="/images/photography/IMG_4444-Edit_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Skyline Amsterdam" href="/images/photography/IMG_4133.jpg">
-        <img alt="Skyline Amsterdam" src="/images/photography/IMG_4133_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Google Nexus One" href="/images/photography/IMG_3982.jpg">
-        <img alt="Google Nexus One" src="/images/photography/IMG_3982_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Sunset over the canals of Amsterdam" href="/images/photography/IMG_3788-Edit.jpg">
-        <img alt="Sunset over the canals of Amsterdam" src="/images/photography/IMG_3788-Edit_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Crooked Amsterdam" href="/images/photography/IMG_3680.jpg">
-        <img alt="Crooked Amsterdam" src="/images/photography/IMG_3680_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Les Collons" href="/images/photography/pano_snow_hut.jpg">
-        <img alt="Les Collons" src="/images/photography/pano_snow_hut_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Sion" href="/images/photography/IMG_2154-Edit.jpg">
-        <img alt="Sion" src="/images/photography/IMG_2154-Edit_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Golden chalice" href="/images/photography/IMG_1222.jpg">
-        <img alt="Golden chalice" src="/images/photography/IMG_1222_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Big Ben, London" href="/images/photography/DSCN1526.jpg">
-        <img alt="Big Ben, London" src="/images/photography/DSCN1526_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Worthing Pier Amusements, United Kingdom" href="/images/photography/DSCN1023.jpg">
-        <img alt="Worthing Pier Amusements, United Kingdom" src="/images/photography/DSCN1023_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Arundel, United Kingdom" href="/images/photography/DSCN0866.jpg">
-        <img alt="Arundel, United Kingdom" src="/images/photography/DSCN0866_thumb.jpg"/>
-    </a>
 </div>
 
 <script>
