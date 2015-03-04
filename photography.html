@@ -3,45 +3,62 @@ layout: photo
 permalink: /photography/
 title: Photography
 description: "Pictures .. todo"
+
+photo-list:
+    - title: Moiraine
+      img: IMG_0055.jpg
+      thumb: IMG_0055_thumb.jpg
+    - title: Rhätische Bahn
+      img: IMG_9119-Edit.jpg
+      thumb: IMG_9119-Edit_thumb.jpg
+    - title: Sunset in Rapperswil
+      img: IMG_8910-Edit.jpg
+      thumb: IMG_8910-Edit_thumb.jpg
+    - title: Autumn valley
+      img: IMG_8529-Edit.jpg
+      thumb: IMG_8529-Edit_thumb.jpg
+    - title: Autumn forest
+      img: IMG_8520.jpg
+      thumb: IMG_8520_thumb.jpg
+    - title: Four daring pilots
+      img: IMG_8188.jpg
+      thumb: IMG_8188_thumb.jpg
+    - title: Free as a bird
+      img: IMG_7642.jpg
+      thumb: IMG_7642_thumb.jpg
+    - title: Nosedive
+      img: IMG_7853.jpg
+      thumb: IMG_7853_thumb.jpg
+    - title: In unison
+      img: IMG_7500.jpg
+      thumb: IMG_7500_thumb.jpg
+    - title: Adventure awaits
+      img: IMG_7432-Edit.jpg
+      thumb: IMG_7432-Edit_thumb.jpg
+    - title: In flight
+      img: IMG_7310.jpg
+      thumb: IMG_7310_thumb.jpg
+    - title: 1th of August
+      img: IMG_8383.jpg
+      thumb: IMG_8383_thumb.jpg
 ---
 
 <div id="gallery" style="display:none;">
-    <a class="swipebox" title="Moiraine" href="/images/photography/IMG_0055.jpg">
-        <img alt="Moiraine" src="/images/photography/IMG_0055_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Rhätische Bahn" href="/images/photography/IMG_9119-Edit.jpg">
-        <img alt="Rhätische Bahn" src="/images/photography/IMG_9119-Edit_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Sunset in Rapperswil" href="/images/photography/IMG_8910-Edit.jpg">
-        <img alt="Sunset in Rapperswil" src="/images/photography/IMG_8910-Edit_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Autumn valley" href="/images/photography/IMG_8529-Edit.jpg">
-        <img alt="Autumn valley" src="/images/photography/IMG_8529-Edit_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Autumn forest" href="/images/photography/IMG_8520.jpg">
-        <img alt="Autumn forest" src="/images/photography/IMG_8520_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Four daring pilots" href="/images/photography/IMG_8188.jpg">
-        <img alt="Four daring pilots" src="/images/photography/IMG_8188_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Free as a bird" href="/images/photography/IMG_7642.jpg">
-        <img alt="Free as a bird" src="/images/photography/IMG_7642_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Nosedive" href="/images/photography/IMG_7853.jpg">
-        <img alt="Nosedive" src="/images/photography/IMG_7853_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="In unison" href="/images/photography/IMG_7500.jpg">
-        <img alt="In unison" src="/images/photography/IMG_7500_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="Adventure awaits" href="/images/photography/IMG_7432-Edit.jpg">
-        <img alt="Adventure awaits" src="/images/photography/IMG_7432-Edit_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="In flight" href="/images/photography/IMG_7310.jpg">
-        <img alt="In flight" src="/images/photography/IMG_7310_thumb.jpg"/>
-    </a>
-    <a class="swipebox" title="1th of August" href="/images/photography/IMG_8383.jpg">
-        <img alt="1th of August" src="/images/photography/IMG_8383_thumb.jpg"/>
-    </a>
+    {% for photo in page.photo-list %}
+    <div itemscope itemtype="http://schema.org/Photograph">
+        <a itemprop="image" class="swipebox" title="{{ photo.title }}" href="/images/photography/{{ photo.img }}">
+            <img alt="{{ photo.title }}" itemprop="thumbnailUrl" src="/images/photography/{{ photo.thumb }}"/>
+            <meta itemprop="name" content="{{ photo.title }}" />
+            <meta itemprop="isFamilyFriendly" content="true" />
+            <meta itemprop="dateCreated" content="{% exiftag date_time_original,, %}{{ photo.img }}{% endexiftag %}"/>
+            <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                <div itemprop="sameAs" href="http://theowinter.ch/about">
+                    <meta itemprop="name">Theo Winter</meta>
+                </div>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
     <a class="swipebox" title="Meow" href="/images/photography/IMG_5449.jpg">
         <img alt="Meow" src="/images/photography/IMG_5449_thumb.jpg"/>
     </a>

@@ -65,6 +65,15 @@ kramdown:
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
 
+#Required gems
+#gems: [jekyll-exiftag]
+
+#ExifTag
+#https://github.com/benib/jekyll-exiftag
+exiftag:
+ sources:
+   - images/photography
+
 #Upload with glynn
 ftp_host: 'ftp.ghoul.io'
 ftp_dir: '/'
