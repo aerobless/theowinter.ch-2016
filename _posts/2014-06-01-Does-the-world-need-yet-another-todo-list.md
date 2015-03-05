@@ -40,7 +40,7 @@ But then I noticed.. having a server and all is cool.. but now everyone who pull
 For those wondering what sort of hardware the server is running on. While I do have a dedicated VPS for running Jenkins, Sonar and stuff I decided I'd run this on my raspberry pi from my home-network. And yep it runs really well, haven't had an outage so far.
 
 ##A GUI is born
-So I decided.. you know what, a GUI would be cool. So I took Swing and started to work on the GUI. Being a mac user I really wanted to make it look like a native application. Which was tricky at first, but then I found a really cool library called [macwidgets](https://code.google.com/p/macwidgets/). With that library it was easy to make a typical mac-unified-toolbar where the icons would be and a bottom bar for settings and status. I took measures like icon-size, toolbar height etc. from other native mac applications and stole the color values from iTunes :P. ToxicTodo started to look really good but there was one problem. Java being Java support for retina-displays was and is abysmal. Text and the GUI-elements looked crisp on my retina macbook but the icons were pretty shitty.. (pardon my french). So I decided to use text instead of icons and found a cool font called [Font Awesome](fortawesome.github.io/Font-Awesome/icons/). Font Awesome contains over 400 icons for any action imaginable. I created a custom button-class that uses a character and Font Awesome instead of an icon and it was good. ToxicTodo finally looked exactly the same on my retina macbook as it did on my non-retina iMac. 
+So I decided.. you know what, a GUI would be cool. So I took Swing and started to work on the GUI. Being a mac user I really wanted to make it look like a native application. Which was tricky at first, but then I found a really cool library called [macwidgets](https://code.google.com/p/macwidgets/). With that library it was easy to make a typical mac-unified-toolbar where the icons would be and a bottom bar for settings and status. I took measures like icon-size, toolbar height etc. from other native mac applications and stole the color values from iTunes :P. ToxicTodo started to look really good but there was one problem. Java being Java support for retina-displays was and is abysmal. Text and the GUI-elements looked crisp on my retina macbook but the icons were pretty shitty.. (pardon my french). So I decided to use text instead of icons and found a cool font called [Font Awesome](http://fortawesome.github.io/Font-Awesome/){:target="_blank"}. Font Awesome contains over 400 icons for any action imaginable. I created a custom button-class that uses a character and Font Awesome instead of an icon and it was good. ToxicTodo finally looked exactly the same on my retina macbook as it did on my non-retina iMac.
 
 <video width="654" height="422" autoplay loop controls>
   <source src="{{ site.url }}/videos/toxic-todo.mp4" type="video/mp4">
@@ -61,7 +61,7 @@ Currently ToxicTodo has the following feature set:
  * Add a **hyperlink** to as task, so you can launch a website associated with it right from the app.
  * **Dynamic category** that features daily tasks that haven't been completed yet.
  * **Remove a task** without logging.
- * **Complete a task**, logging the complition data, location and other meta data.
+ * **Complete a task**, logging the completion data, location and other meta data.
  * **View Statistics** (currently only amount of completed tasks, work in progress).
  * **Add a category** with a description, keyword and one of many awesomeFont icons.
  * **Edit or delete** categories.
@@ -72,6 +72,4 @@ Currently ToxicTodo has the following feature set:
 ##Source, download & more
 I've released ToxicTodo under the MIT licence. So you can do with it as you please. If you have additions feel free to fork or submit pull requests on GitHub.  
 
-**Source on GitHub:** [https://github.com/aerobless/ToxicTodo](https://github.com/aerobless/ToxicTodo)   
-**Binary from Jenkins:** [http://w1nter.net:8080/job/ToxicTodo](http://w1nter.net:8080/job/ToxicTodo)  
-**Sonar Source Analysis:** [http://sonar.w1nter.net/dashboard/index/1](http://sonar.w1nter.net/dashboard/index/1)
+**Source on GitHub:** [https://github.com/aerobless/ToxicTodo](https://github.com/aerobless/ToxicTodo){:target="_blank"}
