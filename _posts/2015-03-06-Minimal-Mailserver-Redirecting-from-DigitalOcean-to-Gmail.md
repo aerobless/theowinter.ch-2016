@@ -62,6 +62,6 @@ admin@yourDomain.com you@gmail.com me@gmail.com
 When you're done, save (:wq in vim). Now it's time to update the Postfix lookup table. Run `postmap /etc/postfix/virtual`. Next Reload the Postfix configuration `sudo service postfix reload`. And we're done. 
 
 #Test it
-Be sure to test it by sending yourself an E-mail. **But make sure that you're not sending an email from your gmail address via this to your gmail address.** Google notices duplicate emails and quietly ignores them, so you need to use some other provider or ask a friend to test it.
+Be sure to test it by sending yourself an E-mail. **But make sure that you're not sending an email from your gmail address via this redirect to your gmail address.** Google notices duplicate emails and quietly ignores them, so you need to use some other provider or ask a friend to test it.
 
 Want to test DigitalOcean? Use [this link](https://www.digitalocean.com/?refcode=3c6fcdd7f9f2){:target="_blank"} and you get $10 for free.

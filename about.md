@@ -24,6 +24,7 @@ I created this site with [Vim](http://vim.sexy){:target="_blank"}, [Git](http://
 {
   "@context": "http://schema.org",
   "@type": "Person",
+  "name": "Theo Winter",
   "givenName": "Theo",
   "familyName": "Winter",
   "alternateName": "Theodor Winter",
