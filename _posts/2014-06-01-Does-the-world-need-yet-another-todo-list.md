@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Does the world need yet another todo list?
-description: "Why I chose to program my own todo list instead of using one of the many productivity apps out there."
+description: "ToxicTodo - Why I chose to program my own todo list instead of using one of the many productivity apps out there."
 category: articles
 tags: [programming projects, todo list, ToxicTodo, Do It Yourself, Java]
 image:

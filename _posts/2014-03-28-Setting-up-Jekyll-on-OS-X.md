@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setting up Jekyll on OS X
-description: "Learn how to setup a Jekyll development environment on OS X."
+description: "Learn how to install Jekyll and create your own blog on OS X or Linux. It's easy, so give it a go."
 category: articles
 tags: [tutorial, Unix, Jekyll, web development, blogging]
 image:
@@ -17,7 +17,7 @@ You know how hipsters do everything before it becomes cool? That means you got t
 > **Fun fact:** Did you know that Obama's $250 million fundraising platform was built with Jekyll?   
 <a href="http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform/" target="_blank">Read more</a>
 
-Not convinced? Have a list then, people love lists.
+Not convinced? Have a list then, people love lists.. or so they say.
 
 * **Security:** No need to update your site if you're not adding content. There's simply no way someone can attack a static site.
 * **Speed:** Google promotes fast sites by putting them first in the search results. Well, there's nothing faster then static.
