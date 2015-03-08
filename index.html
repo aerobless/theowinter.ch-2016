@@ -5,8 +5,20 @@ description: "A simple and clean responsive Jekyll theme for words and photos."
 tags: [Jekyll, theme, themes, responsive, blog, minimalism]
 ---
 
-<ul class="post-list">
+<ul class="post-list" itemprop="Blog" itemscope itemtype="http://schema.org/Blog">
 {% for post in site.posts limit:10 %} 
-  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
+  <li>
+      <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+          <a href="{{ site.url }}{{ post.url }}" itemprop="url"><meta itemprop="headline" content="{{ post.title }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a>
+      </article>
+  </li>
 {% endfor %}
+    <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div itemprop="sameAs" href="http://theowinter.ch/about">
+            <meta itemprop="name" content="Theo Winter"/>
+        </div>
+    </div>
+    <meta itemprop="inLanguage" content="en-US"/>
+    <meta itemprop="isFamilyFriendly" content="true"/>
+    <meta itemprop="image" content="{{ site.url }}/images/apple-touch-icon-144x144-precomposed.png"/>
 </ul>
