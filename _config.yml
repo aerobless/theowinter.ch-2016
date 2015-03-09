@@ -24,10 +24,10 @@ owner:
   google_plus:    https://plus.google.com/+TheoWinterCH
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   UA-49753126-1
+google_analytics: UA-38005810-1
 google_verify: -Nqci8py-NO2xtbUsuUEMgo1cMYeX8mDOYjgBzPXP_0     
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify: 0B0B2020A81729A7AF0981C047A8984C
 
 # Links to include in top navigation
 # For external links add external: true
