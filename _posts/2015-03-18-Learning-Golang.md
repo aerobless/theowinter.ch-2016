@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Golang
-description: "The first steps of a Java Developer getting to know the brave new Go-World. Setup a development environment and learn the basics."
+description: "My first steps with Golang. Setting up a development environment, writing the obligatory "Hello World" and learning the basics."
 category: articles
 tags: [Learning, Go, Golang, Programming, Google, DevLog]
 image:
