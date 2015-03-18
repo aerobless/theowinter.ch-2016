@@ -3,7 +3,7 @@ layout: post
 title: Minimal Mailserver - From DigitalOcean to Gmail
 description: "Setup a minimal Postfix server to redirect your emails from a domain hosted on a VPS to gmail or any other email provider."
 category: articles
-tags: [VPS, HowTo, Linux, Postfix, Ubuntu, DigitalOcean, Server, Gmail, Email, Tutorial]
+tags: [tutorial, Linux, HowTo, Postfix, Digital Ocean, Gmail, VPS, Linux, Server]
 image:
   feature: flight_header.jpg
   credit: Theo Winter
