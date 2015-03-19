@@ -21,11 +21,11 @@ that are stupid and not in line with common Golang idioms. If you find such a pa
 in the comment section below.
 
 Also if you're wondering why I keep writing Golang instead of Go. That's simply a SEO choice. While googling things I've
-quickly started using Golang instead of Go to filter out all the non-programming things.
+quickly started using Golang instead of Go to filter out all the non-programming stuff.
 
 #Environment & Setup
 I've installed Go via [Homebrew](http://brew.sh/){:target="_blank"} on OS X. And I've got another Go-Installation on 
-Ubuntu that I've instealled via [GVM](https://github.com/moovweb/gvm){:target="_blank"}. I'd recommend using GVM on
+Ubuntu that I've installed via [GVM](https://github.com/moovweb/gvm){:target="_blank"}. I'd recommend using GVM on
 Linux because the Go you get via apt-get is actually an old version.
 
 After you've installed Go itself, it's best to set the GOPATH environment variable. That variable should point to your
@@ -38,7 +38,7 @@ I'm using IntelliJ 14 with the [Golang-Plugin](https://github.com/go-lang-plugin
 but there's also a [plugin for eclipse](https://github.com/GoClipse/goclipse){:target="_blank"}.
 And then there's also a standalone IDE called [LiteIDE](https://code.google.com/p/golangide/){:target="_blank"}. I've tried it for a bit 
 and it works. But I can't yet say which of those 3 choices has the most features. So far I'm happy with IntelliJ, but I've already 
-noticed that some things aren't finished yet. For example trying to refactor function names returns a "not impled yet" 
+noticed that some things aren't finished yet. For example trying to refactor function names returns a "not implemented yet"
 message-box.  
 Of course you can also go ahead and not use an IDE at all and [VIM](vim.sexy){:target="_blank"} your way through this. 
 But I feel like refactoring etc. are required for efficient programming.
