@@ -20,12 +20,12 @@ Keep in mind that I'm coming from an object-oriented Java/C# world while you're 
 that are stupid and not in line with common Golang idioms. If you find such a passage then please kindly tell me
 in the comment section below.
 
-Also if you're wondering why I keep writing Golang instead of Go. That's simply a SEO choice. While googling things I've
+Also if you're wondering why I keep writing Golang instead of Go. That's simply a SEO[^1] choice. While googling things I've
 quickly started using Golang instead of Go to filter out all the non-programming stuff.
 
 #Environment & Setup
 I've installed Go via [Homebrew](http://brew.sh/){:target="_blank"} on OS X. And I've got another Go-Installation on 
-Ubuntu that I've installed via [GVM](https://github.com/moovweb/gvm){:target="_blank"}. I'd recommend using GVM on
+Ubuntu that I've installed via [GVM](https://github.com/moovweb/gvm){:target="_blank"}[^2]. I'd recommend using GVM on
 Linux because the Go you get via apt-get is actually an old version.
 
 After you've installed Go itself, it's best to set the GOPATH environment variable. That variable should point to your
@@ -117,10 +117,13 @@ func LearningVariables() {
 
 	//Works
 	fmt.Println("hello every" + strconv.Itoa(1))
+	
+	//Works as well
+	fmt.Println("hello every", 1)
 }
 {% endhighlight %}
-It's also not allowed to change the type of a variable after it has been already used. So we can't turn a int into a string 
-all of the sudden.
+It's also not allowed to change the type of a variable after it has been already used. So we can't turn an int into a string 
+all of the sudden. But what we can do is print multiple different objects when we separate them by a comma.
 
 #Unit tests? Yes I want develop my HelloWorld application with TDD!
 Testing is surprisingly painless. All I need to do to test my "Hellonator.go"-file (class?) 
@@ -161,3 +164,7 @@ Pretty cool, wouldn't you say?
 Ok I'm done for today. But I got to say, Golang is pretty cool. I'll either add more content to this post or write new posts 
 about Go in the future. Feel free to add a comment about your own experience with Golang, or whether or not I made
 you curious enough to give it a try.
+
+[^1]: Search Engine Optimization
+[^2]: Go Version Manager
+ 

@@ -44,9 +44,9 @@ So I decided.. you know what, a GUI would be cool. So I took Swing and started t
 
 <video width="654" height="422" autoplay loop controls>
   <source src="{{ site.url }}/videos/toxic-todo.mp4" type="video/mp4">
-  <object id="flowplayer" name="flowplayer" width="654" height="422" data="http://releases.flowplayer.org/swf/flowplayer-3.2.5.swf" 
+  <object id="flowplayer" name="flowplayer" width="654" height="422" data="{{ site.url }}/assets/flash/flowplayer-3.2.5.swf" 
             type="application/x-shockwave-flash">
-      <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.5.swf" />
+      <param name="movie" value="{{ site.url }}/assets/flash/flowplayer-3.2.5.swf" />
       <param name="allowfullscreen" value="true" />
       <param name="flashvars" 
     value='config={"clip":"{{ site.url }}/videos/toxic-todo.mp4"}' />
