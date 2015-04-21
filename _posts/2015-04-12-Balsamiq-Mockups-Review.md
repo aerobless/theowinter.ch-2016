@@ -134,9 +134,8 @@ I do not know.
 
 #Conclusion
 I'm a programmer, I don't want to have to duplicate screens just because there's no way to dynamically link them. I want to make templates 
-for stuff that I'm going to re-use. I want to organize my screens in a tree-structure and not a list. ii
+for stuff that I'm going to re-use. I want to organize my screens in a tree-structure and not a list.
 Switching in and out of edit-mode is distracting and remembering the correct screen is annoying. Call me lazy, but I see so much work that isn't necessary.
 The library of UI-elements is functional but not huge. Balsamiq isn't _bad_. But it doesn't feel good either.  
 The next time I have to design a user interface I'll probably do it the traditional way.. sketch on paper and the move to 
 the code and real UI editor (JavaFx/XCode/Visual Studio etc.) directly.
-hi ios.
