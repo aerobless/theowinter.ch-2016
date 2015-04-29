@@ -2,6 +2,7 @@
 layout: travel
 title: Travel blog entry example.
 description: "This is a sample description. "
+location: Rapperswil, Switzerland
 category: articles
 tags: [Test, Example]
 image:
