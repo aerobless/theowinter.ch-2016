@@ -1,0 +1,10 @@
+/* Prevents scrolling in a embedded Google Maps until it is clicked */
+/* http://stackoverflow.com/a/22567753/1922505 */
+.overlay {
+    background:transparent;
+    position:relative;
+    width:100%;
+    height:400px; /* iframe height */
+    top:400px;  /* iframe height */
+    margin-top:-400px;  /* iframe height */
+}
