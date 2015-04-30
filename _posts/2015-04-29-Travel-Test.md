@@ -8,7 +8,7 @@ mobileWarning: true
 category: articles
 share: true
 comments: true
-tags: [Test, Example]
+tags: [Test, Example, Switzerland, Rapperswil]
 image:
   feature: rappi_golden_lake.jpg
   credit: Theo Winter
