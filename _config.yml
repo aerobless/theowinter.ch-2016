@@ -67,12 +67,25 @@ exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "l
 
 #Required gems
 #gems: [jekyll-exiftag]
+#require "jekyll-minimagick"
 
 #ExifTag
 #https://github.com/benib/jekyll-exiftag
 exiftag:
  sources:
    - images/photography
+
+#MiniMagick
+#https://github.com/zroger/jekyll-minimagick
+mini_magick:
+    photography:
+        source: images/photography
+        destination: images/photography/thumbnails
+        resize: "800x400"
+    travel:
+        source: images/travel
+        destination: images/travel/thumbnails
+        resize: "800x400"
 
 #Upload with glynn
 ftp_host: 'ftp.ghoul.io'

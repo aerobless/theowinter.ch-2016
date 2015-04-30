@@ -101,7 +101,7 @@ photo-list:
     {% for photo in page.photo-list %}
     <div itemscope itemtype="http://schema.org/Photograph">
         <a itemprop="image" class="swipebox" title="{{ photo.title }}" href="/images/photography/{{ photo.img }}.jpg">
-            <img alt="{{ photo.title }}" itemprop="thumbnailUrl" src="/images/photography/{{ photo.img }}_thumb.jpg"/>
+            <img alt="{{ photo.title }}" itemprop="thumbnailUrl" src="/images/photography/thumbnails/{{ photo.img }}.jpg"/>
             <meta itemprop="name" content="{{ photo.title }}" />
             <meta itemprop="isFamilyFriendly" content="true" />
             <meta itemprop="dateCreated" content="{% exiftag date_time_original,, %}{{ photo.img }}.jpg{% endexiftag %}"/>

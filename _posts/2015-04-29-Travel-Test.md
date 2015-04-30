@@ -4,13 +4,20 @@ title: Travel blog entry example.
 description: "This is a sample description. "
 location: Rapperswil, Switzerland
 category: articles
+share: true
+comments: true
 tags: [Test, Example]
 image:
   feature: rappi_golden_lake.jpg
   credit: Theo Winter
   creditlink: https://theowinter.ch
-comments: true
-share: true
+photo-list:
+    - title: Big Ben, London
+      img: DSCN1526
+    - title: Worthing Pier Amusements, United Kingdom
+      img: DSCN1023
+    - title: Arundel, United Kingdom
+      img: DSCN0866
 ---
 
 #Hello world
