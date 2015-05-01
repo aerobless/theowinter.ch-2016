@@ -3,6 +3,7 @@ layout: travel
 title: Fake travel blog entry
 description: "This is a sample description. "
 location: Rapperswil, Switzerland
+satellite: false
 startLocation: Zürich
 endLocation: New York
 temperature: 20

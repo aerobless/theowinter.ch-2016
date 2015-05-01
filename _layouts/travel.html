@@ -13,7 +13,9 @@
 
 <div id="main" role="main">
   <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-    {% if page.image.feature %}<img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" {% if site.logo == null %}style="margin-top:0;"{% endif %}>{% if page.image.credit %}<p class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a>{% endif %}{% endif %}
+    {% if page.image.feature %}
+      <img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" {% if site.logo == null %}style="margin-top:0;"{% endif %}>{% if page.image.credit %}<p class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a>{% endif %}
+    {% endif %}
     <div class="entry-wrapper">
       <header class="entry-header">
         <span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags/#{{ tag | cgi_encode }}" title="Pages tagged {{ tag }}">{{ tag }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>
@@ -86,7 +88,10 @@
                       frameborder="0" style="border:0"
                       src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyCMXdSigC-sBHJOrGakSxjGi2uMMq_N7RY
                         &origin={{ page.startLocation }}
-                        &destination={{ page.endLocation }}">
+                        &destination={{ page.endLocation }}
+                        {% if page.satellite %}&maptype=satellite{% endif %}
+                        {% if page.waypoints %}&waypoints={{ page.waypoints }}{% endif %}
+                      ">
               </iframe>
           </div>
         {% elsif page.location %}
@@ -98,11 +103,14 @@
               frameborder="0" style="border:0"
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCMXdSigC-sBHJOrGakSxjGi2uMMq_N7RY
                     &q={{ page.location }}
-                    &maptype=satellite">
+                    {% if page.satellite %}&maptype=satellite{% endif %}
+                    ">
             </iframe>
           </div>
         {% endif %}
 
+          {% if page.waypoints %}&waypoints={{ page.waypoints }}{% endif %}
+          
         {% if page.photo-list %}
           <div id="gallery" style="display:none;">
             {% for photo in page.photo-list %}
