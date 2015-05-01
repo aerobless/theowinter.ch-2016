@@ -3,7 +3,8 @@ layout: travel
 title: Fake travel blog entry
 description: "This is a sample description. "
 location: Rapperswil, Switzerland
-temperature: 33
+temperature: 20
+weather: sunny
 mobileWarning: true
 category: articles
 share: true
