@@ -77,9 +77,21 @@
 
         {{ content }}
 
-        {% if page.location %}
+        {% if page.startLocation and page.endLocation %}
           <div class="overlay" onClick="style.pointerEvents='none'"></div>
-          <div id="mapbox">
+          <div id="mapbox-journey">
+              <iframe
+                      width="100%"
+                      height="400"
+                      frameborder="0" style="border:0"
+                      src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyCMXdSigC-sBHJOrGakSxjGi2uMMq_N7RY
+                        &origin={{ page.startLocation }}
+                        &destination={{ page.endLocation }}">
+              </iframe>
+          </div>
+        {% elsif page.location %}
+          <div class="overlay" onClick="style.pointerEvents='none'"></div>
+          <div id="mapbox-location">
             <iframe
               width="100%"
               height="400"
