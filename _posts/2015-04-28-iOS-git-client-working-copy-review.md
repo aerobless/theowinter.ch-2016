@@ -5,9 +5,9 @@ description: "A fully-featured git client for iOS that can: clone, commit, push,
 category: articles
 tags: [Review, Working Copy, iOS, iPhone, App, Git, Tools]
 image:
-  feature: rappi_golden_lake.jpg
-  credit: Theo Winter
-  creditlink: https://theowinter.ch
+  feature: grass_header.jpg
+  credit: Franziska Winter
+  creditlink: http://canvasart.ch
 comments: true
 share: true
 ---
