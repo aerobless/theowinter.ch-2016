@@ -19,7 +19,7 @@ I'm levelheaded and I don't do flamewars. I believe in Open Source and I've made
 If you'd like to know more feel free to contact me or visit my
 [G+ profile](https://plus.google.com/+TheoWinterCH){:target="_blank"}.
 
-This page is my personal blog and place to show off some of my projects. Enjoy :)
+This page is my personal blog and place to show off some of my projects. Enjoy :) TEST !!
 
 ## Skills
  + **Programming Languages:** Java, C# & .NET, JavaScript
@@ -60,5 +60,3 @@ The awesome black & white theme was made by Michael Rose and is called [MinimalM
   "url": "http://www.theowinter.ch"
 }
 </script>
-
-TEST TEST TEST
