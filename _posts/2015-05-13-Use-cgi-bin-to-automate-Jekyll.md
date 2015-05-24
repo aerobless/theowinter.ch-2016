@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Automate Jekyll publishing with a cgi-bin bash script
-description: " "
+description: "Automate publishing your Jekyll blog posts with a simple cgi-bin bash script. This works also for other static site generators."
 category: articles
 tags: [Jekyll, blogging, cgi-bin, automation, git, web]
 image:
