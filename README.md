@@ -1,12 +1,14 @@
 theowinter.ch
 =============
 
+![Site preview](https://raw.githubusercontent.com/aerobless/theowinter.ch/master/images/preview.png)
+
 This repo contains the source files of my personal blog. It is made with [Jekyll](http://jekyllrb.com/), an awesome, static site
-generator for programmers. As basline template I'm using [Minimal Mistake](https://github.com/mmistakes/minimal-mistakes) by Michael Rose.
+generator for programmers. As basline template I'm using [So Simple](https://github.com/mmistakes/so-simple-theme) by Michael Rose.
 
 #Incomplete list of tools used:
  + [Jekyll](http://jekyllrb.com/)
- + [Minimal Mistake](https://github.com/mmistakes/minimal-mistakes)
+ + [So Simple](https://github.com/mmistakes/so-simple-theme)
  + [Swipebox](http://brutaldesign.github.io/swipebox/)
  + [Justified Gallery](http://miromannino.github.io/Justified-Gallery/)
  + [Simple Jekyll Search](https://github.com/christian-fei/Simple-Jekyll-Search)
@@ -21,4 +23,4 @@ should you wish to use my photography in your own projects.
 Text articles/blog posts (.md files) are copyrighted by me as well, however you can freely link or quote them
 under a fair use policy.  
 
-**Tdlr:** Don't steal images. Use this repo as a reference and not as a direct template. To get the template, go [here](https://github.com/mmistakes/minimal-mistakes).
+**Tdlr:** Don't steal images. Use this repo as a reference and not as a direct template. To get the template, go [here](https://github.com/mmistakes/so-simple-theme).

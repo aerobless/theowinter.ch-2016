@@ -40,7 +40,7 @@ If you want to send me a file you can drop it in the marked area below.
 ## About this site
 I created it with [Vim](http://vim.sexy){:target="_blank"}, [Git](http://git-scm.com/) and [Jekyll](http://jekyllrb.com/){:target="_blank"}.
 And I'm using various cool JS scripts, such as dropzone, justifiedGallery and swipebox.   
-The awesome black & white theme was made by Michael Rose and is called [MinimalMistake](https://github.com/mmistakes/minimal-mistakes){:target="_blank"}.
+The awesome black & white theme was made by Michael Rose and is called [So Simple](https://github.com/mmistakes/so-simple-theme){:target="_blank"}.
 
 <script type="application/ld+json">
 {
