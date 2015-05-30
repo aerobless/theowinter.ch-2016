@@ -34,7 +34,7 @@ bing_verify: 0B0B2020A81729A7AF0981C047A8984C
 links:
   - title: Photography
     url: /photography/
-  - title: Blog
+  - title: Archive
     url: /articles/
   - title: About
     url: /about/
@@ -64,10 +64,6 @@ kramdown:
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
-
-#Required gems
-#gems: [jekyll-exiftag]
-#require "jekyll-minimagick"
 
 #ExifTag
 #https://github.com/benib/jekyll-exiftag
