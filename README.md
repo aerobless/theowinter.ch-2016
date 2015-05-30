@@ -1,6 +1,3 @@
-theowinter.ch
-=============
-
 ![Site preview](https://raw.githubusercontent.com/aerobless/theowinter.ch/master/images/preview.png)
 
 This repo contains the source files of my personal blog. It is made with [Jekyll](http://jekyllrb.com/), an awesome, static site
