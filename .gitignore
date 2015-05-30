@@ -7,3 +7,4 @@ _site
 ## Specific files:
 site-logo.psd
 
+*.lock
