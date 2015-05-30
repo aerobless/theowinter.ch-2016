@@ -16,21 +16,23 @@ description: "An archive of all the posts I've written over the years. Sorted by
 
 {% assign postsWordCount = 0 %}
 {% assign longestWordCount = 0 %}
+{% assign longestPost = none %}
 {% for posts in getPosts %}
 {% assign postWordCount = posts.content | number_of_words %}
 {% assign postsWordCount = postsWordCount | plus:postWordCount %}
 {% if postWordCount > longestWordCount %}
 {% assign longestWordCount = postWordCount %}
+{% assign longestPost = posts.title %}
 {% endif %}
 {% endfor %}
 
 {% assign averageWordCount = postsWordCount | divided_by:postsCount %}
 
 <ul class="post-list" itemprop="Blog" itemscope itemtype="http://schema.org/Blog">
-<div>
-    My blog contains <b>{{ postsCount }}</b> posts and <b>{{ pagesCount }}</b> pages. Those <b>{{ postsCount }}</b> posts contain a total of
-    <span class="separate-thousands"><b>{{ postsWordCount }}</b></span> words. That's an average of <span class="separate-thousands"><b>{{ averageWordCount }}</b></span>
-    words per post. The longest post contains <span class="separate-thousands"><b>{{ longestWordCount }}</b></span> words.
+<div style="text-align:center">
+    My blog contains <b>{{ postsCount }}</b> posts and <b>{{ pagesCount }}</b> pages. Those <b>{{ postsCount }}</b>
+    posts contain a total of <b>{{ postsWordCount }}</b> words. That's an average of <b>{{ averageWordCount }}</b>
+    words per post. The longest post is <b>"{{longestPost}}"</b>, it has a length of <b>{{ longestWordCount }}</b> words.
 </div>
     <br>
     
