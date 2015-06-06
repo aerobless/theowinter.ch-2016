@@ -14,15 +14,15 @@ image:
 My name is Theo Winter and I'm studying Computer Science at [HSR](http://www.hsr.ch){:target="_blank"} in [Switzerland](https://www.google.com/maps/place/Switzerland){:target="_blank"}.
 Some of my hobbies are programming, [photography]({{ site.url }}/photography/), cycling, skiing and more. My tools of choice are OS X,
 Canon, GitHub and everything from Google.
-I'm levelheaded and I don't do flamewars. I believe in Open Source and I've made most of my projects freely available on
-[GitHub](https://github.com/aerobless){:target="_blank"}.  
+I'm levelheaded and I don't participate in flamewars. I believe in Open Source and I've made most of my projects freely available on
+[GitHub](https://github.com/aerobless){:target="_blank"}. Yes, you can find the repository of this site on GitHub as well.  
 If you'd like to know more feel free to contact me or visit my
 [G+ profile](https://plus.google.com/+TheoWinterCH){:target="_blank"}.
 
-This page is my personal blog and place to show off some of my projects. Enjoy :)
+This page is my personal blog and I use it as a place to show off some of my projects. Enjoy :)
 
 ## Skills
- + **Programming Languages:** Java, C# & .NET, JavaScript
+ + **Programming Languages:** Java, Go, C# & .NET, JavaScript
     + **Supporting Skills:** Continuous Integration, Test-Driven Development, Patterns of Enterprise Application Architecture,
      Enterprise Integration Patterns, GoF Patterns
  + **Web:** HTML, CSS, JavaScript, WordPress, Jekyll
@@ -38,9 +38,9 @@ If you want to send me a file you can drop it in the marked area below.
 <form class="dropzone" action="{{ site.url }}/upload.php" class="dropzone"></form>
 
 ## About this site
-I created it with [Vim](http://vim.sexy){:target="_blank"}, [Git](http://git-scm.com/) and [Jekyll](http://jekyllrb.com/){:target="_blank"}.
-And I'm using various cool JS scripts, such as dropzone, justifiedGallery and swipebox.   
-The awesome black & white theme was made by Michael Rose and is called [So Simple](https://github.com/mmistakes/so-simple-theme){:target="_blank"}.
+I created it with [WebStorm](https://www.jetbrains.com/webstorm/){:target="_blank"}, [Git](http://git-scm.com/) and [Jekyll](http://jekyllrb.com/){:target="_blank"}.
+And I'm using various cool scripts, such as dropzone, justifiedGallery and swipebox. The awesome black & white theme was 
+made by Michael Rose and is called [So Simple](https://github.com/mmistakes/so-simple-theme){:target="_blank"}.
 
 <script type="application/ld+json">
 {
