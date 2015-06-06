@@ -40,7 +40,7 @@ And then there's also a standalone IDE called [LiteIDE](https://code.google.com/
 and it works. But I can't yet say which of those 3 choices has the most features. So far I'm happy with IntelliJ, but I've already 
 noticed that some things aren't finished yet. For example trying to refactor function names returns a "not implemented yet"
 message-box.  
-Of course you can also go ahead and not use an IDE at all and [VIM](vim.sexy){:target="_blank"} your way through this. 
+Of course you can also go ahead and not use an IDE at all and [VIM](http://vim.sexy){:target="_blank"} your way through this. 
 But I feel like refactoring etc. are required for efficient programming.
 
 ![IntelliJ IDEA 14 with Golang Plugin]({{ site.url }}/images/golang_intellij.png) 
