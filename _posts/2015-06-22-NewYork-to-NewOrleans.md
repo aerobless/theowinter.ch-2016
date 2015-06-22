@@ -18,12 +18,18 @@ image:
   credit: Google Inc.
   creditlink: https://maps.google.com
 photo-list:
-    - title: Camera Gear
-      img: IMG_1079
-    - title: Sunglasses
-      img: IMG_1083
-    - title: Photo Backup
-      img: mobilelite_floor
+    - title: Times Square
+      img: ny1
+    - title: Brooklyn Bridge
+      img: ny2
+    - title: Massive Burger
+      img: ny3
+    - title: Camping
+      img: c1
+    - title: Pool Time
+      img: c2
+    - title: Washington Metro
+      img: wa1
 --- 
 
 ### New York City
