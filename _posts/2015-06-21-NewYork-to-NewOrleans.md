@@ -6,7 +6,6 @@ location: New Orleans
 satellite: true
 startLocation: New York City
 endLocation: New Orleans
-waypoints: [Philladelphia, Washington D.C., Memphis, Nashville]
 temperature: 35
 weather: sunny
 mobileWarning: true
