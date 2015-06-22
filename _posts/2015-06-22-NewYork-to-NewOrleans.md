@@ -17,6 +17,13 @@ image:
   feature: newyork_newyork_header.jpg
   credit: Google Inc.
   creditlink: https://maps.google.com
+photo-list:
+    - title: Camera Gear
+      img: IMG_1079
+    - title: Sunglasses
+      img: IMG_1083
+    - title: Photo Backup
+      img: mobilelite_floor
 --- 
 
 ### New York City
