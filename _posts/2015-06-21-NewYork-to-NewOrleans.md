@@ -18,7 +18,7 @@ image:
   feature: newyork_newyork_header.jpg
   credit: Google Inc.
   creditlink: https://maps.google.com
-  photo-list:
+photo-list:
     - title: Times Square
       img: ny1
    - title: Brooklyn Bridge
