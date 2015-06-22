@@ -18,18 +18,18 @@ image:
   credit: Google Inc.
   creditlink: https://maps.google.com
 photo-list:
-    - title: Times Square
-      img: ny1
-   - title: Brooklyn Bridge
-      img: ny2
-   - title: Massive Burgers
-      img: ny3
-   - title: Camping
-      img: c1
-   - title: Pool Time
-      img: c2
-   - title: Washington Metro
-      img: wa1
+  - title: Times Square
+     img: ny1
+ - title: Brooklyn Bridge
+    img: ny2
+ - title: Massive Burgers
+    img: ny3
+ - title: Camping
+    img: c1
+ - title: Pool Time
+    img: c2
+ - title: Washington Metro
+    img: wa1
 --- 
 
 ### New York City
