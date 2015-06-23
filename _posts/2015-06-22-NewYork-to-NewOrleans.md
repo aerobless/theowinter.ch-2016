@@ -3,7 +3,7 @@ layout: travel
 title: New York to New Orleans
 description: "Travelling from New York to New Orleans via Washington DC, Nashville and Memphis."
 location: New Orleans
-satellite: true
+satellite: false
 startLocation: New York City
 endLocation: New Orleans
 waypoints: [Philladelphia, Washington D.C., Nashville, Memphis]
