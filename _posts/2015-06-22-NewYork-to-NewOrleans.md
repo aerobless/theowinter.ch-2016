@@ -3,10 +3,9 @@ layout: travel
 title: New York to New Orleans
 description: "Travelling from New York to New Orleans via Washington DC, Nashville and Memphis."
 location: New Orleans
-satellite: false
+satellite: true
 startLocation: New York City
 endLocation: New Orleans
-waypoints: [Philladelphia, Washington D.C., Nashville, Memphis]
 temperature: 35
 weather: sunny
 mobileWarning: true
