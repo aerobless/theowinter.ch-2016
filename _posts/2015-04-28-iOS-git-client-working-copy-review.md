@@ -1,5 +1,6 @@
 ---
 layout: post
+icon: icon-apple
 title: Review&#58; Working Copy, a Git-Client for iOS
 description: "A fully-featured git client for iOS that can: clone, commit, push, pull, merge etc. "
 category: articles

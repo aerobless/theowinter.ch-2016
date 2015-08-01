@@ -1,5 +1,6 @@
 ---
 layout: post
+icon: icon-apple
 title: Setting up Jekyll on OS X
 description: "Learn how to install Jekyll and create your own blog on OS X or Linux. It's easy, so give it a go."
 category: articles

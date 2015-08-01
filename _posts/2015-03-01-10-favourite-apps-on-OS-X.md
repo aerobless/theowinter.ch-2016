@@ -1,5 +1,6 @@
 ---
 layout: post
+icon: icon-apple
 title: My top 10 favourite apps on OS X Yosemite
 description: "A list of my 10 favourite applications on Mac OS X Yosemite. These are little-known apps that can improve your productivity."
 category: articles

@@ -1,5 +1,6 @@
 ---
 layout: travel
+icon: icon-plane
 title: New York to New Orleans
 description: "Travelling from New York to New Orleans via Washington DC, Nashville and Memphis."
 location: New Orleans

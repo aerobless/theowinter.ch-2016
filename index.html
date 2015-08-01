@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Latest Posts
+title:
 description: "A simple and clean responsive Jekyll theme for words and photos."
 tags: [Jekyll, theme, themes, responsive, blog, minimalism]
 ---
@@ -9,7 +9,15 @@ tags: [Jekyll, theme, themes, responsive, blog, minimalism]
 {% for post in site.posts limit:10 %} 
   <li>
       <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-          <a href="{{ site.url }}{{ post.url }}" itemprop="url"><meta itemprop="headline" content="{{ post.title }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a>
+          <a href="{{ site.url }}{{ post.url }}" itemprop="url"><meta itemprop="headline" 
+                  content="{{ post.title }}">
+              {% if post.icon %}
+              <i class="{{post.icon}}"> </i>
+              {% else %}
+              <i class="icon-file-text-alt"> </i>
+              {% endif %}
+              {{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">
+                  {{ post.date | date: "%B %d, %Y" }}</time></span></a>
       </article>
   </li>
 {% endfor %}

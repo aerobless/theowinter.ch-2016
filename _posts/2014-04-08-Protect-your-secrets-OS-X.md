@@ -1,5 +1,6 @@
 ---
 layout: post
+icon: icon-apple
 title: Protect your secrets on OS X
 description: "Use the OS X Disk Utility to create a free, personal safe for your important data. You can choose between AES-128 or even AES-256bit encryption."
 category: articles
