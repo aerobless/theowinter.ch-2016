@@ -86,3 +86,10 @@
 .alert-danger .alert-link {
     color: #843534;
 }
+
+.centeredG {
+    height: 400px;
+    width: 400px;
+    background: #eee;
+    margin: 50px auto;
+}

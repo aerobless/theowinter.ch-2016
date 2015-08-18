@@ -255,64 +255,71 @@ photo-list:
 
 These are just some of the pictures I've taken while travelling in <a onclick="sortGallery('.Switzerland')" href="#">Switzerland</a> and around the <a onclick="sortGallery('.all')" href="#">world</a>.
 
+<!-- TODO: prevent clicks before onLoad has built the initial gallery-->
+<!-- TODO: I just realized that linking to photos will only work in the default mode.. at some point
+I'll have to find a solution to link to albums -->
 <ul>
-    <li><a onclick="sortGallery('.USA')" href="#">United States of America</a></li>
-    <li><a onclick="sortGallery('.UnitedKingdom')" href="#">United Kingdom</a></li>
-    <li><a onclick="sortGallery('.Netherland')" href="#">Netherland</a></li>
-    <li><a onclick="sortGallery('.Switzerland')" href="#">Switzerland</a></li>
-    <li><a onclick="sortGallery('.all')" href="#">All</a></li>
+    <li><a onclick="sortGallery('USA')" href="#">United States of America</a></li>
+    <li><a onclick="sortGallery('UnitedKingdom')" href="#">United Kingdom</a></li>
+    <li><a onclick="sortGallery('Netherland')" href="#">Netherland</a></li>
+    <li><a onclick="sortGallery('Switzerland')" href="#">Switzerland</a></li>
+    <li><a onclick="sortGallery('Italy')" href="#">Italy</a></li>
+    <li><a onclick="sortGallery('all')" href="#">All</a></li>
 </ul><br>
-
-<div id="gallery" style="display:none;">
-    {% for photo in page.photo-list %}
-    <div class="all {{ photo.tags }}" itemscope itemtype="http://schema.org/Photograph">
-        <a itemprop="image" class="swipebox" title="{{ photo.title }}" href="/images/photography/{{ photo.img }}.jpg">
-            <img alt="{{ photo.title }}" itemprop="thumbnailUrl" src="/images/photography/thumbnails/{{ photo.img }}.jpg"/>
-            <meta itemprop="name" content="{{ photo.title }}" />
-            <meta itemprop="isFamilyFriendly" content="true" />
-            <meta itemprop="dateCreated" content="{% exiftag date_time_original,, %}{{ photo.img }}.jpg{% endexiftag %}"/>
-            <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
-                <div itemprop="sameAs" href="http://theowinter.ch/about">
-                    <meta itemprop="name" content="Theo Winter"/>
-                </div>
-            </div>
-        </a>
-    </div>
-    {% endfor %}
-</div>
+<div id="gallery"></div>
 
 <script>
+    var photoList = [
+        /*   {% for photo in page.photo-list %} */
+        {
+            src: '/images/photography/{{ photo.img }}.jpg',
+            srct: '/images/photography/thumbnails/{{ photo.img }}.jpg',
+            title: '{{ photo.title }}',
+            description : '{{ photo.tags }}',
+            tags: '{{ photo.tags }}'
+        }, //Trailing comma apperently fine according to http://stackoverflow.com/questions/7246618/trailing-commas-in-javascript
+        /* {% endfor %} */
+    ]
+    
     window.onload=function(){
-        $("#gallery").justifiedGallery({
-            rowHeight : 180,
-            margins : 3,
-            border : 0,
-            fixedHeight: false,
-            lastRow : 'justify',
-            captions: true
-        });
-        
-        $('#gallery').justifiedGallery().on('jg.complete', function (e) {
-            $("#gallery").fadeIn(1000);
-        });
-
-        $('.swipebox').swipebox({
-            hideBarsDelay : 3000,
-            loopAtEnd: true
-        });
+        buildGallery(photoList);
     }
 
     var sortGallery = function(input) {
-        $("#gallery").justifiedGallery('destroy');
-        $("#gallery").justifiedGallery({
-            rowHeight : 180,
-            margins : 3,
-            border : 0,
-            selector: input,
-            fixedHeight: false,
-            lastRow : 'justify',
-            captions: true
-        });
+        var sortedList = [];
+
+        if(input != 'all'){
+            for(var i = 0, size = photoList.length; i < size ; i++){
+                var photo = photoList[i];
+                if(photo.tags.indexOf(input) !== -1){
+                    sortedList.push(photo);
+                }
+            }
+        } else {
+            sortedList = photoList;
+        }
+
+        /*For some reason nanoGallery doesn't destroy it's internal model properly.. so if
+        * we're using only doing "destroy" and then rebuild the gallery, the thumbnails point to the wrong images.
+        * This seems to be a problem with nanoGallery.. so I'm using this quick & dirty fix to destroy-build-destroy
+        * which makes it work as intended. Hopefully it'll get fixed properly at some point. 18.08.2015*/
+        $("#gallery").nanoGallery('destroy');
+        buildGallery(sortedList);
+        $("#gallery").nanoGallery('destroy');
+        buildGallery(sortedList);
     }
     
+    var buildGallery = function(list) {
+        $("#gallery").nanoGallery({
+            thumbnailWidth: 'auto',
+            locationHash: true,
+            thumbnailHeight: 240,
+            imageTransition: 'fade',
+            thumbnailHoverEffect:[{name: 'imageScale150', duration:700}, {name:'labelAppear75', duration:400}, {name:'descriptionAppear', duration:1000}],
+            thumbnailGutterWidth : 0,
+            thumbnailGutterHeight : 0,
+            thumbnailLabel: { display: true, position: 'overImageOnMiddle', align: 'center' },
+            items: list
+        });
+    }
 </script>
