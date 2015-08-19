@@ -256,8 +256,7 @@ photo-list:
 These are just some of the pictures I've taken while travelling in <a onclick="sortGallery('.Switzerland')" href="#">Switzerland</a> and around the <a onclick="sortGallery('.all')" href="#">world</a>.
 
 <!-- TODO: prevent clicks before onLoad has built the initial gallery-->
-<!-- TODO: I just realized that linking to photos will only work in the default mode.. at some point
-I'll have to find a solution to link to albums -->
+
 <ul>
     <li><a onclick="sortGallery('USA')" href="#">United States of America</a></li>
     <li><a onclick="sortGallery('UnitedKingdom')" href="#">United Kingdom</a></li>
@@ -282,11 +281,15 @@ I'll have to find a solution to link to albums -->
     ]
     
     window.onload=function(){
-        buildGallery(photoList);
+        buildGallery(photoList, true);
     }
 
     var sortGallery = function(input) {
         var sortedList = [];
+        
+        /*hasHEnabled is used to disable hashing/browser-history when the photos are sorted in a custom way.
+        * This prevents people from bookmarking a photo and when they open the link, it links to a different photo.*/
+        var hashEnabled = false;
 
         if(input != 'all'){
             for(var i = 0, size = photoList.length; i < size ; i++){
@@ -297,6 +300,7 @@ I'll have to find a solution to link to albums -->
             }
         } else {
             sortedList = photoList;
+            hashEnabled = true;
         }
 
         /*For some reason nanoGallery doesn't destroy it's internal model properly.. so if
@@ -304,16 +308,19 @@ I'll have to find a solution to link to albums -->
         * This seems to be a problem with nanoGallery.. so I'm using this quick & dirty fix to destroy-build-destroy
         * which makes it work as intended. Hopefully it'll get fixed properly at some point. 18.08.2015*/
         $("#gallery").nanoGallery('destroy');
-        buildGallery(sortedList);
+        buildGallery(sortedList, hashEnabled);
         $("#gallery").nanoGallery('destroy');
-        buildGallery(sortedList);
+        buildGallery(sortedList, hashEnabled);
     }
     
-    var buildGallery = function(list) {
+    var buildGallery = function(list, hashEnabled) {
         $("#gallery").nanoGallery({
             thumbnailWidth: 'auto',
-            locationHash: true,
-            thumbnailHeight: 240,
+            thumbnailHeight: 270,
+            touchAnimation: false,
+            thumbnailAlignment: 'justified',
+            thumbnailAdjustLastRowHeight: true,
+            locationHash: hashEnabled,
             imageTransition: 'fade',
             thumbnailHoverEffect:[{name: 'imageScale150', duration:700}, {name:'labelAppear75', duration:400}, {name:'descriptionAppear', duration:1000}],
             thumbnailGutterWidth : 0,
