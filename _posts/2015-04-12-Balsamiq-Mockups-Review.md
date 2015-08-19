@@ -5,7 +5,7 @@ description: "Rapidly create UI mockups & wireframes. Work smarter and collabora
 category: articles
 tags: [Review, Balsamiq, UI, Web, Mockup, User Experience]
 image:
-  feature: rappi_golden_lake.jpg
+  feature: headers/rappi_golden_lake.jpg
   credit: Theo Winter
   creditlink: https://theowinter.ch
 comments: true

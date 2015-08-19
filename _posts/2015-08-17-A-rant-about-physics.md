@@ -8,7 +8,7 @@ share: true
 comments: true
 tags: [physics, HSR, school, rant]
 image:
-  feature: grass_header.jpg
+  feature: headers/macrograss.jpg
   credit: Theo Winter
   creditlink: https://theowinter.ch
 --- 

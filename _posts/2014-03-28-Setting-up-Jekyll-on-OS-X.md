@@ -6,7 +6,7 @@ description: "Learn how to install Jekyll and create your own blog on OS X or Li
 category: articles
 tags: [tutorial, Unix, Jekyll, web development, blogging]
 image:
-  feature: servers.jpg
+  feature: headers/serverroom.jpg
   credit: The National Archives (UK)
   creditlink: http://commons.wikimedia.org/wiki/File:A_view_of_the_server_room_at_The_National_Archives.jpg
 comments: true

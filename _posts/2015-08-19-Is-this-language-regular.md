@@ -7,7 +7,7 @@ share: true
 comments: true
 tags: [Automaton, Machine, HSR, Languages, CompSci, Pumping Lemma]
 image:
-  feature: grass_header.jpg
+  feature: headers/macrograss.jpg
   credit: Theo Winter
   creditlink: https://theowinter.ch
 --- 

@@ -6,7 +6,7 @@ description: "A list of my 10 favourite applications on Mac OS X Yosemite. These
 category: articles
 tags: [OS X, Apps, Software, Programs, top 10]
 image:
-  feature: yosemite.jpg
+  feature: headers/yosemite.jpg
   credit: Apple Inc.
   creditlink: https://www.apple.com/osx/
 comments: true

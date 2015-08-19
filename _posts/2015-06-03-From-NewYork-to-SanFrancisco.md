@@ -14,7 +14,7 @@ share: true
 comments: true
 tags: [Travel, USA, Jekyll]
 image:
-  feature: newyork_newyork_header.jpg
+  feature: headers/usa_map.jpg
   credit: Google Inc.
   creditlink: https://maps.google.com
 photo-list:

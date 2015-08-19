@@ -5,7 +5,7 @@ description: "Setup a minimal Postfix server to redirect your emails from a doma
 category: articles
 tags: [tutorial, Linux, HowTo, Postfix, Digital Ocean, Gmail, VPS, Linux, Server]
 image:
-  feature: flight_header.jpg
+  feature: headers/flight.jpg
   credit: Theo Winter
   creditlink: https://theowinter.ch
 comments: true

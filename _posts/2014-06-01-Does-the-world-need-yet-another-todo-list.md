@@ -5,7 +5,7 @@ description: "ToxicTodo - Why I chose to program my own todo list instead of usi
 category: articles
 tags: [programming projects, todo list, ToxicTodo, Do It Yourself, Java]
 image:
-  feature: toxic-todo-header.jpg
+  feature: headers/todolist_hand.jpg
   credit: Lâm HUA (CC 2.0)
   creditlink: https://www.flickr.com/photos/monsieurlam/2645956083
 comments: true

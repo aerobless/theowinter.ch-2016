@@ -6,7 +6,7 @@ description: "A fully-featured git client for iOS that can: clone, commit, push,
 category: articles
 tags: [Review, Working Copy, iOS, iPhone, App, Git, Tools]
 image:
-  feature: grass_header.jpg
+  feature: headers/macrograss.jpg
   credit: Franziska Winter
   creditlink: http://canvasart.ch
 comments: true

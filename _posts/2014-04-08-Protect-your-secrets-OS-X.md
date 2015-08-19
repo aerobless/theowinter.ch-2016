@@ -6,7 +6,7 @@ description: "Use the OS X Disk Utility to create a free, personal safe for your
 category: articles
 tags: [security, HowTo, encryption, OS X, Disk Utility]
 image:
-  feature: protect-data-on-os-x-header.jpg
+  feature: headers/securitysafe.jpg
   credit: IceSabre
   creditlink: https://www.flickr.com/photos/icesabre/2221406000
 comments: true

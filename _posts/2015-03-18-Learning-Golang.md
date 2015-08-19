@@ -5,7 +5,7 @@ description: "My first steps with Golang. Setting up a development environment, 
 category: articles
 tags: [Learning, Go, Golang, Programming, Google, DevLog]
 image:
-  feature: golang_header.jpg
+  feature: headers/goldencorn.jpg
   credit: Theo Winter
   creditlink: https://theowinter.ch
 comments: true

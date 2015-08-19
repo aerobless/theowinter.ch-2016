@@ -15,7 +15,7 @@ share: true
 comments: true
 tags: [Travel, USA, New York, New Orleans, Washington D.C., Nashville, Memphis]
 image:
-  feature: newyork_newyork_header.jpg
+  feature: headers/newyork_map.jpg
   credit: Google Inc.
   creditlink: https://maps.google.com
 photo-list:

@@ -5,7 +5,7 @@ description: "Have you ever felt like your spending to much time on 9gag and the
 category: articles
 tags: [HowTo, Tutorial, Productivity, Know-Your-OS, OS X, Linux, Windows]
 image:
-  feature: mountainlake_header.jpg
+  feature: headers/mountainlake.jpg
   credit: Theo Winter
   creditlink: https://theowinter.ch
 comments: true

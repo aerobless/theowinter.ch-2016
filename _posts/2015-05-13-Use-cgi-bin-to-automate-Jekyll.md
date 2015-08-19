@@ -5,7 +5,7 @@ description: "Automate publishing your Jekyll blog posts with a simple cgi-bin b
 category: articles
 tags: [Jekyll, blogging, cgi-bin, automation, git, web]
 image:
-  feature: rappi_steg.jpg
+  feature: headers/rappi_steg.jpg
   credit: Theo Winter
   creditlink: http://theowinter.ch
 comments: true
