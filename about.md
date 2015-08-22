@@ -6,7 +6,7 @@ tags: [about, Theo Winter, website]
 description: Theo Winter is studying Computer Science at Hochschule für Technik Rapperswil in Switzerland. Some of his hobbies are programming, photography, cycling and more.
 modified: 2014-03-26
 image:
-  feature: switzerland.jpg
+  feature: headers/switzerland.jpg
   credit: Theo Winter
   creditlink: http://theowinter.ch
 ---

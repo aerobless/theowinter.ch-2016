@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Is this language regular?
-description: ""
+description: "How to find out if a language is regular with the pumping lemma algorithm."
 category: articles
 share: true
 comments: true
