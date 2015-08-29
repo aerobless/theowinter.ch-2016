@@ -1,10 +1,12 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="{{ site.url }}/assets/js/scripts.min.js"></script>
-<script src="{{ site.url }}/assets/js/plugins/dropzone.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/jquery/2.1.4/jquery.min.js"><\/script>')</script>
 
-<script src="{{ site.url }}/assets/js/plugins/jquery.nanogallery.min.js"></script>
 <script src="{{ site.url }}/assets/js/plugins/jquery.transit.min.js"></script>
+{% javascript_asset_tag global %}
+- /_assets/js/dropzone.js
+- /_assets/js/scripts.min.js
+- /_assets/js/jquery.nanogallery.js
+{% endjavascript_asset_tag %}
 
 {% if site.search %}
 <!-- Jekyll Simple Search option -->

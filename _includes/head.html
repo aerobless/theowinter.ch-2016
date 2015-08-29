@@ -33,24 +33,18 @@
 <meta name="MobileOptimized" content="320">
 <meta name=viewport content="width=device-width, initial-scale=1">
 
-<!-- For all browsers -->
-<link rel="stylesheet" href="{{ site.url }}/assets/css/main.min.css">
-
-<!-- Photo Tools -->
-<link href="{{ site.url }}/assets/css/nanogallery/nanogallery.min.css" rel="stylesheet" type="text/css">
-
-<!-- Options -->
-<link rel="stylesheet" href="{{ site.url }}/assets/css/options.css">
-
-<!-- DropZone -->
-<link rel="stylesheet" href="{{ site.url }}/assets/css/dropzone.css">
-
 <!-- Webfonts -->
 <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
 
 <!-- Load Modernizr -->
 <script src="{{ site.url }}/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
 
+{% css_asset_tag global %}
+- /_assets/css/main.min.css
+- /_assets/css/dropzone.css
+- /_assets/css/options.css
+- /_assets/css/nanogallery.min.css
+{% endcss_asset_tag %}
 
 <!-- Icons -->
 <!-- 16x16 -->
