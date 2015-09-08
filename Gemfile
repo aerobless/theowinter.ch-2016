@@ -11,3 +11,9 @@ gem 'jekyll-exiftag'
 gem 'mini_magick'
 gem 'jekyll-minimagick'
 gem 'japr'
+
+
+
+gem 'therubyracer'
+gem 'i18n'
+gem 'json'

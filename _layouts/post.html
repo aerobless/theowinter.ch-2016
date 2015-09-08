@@ -50,6 +50,11 @@
       </footer>
       <div class="entry-content" itemprop="articleBody">
         {{ content }}
+
+          {% if page.photo-list %}
+          <div id="gallery"></div>
+          {% endif %}
+          
         {% if site.disqus_shortname and page.comments %}<div id="disqus_thread"></div><!-- /#disqus_thread -->{% endif %}
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
@@ -72,5 +77,55 @@
 
 {% include scripts.html %}
 
+{% if page.photo-list %}
+<script>
+    var photoList = [
+        /*   {% for photo in page.photo-list %} */
+        {
+            src: '/images/travel/{{ photo.img }}.jpg',
+            srct: '/images/travel/thumbnails/{{ photo.img }}.jpg',
+            title: '{{ photo.title }}',
+            description : '{{ photo.title }}',
+            tags: '{{ photo.tags }}'
+        },
+        /* {% endfor %} */
+    ]
+
+    window.onload=function(){
+        buildGallery(photoList);
+    }
+
+    var sortGallery = function(input) {
+        var sortedList = [];
+
+        if(input != 'all'){
+            for(var i = 0, size = photoList.length; i < size ; i++){
+                var photo = photoList[i];
+                if(photo.tags.indexOf(input) !== -1){
+                    sortedList.push(photo);
+                }
+            }
+        } else {
+            sortedList = photoList;
+        }
+
+        $("#gallery").nanoGallery('destroy');
+        buildGallery(sortedList);
+    }
+
+    var buildGallery = function(list) {
+        $("#gallery").nanoGallery({
+            thumbnailWidth: 'auto',
+            thumbnailHeight: 150,
+            imageTransition: 'fade',
+            thumbnailHoverEffect:[{name: 'imageScale150', duration:700}, {name:'labelAppear75', duration:400}, {name:'descriptionAppear', duration:1000}],
+            thumbnailGutterWidth : 0,
+            thumbnailGutterHeight : 0,
+            thumbnailLabel: { display: true, position: 'overImageOnMiddle', align: 'center' },
+            items: list
+        });
+    }
+</script>
+{% endif %}
 </body>
 </html>
