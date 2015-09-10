@@ -2,11 +2,17 @@
 <script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/jquery/2.1.4/jquery.min.js"><\/script>')</script>
 
 <script src="{{ site.url }}/assets/js/plugins/jquery.transit.min.js"></script>
-{% javascript_asset_tag global %}
-- /_assets/js/dropzone.js
-- /_assets/js/scripts.min.js
-- /_assets/js/jquery.nanogallery.js
-{% endjavascript_asset_tag %}
+{% comment %}{% javascript_asset_tag global %}
+- /assets/js/dropzone.js
+- /assets/js/scripts.min.js
+- /assets/js/jquery.justifiedGallery.min.js
+{% endjavascript_asset_tag %}{% endcomment %}
+
+<!-- Can be commented out for minimization in production -->
+<script src="{{ site.url }}/assets/js/dropzone.js"></script>
+<script src="{{ site.url }}/assets/js/scripts.min.js"></script>
+<script src="{{ site.url }}/assets/js/jquery.justifiedGallery.min.js"></script>
+
 
 {% if site.search %}
 <!-- Jekyll Simple Search option -->

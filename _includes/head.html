@@ -39,12 +39,19 @@
 <!-- Load Modernizr -->
 <script src="{{ site.url }}/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
 
+{% comment %}
 {% css_asset_tag global %}
-- /_assets/css/main.min.css
-- /_assets/css/dropzone.css
-- /_assets/css/options.css
-- /_assets/css/nanogallery.min.css
-{% endcss_asset_tag %}
+- /assets/css/main.min.css
+- /assets/css/dropzone.css
+- /assets/css/options.css
+- /assets/css/justifiedGallery.min.css
+{% endcss_asset_tag %}{% endcomment %}
+
+<!-- Can be commented out in production -->
+<link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/main.min.css">
+<link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/dropzone.css">
+<link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/options.css">
+<link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/justifiedGallery.min.css">
 
 <!-- Icons -->
 <!-- 16x16 -->

@@ -1,7 +1,8 @@
 ---
 layout: post
+icon: icon-apple
 title: The epic tale of an iPad Air repair
-description: ""
+description: "Fixing the Front Panel Digitizer Assembly of an iPad Air isn't easy. Here's how to do it."
 category: articles
 share: true
 comments: true
@@ -47,7 +48,7 @@ Obviously the heat from the iOpener also loosened the adhesive of the lamination
 ##30seconds or 3minutes?
 The wait for the iOpener to warm the iPad sufficiently became quite boring. So I ended up watching some Top Gear on YouTube. (Thanks +Ryan for that addiction).
 But this was not a good idea. While I was distractedly watching [Richard Hammond setting up a campervan cottage](https://www.youtube.com/watch?v=I7g08nwEmyY) I ended up programming
-the microwave for 3minutes instead of 30seconds. After a minute and a half it dawned on me and I jumped up to turn of the microwave. And I was just in time to see the 
+the microwave for 3minutes instead of 30seconds. After a minute and a half it dawned on me and I jumped up to turn off the microwave. And I was just in time to see the 
 iOpener explode.  
 Luckily for me it wasn't too bad.. the iOpener fluid (some sort of oil) decorated the walls of the microwave, but it was cleaned off easily enough. 
 The only downside.. I had now a half-open iPad but no way to heat it enough to continue. The iOpener (may it rest in peace) left me in the most crucial moment.

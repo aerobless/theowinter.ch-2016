@@ -93,3 +93,33 @@
     background: #eee;
     margin: 50px auto;
 }
+
+.photoCentre
+{
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+
+.photoInfo
+{
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 10%;
+    float: left;
+    margin-right: 20px
+}
+
+.photoInfo-content {
+    margin-left: 20px;
+
+}

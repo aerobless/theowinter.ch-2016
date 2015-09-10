@@ -6,7 +6,7 @@ generator for programmers. As basline template I'm using [So Simple](https://git
 #Incomplete list of tools used:
  + [Jekyll](http://jekyllrb.com/)
  + [So Simple](https://github.com/mmistakes/so-simple-theme)
- + [NanoGallery](http://nanogallery.brisbois.fr/)
+ + [JustifiedGallery](http://miromannino.github.io/Justified-Gallery/)
  + [Simple Jekyll Search](https://github.com/christian-fei/Simple-Jekyll-Search)
  + [Bower](http://bower.io/)
 
