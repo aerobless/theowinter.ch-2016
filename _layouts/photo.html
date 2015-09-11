@@ -11,12 +11,14 @@
 
 {% include headless_navigation.html %}
 
-<div id="main" role="main">
+<div id="main" role="main" class="animsition">
   <article>
       <div class="photoCentre">
           <img id="photo" src="{{ site.url }}/images/photography/{{ page.photo_url }}.jpg" class="entry-feature-image" alt="{{ page.title }}">
-          <a href="{{ site.url }}/photography/{{page.previous_pic}}" style="float: left";>Newer</a>
-          <a href="{{ site.url }}/photography/{{page.next_pic}}" style="float: right;">Older</a>
+          <div>
+             <a class="animsition-link" data-animsition-out="fade-out-right" href="{{ site.url }}/photography/{{page.previous_pic}}" style="float: left";>Newer</a>
+             <a class="animsition-link" data-animsition-out="fade-out-left" href="{{ site.url }}/photography/{{page.next_pic}}" style="float: right;">Older</a>
+          </div>
           <br><br>
           <div class="photoInfo">
               <div>
@@ -66,6 +68,30 @@
         else{
             window.location.href = '{{ site.url }}/photography/{{page.next_pic}}';
         }
+    });
+
+    $(document).ready(function() {
+        $(".animsition").animsition({
+            inClass: 'fade-in',
+            outClass: 'fade-out',
+            inDuration: 1500,
+            outDuration: 400,
+            linkElement: '.animsition-link',
+            // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
+            loading: true,
+            loadingParentElement: 'body', //animsition wrapper element
+            loadingClass: 'animsition-loading',
+            unSupportCss: [
+                'animation-duration',
+                '-webkit-animation-duration',
+                '-o-animation-duration'
+            ],
+            //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+            //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+            overlay : false,
+            overlayClass : 'animsition-overlay-slide',
+            overlayParentElement : 'body'
+        });
     });
 </script>
 
