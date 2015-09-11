@@ -3,7 +3,7 @@
 
 module Jekyll
   class PhotoPage < Page
-    def initialize(site, base, dir, photo_url, previous_pic, next_pic, title)
+    def initialize(site, base, dir, photo_url, previous_pic, next_pic, title, description)
       @site = site
       @base = base
       @dir = dir
@@ -15,6 +15,7 @@ module Jekyll
       self.data['previous_pic'] = previous_pic
       self.data['next_pic'] = next_pic
       self.data['title'] = title
+      self.data['description'] = description
       self.data['comments'] = true
     end
   end
@@ -30,6 +31,7 @@ module Jekyll
         [nil, *details, nil].each_cons(3){|prev, curr, nxt|
           photo_url = curr["img"]
           title = curr["title"]
+          description = curr["description"]
           title_stub = title.strip.gsub(' ', '-').gsub(/[^\w-]/, '') #remove non-alpha and replace spaces with hyphens
           if(prev != nil)
             previous_pic = prev["title"].strip.gsub(' ', '-').gsub(/[^\w-]/, '')
@@ -41,7 +43,7 @@ module Jekyll
           else
             next_pic = ""
           end
-          site.pages << PhotoPage.new(site, site.source, File.join(dir, title_stub), photo_url, previous_pic, next_pic, title)
+          site.pages << PhotoPage.new(site, site.source, File.join(dir, title_stub), photo_url, previous_pic, next_pic, title, description)
         }
       end
     end

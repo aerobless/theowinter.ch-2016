@@ -1,4 +1,49 @@
 photos:
+    - title: On the road again
+      img: IMG_3865-Edit
+      tags: USA, Santa Fe
+    - title: Trading Post in Santa Fe
+      img: IMG_3851
+      tags: USA, Santa Fe
+    - title: Camping is fun
+      img: IMG_3841
+      tags: USA, Santa Fe
+    - title: The aliens have landed
+      img: IMG_3826
+      tags: USA, Roswell
+      description: Lots of "evidence" and "facts"! But I'm not complaining.. at least I got to use a grainy black & white filter.
+    - title: UFO museum in Roswell
+      img: IMG_3828
+      tags: USA, Roswell
+      description: A stroll through the Roswell UFO museum quickly proves that there are indeed Aliens. Sadly they're only made of cardboard and plastic.
+    - title: Lonely mountain
+      img: IMG_3627
+      tags: USA, Carlsbad
+      description: I took this picture while travelling from San Antonio to Carlsbad to see the caverns.
+    - title: Endless plain
+      img: IMG_3634
+      tags: USA, Carlsbad Caverns
+      description: A flat, endless horizon like this makes you feel small and insignificant. This picture is from the Carlsbad Caverns National Park, near the Visitors Center.
+    - title: Carlsbad Caverns Natural Entrance
+      img: IMG_3643
+      tags: USA, Carlsbad Caverns
+      description: Through the Natural Entrance you can hike down into the Carlsbad Caverns (National Park). But only until 5pm. Once it gets dark the Natural Entrance is closed for humans and only the local bat population may use it. There's a small amphitheater further up the hill from where you can watch the bats swarm out a night, which is really a sight to behold.
+    - title: Carlsbad Caverns
+      img: IMG_3663
+      tags: USA, Carlsbad Caverns
+    - title: Last light
+      img: IMG_3675
+      tags: USA, Carlsbad Caverns
+    - title: In the dark
+      img: IMG_3779
+      tags: USA, Carlsbad Caverns
+    - title: Color in the Caverns
+      img: IMG_3770
+      tags: USA, Carlsbad Caverns
+    - title: Hell's mouth
+      img: IMG_3697
+      tags: USA, Carlsbad Caverns
+      description: The stalagmites and stalactites inside the Carlsbad Caverns are lit beautifully.
     - title: MV Cape Kennedy moored at New Orleans
       img: IMG_3565-Edit
       tags: USA NewOrleans
