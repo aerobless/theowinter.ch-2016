@@ -20,6 +20,9 @@
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
 
+<!-- loaded first so everything can be properly overwritten -->
+<link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/bootstrap.min.css">
+
 {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
 {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
 
@@ -46,12 +49,14 @@
 - /assets/css/options.css
 - /assets/css/justifiedGallery.min.css
 - /assets/css/animsition.css
+- /assets/css/bootstrap.min.css
 {% endcss_asset_tag %}{% endcomment %}
 
 <!-- Can be commented out in production -->
 <link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/main.min.css">
 <link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/dropzone.css">
 <link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/options.css">
+<link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/animsition.css">
 <link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/justifiedGallery.min.css">
 <link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/animsition.css">
 

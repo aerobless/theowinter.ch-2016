@@ -105,7 +105,7 @@
 
 .photoInfo
 {
-    width: 75%;
+    width: 85%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -114,12 +114,17 @@
 
 .img-circle {
     border-radius: 50%;
-    width: 10%;
+    width: 70%;
     float: left;
     margin-right: 20px
 }
 
 .photoInfo-content {
     margin-left: 20px;
+    float: left;
+}
 
+.photoInfo-content-right {
+    margin-left: 20px;
+    float: right;
 }

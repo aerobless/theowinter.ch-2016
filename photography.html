@@ -5,7 +5,7 @@ title: Photography
 description: "With photography you can take a snapshot of the world at a particular moment. That moment is now frozen in time and through the internet remembered forever."
 ---
 
-<div id="gallery" style="display:none;">
+<div id="gallery" style="display:none; margin-bottom: 20px;">
     {% for photo in site.data.photos.photos %}
     <div itemscope itemtype="http://schema.org/Photograph">
         <a itemprop="image" class="swipebox" title="{{ photo.title }}" href="/photography/{{ photo.title | toStub }}/">
@@ -26,7 +26,8 @@ description: "With photography you can take a snapshot of the world at a particu
 <script>
     window.onload=function(){
         $("#gallery").justifiedGallery({
-            rowHeight : 170,
+            rowHeight : 140,
+            maxRowHeight: 300,
             margins : 5,
             border : 0,
             fixedHeight: false,

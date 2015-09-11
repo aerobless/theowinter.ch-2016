@@ -12,6 +12,7 @@ module Jekyll
       self.data['previous_pic'] = previous_pic
       self.data['next_pic'] = next_pic
       self.data['title'] = title
+      self.data['comments'] = true
     end
   end
 

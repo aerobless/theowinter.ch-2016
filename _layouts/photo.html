@@ -21,28 +21,66 @@
           </div>
           <br><br>
           <div class="photoInfo">
-              <div>
-                  <img src="{{ site.url }}/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }} photo" class="img-circle">
-                  <div class="photoInfo-content">
-                      <h2 style="margin-bottom: 0px">{{page.title}}</h2>
-                      {% capture photo_date %}
-                        {% exiftag date_time_original,, %}{{ page.photo_url }}.jpg{% endexiftag %}
-                      {% endcapture %}
-                      {% capture camera %}
-                        {% exiftag model,, %}{{ page.photo_url }}.jpg{% endexiftag %}
-                      {% endcapture %}
-                      Shot on {{photo_date | date_to_long_string }} with {{camera}}<br>
-                      <span class="author" itemprop="author">by <span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>
+              <div class="row">
+                  <div class="col-md-2 col-xs-3">
+                      <img src="{{ site.url }}/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }} photo" class="img-circle">
                   </div>
-              </div>
-              <div>
+                  <div class="col-xs-9 col-md-7" style="margin-left: -70px;">
+                      <div class="photoInfo-content">
+                          <h2 style="margin-bottom: 0px; margin-top: 0px;">{{page.title}}</h2>
+                          {% capture photo_date %}
+                          {% exiftag date_time_original, %}{{ page.photo_url }}.jpg{% endexiftag %}
+                          {% endcapture %}
+                          {% capture camera %}
+                          {% exiftag model, %}{{ page.photo_url }}.jpg{% endexiftag %}
+                          {% endcapture %}
+                          {% capture exposure %}
+                          {% exiftag exposure_time, %}{{ page.photo_url }}.jpg{% endexiftag %}
+                          {% endcapture %}
+                          {% capture f_number %}
+                          {% exiftag f_number, %}{{ page.photo_url }}.jpg{% endexiftag %}
+                          {% endcapture %}
+                          {% capture iso %}
+                          {% exiftag iso_speed_ratings, %}{{ page.photo_url }}.jpg{% endexiftag %}
+                          {% endcapture %}
 
+                          Shot on {{photo_date | date_to_long_string }} with {{camera}}<br>
+                          <span class="author" itemprop="author">by <span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>
+                          <div class="hidden-xs">
+                              {% if site.disqus_shortname and page.comments %}<div id="disqus_thread"></div><!-- /#disqus_thread -->{% endif %}
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                      <div class="row">
+                          <ul style="list-style-type: none; margin-left: -30px;">
+                              <li>{% if camera contains 'iPhone' %} <i class="icon-mobile-phone"></i> {% else %} <i class="icon-camera"></i> {% endif %} {{camera}}</li>
+                              <li><i class="icon-time"></i> {{exposure}}</li>
+                              <li><b>F</b> {{f_number}}</li>
+                              <li><b>ISO</b> {{iso}}</li>
+                          </ul>
+                          <hr>
+                      </div>
+                      <div class="row">
+                          {% capture photo_latitude %}
+                          {% exiftag gps.latitude, %}{{ page.photo_url }}.jpg{% endexiftag %}
+                          {% endcapture %}
+                          {% capture photo_longitude %}
+                          {% exiftag gps.longitude, %}{{ page.photo_url }}.jpg{% endexiftag %}
+                          {% endcapture %}
+                          <a href="https://www.google.ch/maps/place/{{photo_latitude}},{{photo_longitude}}" target="_blank">
+                          <img src="https://maps.googleapis.com/maps/api/staticmap?zoom=12&size=300x150&
+markers=color:blue%7Clabel:S%7C{{photo_latitude}},{{photo_longitude}}
+                           &scale=2&key=AIzaSyCMXdSigC-sBHJOrGakSxjGi2uMMq_N7RY">
+                          </a>
+                      </div>
               </div>
           </div>
       </div>
       <div class="entry-wrapper">
         <div class="entry-content" itemprop="articleBody">
-            {% if site.disqus_shortname %}<div id="disqus_thread"></div><!-- /#disqus_thread -->{% endif %}
+
+
         </div><!-- /.entry-content -->
       </div><!-- /.entry-wrapper -->
   </article>
@@ -57,6 +95,7 @@
 </div><!-- /.footer-wrapper -->
 
 {% include scripts.html %}
+
 <script>
     $("#photo").click(function(e){
         var pWidth = $(this).innerWidth();
