@@ -1,7 +1,6 @@
 #BloodGallery generates a HTML page for every photo specified in _data/photos.yaml
 #Author: Theo Winter (https://github.com/aerobless)
 
-
 module Jekyll
   class PhotoPage < Page
     def initialize(site, base, dir, photo_url, previous_pic, next_pic, title)
