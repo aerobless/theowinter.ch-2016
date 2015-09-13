@@ -19,7 +19,7 @@ layout: nil
     </url>
     {% endfor %}
 
-    {% for photo in site.photos %}
+    {% for photo in site.photoSlugs %}
     <url>
         <loc>{{ site.url }}{{ photo }}</loc>
     </url>

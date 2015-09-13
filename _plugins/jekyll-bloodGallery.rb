@@ -51,7 +51,7 @@ module Jekyll
           site.pages << PhotoPage.new(site, site.source, File.join(dir, title_stub), photo_url, previous_pic, next_pic, title, description)
         }
       end
-      site.data['photos'] = photoSlugs
+      site.data['photoSlugs'] = photoSlugs
     end
   end
 end
