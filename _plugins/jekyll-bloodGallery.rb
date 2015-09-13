@@ -26,6 +26,10 @@ module Jekyll
     def generate(site)
       photos = YAML::load_file('_data/photos.yaml')
       dir = site.config['photo_dir'] || 'photography'
+
+      #Reference in site, used for sitemap
+      photoSlugs = Array.new
+
       photos.each do |photo,details|
         #Iterate through array & return previous, current & next
         [nil, *details, nil].each_cons(3){|prev, curr, nxt|
@@ -43,9 +47,11 @@ module Jekyll
           else
             next_pic = ""
           end
+          photoSlugs << photo_url
           site.pages << PhotoPage.new(site, site.source, File.join(dir, title_stub), photo_url, previous_pic, next_pic, title, description)
         }
       end
+      site.data['photos'] = photoSlugs
     end
   end
 end

@@ -13,7 +13,19 @@
 
 <div id="main" role="main" class="animsition">
   <article>
-      <div class="photoCentre">
+      <div class="photoCentre" itemscope itemtype="http://schema.org/Photograph">
+
+          <!-- Schema.org BlogPost Invisible Meta-Data -->
+          <meta itemprop="author" content="Theo Winter"/>
+          <meta itemprop="inLanguage" content="en-US"/>
+          <meta itemprop="isFamilyFriendly" content="true"/>
+          <meta itemprop="url" content="{{ site.url }}{{ page.url }}"/>
+          <meta itemprop="name" content="{{page.title}}"/>
+          <meta itemprop="image" content="{{ site.url }}/images/photography/{{ page.photo_url }}.jpg"/>
+          <meta itemprop="thumbnailUrl" content="{{ site.url }}/images/photography/thumbnails/{{ page.photo_url }}.jpg"/>
+          <meta itemprop="description" content="{{page.description}}"/>
+          <!-- todo: content location -->
+
           <img id="photo" src="{{ site.url }}/images/photography/{{ page.photo_url }}.jpg" class="entry-feature-image" alt="{{ page.title }}">
           <div>
              <a class="animsition-link" data-animsition-out="fade-out-right" href="{{ site.url }}/photography/{{page.previous_pic}}" style="float: left";>Newer</a>
@@ -43,7 +55,6 @@
                           {% capture iso %}
                           {% exiftag iso_speed_ratings, %}{{ page.photo_url }}.jpg{% endexiftag %}
                           {% endcapture %}
-
                           <!-- TODO: insert better text, atm duplicate information .. -->
                           {% if page.description %}
                             {{page.description}}<br>

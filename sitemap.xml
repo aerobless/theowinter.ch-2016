@@ -18,4 +18,10 @@ layout: nil
         <loc>{{ site.url }}{{ post.url }}</loc>
     </url>
     {% endfor %}
+
+    {% for photo in site.photos %}
+    <url>
+        <loc>{{ site.url }}{{ photo }}</loc>
+    </url>
+    {% endfor %}
 </urlset>
