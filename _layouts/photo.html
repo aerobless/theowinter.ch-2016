@@ -26,7 +26,9 @@
           <meta itemprop="description" content="{{page.description}}"/>
           <!-- todo: content location -->
 
-          <img id="photo" src="{{ site.url }}/images/photography/{{ page.photo_url }}.jpg" class="entry-feature-image" alt="{{ page.title }}">
+          <div style="text-align: center;">
+              <img id="photo" src="{{ site.url }}/images/photography/{{ page.photo_url }}.jpg" class="entry-feature-image" alt="{{ page.title }}">
+          </div>
           <div>
              <a class="animsition-link" data-animsition-out="fade-out-right" href="{{ site.url }}/photography/{{page.previous_pic}}" style="float: left";>Newer</a>
              <a class="animsition-link" data-animsition-out="fade-out-left" href="{{ site.url }}/photography/{{page.next_pic}}" style="float: right;">Older</a>
@@ -125,6 +127,16 @@ markers=color:blue%7Clabel:S%7C{{photo_latitude}},{{photo_longitude}}
     });
 
     $(document).ready(function() {
+        //TODO: Fix issues on resize when image gets larger than width would allow (need a listener etc.)
+        //Image height according to window height
+        if($('#photo').width()<$('#photo').height()){
+            var imageHeight = window.innerHeight/7*6;
+            $('#photo').width("auto");
+            $('#photo').height(imageHeight);
+            $('#photo').marginLeft = "auto";   
+        }
+        
+        //Dynamic Transition Support
         $(".animsition").animsition({
             inClass: 'fade-in',
             outClass: 'fade-out',
