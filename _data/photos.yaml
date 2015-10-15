@@ -1,4 +1,58 @@
 photos:
+    - title: Yosemite Half Dome
+      img: IMG_4878
+      tags: USA, Yosemite
+    - title: Granite Mountain
+      img: IMG_4882
+      tags: USA, Yosemite
+    - title: Sequoia tree
+      img: IMG_4908
+      tags: USA, Yosemite
+    - title: Yosemite Valley
+      img: IMG_4924
+      tags: USA, Yosemite
+    - title: Glacier Point, Yosemite
+      img: IMG_4932-Pano
+      tags: USA, Yosemite
+    - title: Panorama Trail, Yosemite
+      img: IMG_4957
+      tags: USA, Yosemite
+    - title: Hidden Waterfall
+      img: IMG_4978
+      tags: USA, Yosemite
+    - title: Vernal Falls
+      img: IMG_5050
+      tags: USA, Yosemite
+    - title: Vernal Falls II
+      img: IMG_5077
+      tags: USA, Yosemite
+    - title: Vernal Falls III
+      img: IMG_5095
+      tags: USA, Yosemite
+    - title: Vernal Falls IV
+      img: IMG_5113
+      tags: USA, Yosemite
+    - title: Vernal Falls V
+      img: IMG_5119
+      tags: USA, Yosemite
+    - title: Mono Lake
+      img: IMG_4844
+      tags: USA, Mono Lake
+    - title: Mono Lake II
+      img: IMG_4854
+      tags: USA, Mono Lake
+    - title: Mono Lake III
+      img: IMG_4859
+      tags: USA, Mono Lake      
+    - title: Mono Lake IV
+      img: IMG_4873
+      tags: USA, Mono Lake  
+    - title: Death Valley
+      img: IMG_2403-2
+      tags: USA, Death Valley
+    - title: Acid water
+      img: IMG_4827
+      tags: USA, Death Valley
     - title: Super8
       img: IMG_4705
       tags: USA, Las Vegas
