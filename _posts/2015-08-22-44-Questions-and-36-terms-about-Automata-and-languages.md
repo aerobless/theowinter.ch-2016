@@ -102,7 +102,7 @@ It can also be used to prove that a language isn't context-free.[^9][^10]
 
 18. **How does a stack automaton (push down automaton - PDA) work?**  
 Context-free grammars produce languages that can't be accepted by a DFA. In order for an automaton to accept such a language it needs a storage. 
-Stack automatons solve this problem by providing a stack storage. The arrows in the graph of a stack automaton are labeled like this: `[INPUT], [ELEMENT ON STACK] --> [WRITE TO STACK]`. 
+Stack automatons solve this problem by providing a stack storage. The arrows in the graph of a stack automaton are labeled like this: *[INPUT], [ELEMENT ON STACK] --> [WRITE TO STACK]*. 
 The items on the stack don't need to match with the input, they're part of their own alphabet. All valid operations for a stack machine work like the following examples:
 	+ **Replace**: a,b -> c _(if input a, and b on top of stack, replace b with c)_
 	+ **Push**: a, ε -> b _(if input a, push b on top of the stack)_

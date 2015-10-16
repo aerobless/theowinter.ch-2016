@@ -20,18 +20,17 @@ But there comes the iPhone6S.. adding things like Live Photos and 3D touch. And 
 
 I guess could live without 3D touch.. but resisting Live Photos? Impossible.
 
-<div style="width: 50%; margin: 0 auto;">
-    <video width="281" height="500" autoplay loop controls>
-      <source src="{{ site.url }}/videos/iOS9_LivePhoto_on_iPhone6.mp4" type="video/mp4">
-      <object id="flowplayer" name="flowplayer" width="654" height="422" data="{{ site.url }}/assets/flash/flowplayer-3.2.5.swf" 
-                type="application/x-shockwave-flash">
-          <param name="movie" value="{{ site.url }}/assets/flash/flowplayer-3.2.5.swf" />
-          <param name="allowfullscreen" value="true" />
-          <param name="flashvars" 
-        value='config={"clip":"{{ site.url }}/videos/iOS9_LivePhoto_on_iPhone6.mp4"}' />
-       </object>
-    </video>
-</div>
+<video class="videoCentre" width="281" height="500" autoplay loop controls>
+  <source src="{{ site.url }}/videos/iOS9_LivePhoto_on_iPhone6.mp4" type="video/mp4">
+  <object id="flowplayer" name="flowplayer" width="654" height="422" data="{{ site.url }}/assets/flash/flowplayer-3.2.5.swf" 
+            type="application/x-shockwave-flash">
+      <param name="movie" value="{{ site.url }}/assets/flash/flowplayer-3.2.5.swf" />
+      <param name="allowfullscreen" value="true" />
+      <param name="flashvars" 
+    value='config={"clip":"{{ site.url }}/videos/iOS9_LivePhoto_on_iPhone6.mp4"}' />
+   </object>
+</video>
+
 
 ##Jailbreak is the way forward
 So I googled jailbreak. I found a lot of sites with tools and tutorials, most of them untrustworthy. Then I went to Reddit and found the
