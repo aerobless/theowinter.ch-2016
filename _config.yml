@@ -4,7 +4,7 @@ logo:             site-logo.png
 disqus_shortname: theowinterch
 search:           true
 # Change url to your domain. Leave localhost server or blank when working locally.
-url:              https://theowinter.ch
+url:              http://localhost:4000
 
 # Owner/author information
 owner:
@@ -82,9 +82,3 @@ mini_magick:
         source: images/travel
         destination: images/travel/thumbnails
         resize: "800x400"
-
-#Upload with glynn
-ftp_host: 'ftp.ghoul.io'
-ftp_dir: '/'
-ftp_passive: false
-ftp_username: 'ghoul@ghoul.io' 
