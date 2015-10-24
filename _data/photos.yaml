@@ -1,607 +1,607 @@
 photos:
     - title: San Francisco Docks
       img: IMG_6080-Pano
-      tags: USA, San Francisco
+      country: United States of America
     - title: Sea Lion at Pier 39
       img: IMG_6088
-      tags: USA, San Francisco
+      country: United States of America
     - title: Cliff House
       img: IMG_6013
-      tags: USA, San Francisco
+      country: United States of America
     - title: Cliff House II
       img: IMG_2696-2
-      tags: USA, San Francisco
+      country: United States of America
     - title: Cliff Overlook
       img: IMG_6026
-      tags: USA, San Francisco
+      country: United States of America
     - title: Isle of Birds
       img: IMG_6030
-      tags: USA, San Francisco
+      country: United States of America
     - title: Forgotten Coastguard
       img: IMG_6048
-      tags: USA, San Francisco
+      country: United States of America
     - title: San Francisco Skyline
       img: IMG_5692
-      tags: USA, San Francisco
+      country: United States of America
     - title: Alcatraz
       img: IMG_5714-Pano
-      tags: USA, San Francisco
+      country: United States of America
     - title: Alcatraz II
       img: IMG_5742-Pano
-      tags: USA, San Francisco
+      country: United States of America
     - title: Alcatraz III
       img: IMG_5762
-      tags: USA, San Francisco
+      country: United States of America
     - title: Alcatraz IV
       img: IMG_5882
-      tags: USA, San Francisco
+      country: United States of America
     - title: Alcatraz V
       img: IMG_5818
-      tags: USA, San Francisco
+      country: United States of America
     - title: Alcatraz Administration Building
       img: IMG_5826
-      tags: USA, San Francisco
+      country: United States of America
     - title: Alcatraz Sunset
       img: IMG_5834
-      tags: USA, San Francisco
+      country: United States of America
     - title: Alcatraz VI
       img: IMG_5863
-      tags: USA, San Francisco
+      country: United States of America
     - title: Alcatraz VII
       img: IMG_5872
-      tags: USA, San Francisco
+      country: United States of America
     - title: Alcatraz Indian Occupation
       img: IMG_5893
-      tags: USA, San Francisco
+      country: United States of America
     - title: Golden Gate Bridge
       img: IMG_5621-Pano
-      tags: USA, San Francisco
+      country: United States of America
     - title: Golden Gate Bridge II
       img: IMG_5664
-      tags: USA, San Francisco
+      country: United States of America
     - title: Golden Gate Bridge III
       img: IMG_5604
-      tags: USA, San Francisco
+      country: United States of America
     - title: Sea View
       img: IMG_5569
-      tags: USA, San Francisco
+      country: United States of America
     - title: The painted sisters
       img: IMG_5574-Edit
-      tags: USA, San Francisco
+      country: United States of America
     - title: Lombard Street
       img: IMG_5519
-      tags: USA, San Francisco
+      country: United States of America
     - title: Crazy Hill City
       img: IMG_5514
-      tags: USA, San Francisco
+      country: United States of America
     - title: Ben & Jerry's
       img: IMG_5477
-      tags: USA, San Francisco
+      country: United States of America
     - title: Mist around the Golden Gate Bridge
       img: IMG_5262
-      tags: USA, San Francisco
+      country: United States of America
     - title: Below the bridge
       img: IMG_5330
-      tags: USA, San Francisco
+      country: United States of America
     - title: San Francisco Coast
       img: IMG_5362-Pano
-      tags: USA, San Francisco
+      country: United States of America
     - title: Nightfall over Alcatraz
       img: IMG_5211
-      tags: USA, San Francisco
+      country: United States of America
     - title: Before the storm
       img: IMG_5228
-      tags: USA, San Francisco
+      country: United States of America
     - title: Chinatown at night
       img: IMG_5443
-      tags: USA, San Francisco
+      country: United States of America
     - title: San Francisco Night
       img: IMG_5445
-      tags: USA, San Francisco
+      country: United States of America
     - title: San Francisco Night II
       img: IMG_5453
-      tags: USA, San Francisco
+      country: United States of America
     - title: San Francisco Night III
       img: IMG_5458
-      tags: USA, San Francisco
+      country: United States of America
     - title: San Francisco Night IV
       img: IMG_5459
-      tags: USA, San Francisco
+      country: United States of America
     - title: Yosemite Half Dome
       img: IMG_4878
-      tags: USA, Yosemite
+      country: United States of America
     - title: Granite Mountain
       img: IMG_4882
-      tags: USA, Yosemite
+      country: United States of America
     - title: Sequoia tree
       img: IMG_4908
-      tags: USA, Yosemite
+      country: United States of America
     - title: Yosemite Valley
       img: IMG_4924
-      tags: USA, Yosemite
+      country: United States of America
     - title: Glacier Point, Yosemite
       img: IMG_4932-Pano
-      tags: USA, Yosemite
+      country: United States of America
     - title: Panorama Trail, Yosemite
       img: IMG_4957
-      tags: USA, Yosemite
+      country: United States of America
     - title: Hidden Waterfall
       img: IMG_4978
-      tags: USA, Yosemite
+      country: United States of America
     - title: Vernal Falls
       img: IMG_5050
-      tags: USA, Yosemite
+      country: United States of America
     - title: Vernal Falls II
       img: IMG_5077
-      tags: USA, Yosemite
+      country: United States of America
     - title: Vernal Falls III
       img: IMG_5095
-      tags: USA, Yosemite
+      country: United States of America
     - title: Vernal Falls IV
       img: IMG_5113
-      tags: USA, Yosemite
+      country: United States of America
     - title: Vernal Falls V
       img: IMG_5119
-      tags: USA, Yosemite
+      country: United States of America
     - title: Mono Lake
       img: IMG_4844
-      tags: USA, Mono Lake
+      country: United States of America
     - title: Mono Lake II
       img: IMG_4854
-      tags: USA, Mono Lake
+      country: United States of America
     - title: Mono Lake III
       img: IMG_4859
-      tags: USA, Mono Lake      
+      country: United States of America
     - title: Mono Lake IV
       img: IMG_4873
-      tags: USA, Mono Lake  
+      country: United States of America
     - title: Death Valley
       img: IMG_2403-2
-      tags: USA, Death Valley
+      country: United States of America
     - title: Acid water
       img: IMG_4827
-      tags: USA, Death Valley
+      country: United States of America
     - title: Super8
       img: IMG_4705
-      tags: USA, Las Vegas
+      country: United States of America
     - title: Early customer
       img: IMG_4788
-      tags: USA, Las Vegas
+      country: United States of America
     - title: Glamorous Venice
       img: IMG_4798
-      tags: USA, Las Vegas
+      country: United States of America
     - title: Paris
       img: IMG_4777
-      tags: USA, Las Vegas
+      country: United States of America
     - title: Las Vegas Strip
       img: IMG_4717
-      tags: USA, Las Vegas
+      country: United States of America
     - title: Caesars Palace
       img: IMG_4722
-      tags: USA, Las Vegas
+      country: United States of America
     - title: Caesars Palace II
       img: IMG_4726
-      tags: USA, Las Vegas
+      country: United States of America
     - title: Caesars Palace III
       img: IMG_4729
-      tags: USA, Las Vegas
+      country: United States of America
     - title: Bellagio
       img: IMG_4757
-      tags: USA, Las Vegas
+      country: United States of America
     - title: Useless Boats
       img: IMG_4773
-      tags: USA, Las Vegas
+      country: United States of America
     - title: Welcome to Las Vegas
       img: IMG_2280-2
-      tags: USA, Las Vegas
+      country: United States of America
     - title: Party Limo
       img: IMG_2313-2
-      tags: USA, Las Vegas
+      country: United States of America
     - title: M&Ms at night
       img: IMG_2111-2
-      tags: USA, Las Vegas
+      country: United States of America
     - title: Fremont Street
       img: IMG_2334-2
-      tags: USA, Las Vegas
+      country: United States of America
     - title: Fremont Street II
       img: IMG_2339-2
-      tags: USA, Las Vegas
+      country: United States of America
     - title: Tiny Brooklyn Bridge
       img: IMG_2153-2
-      tags: USA, Las Vegas
+      country: United States of America
     - title: Excalibur
       img: IMG_2170-2
-      tags: USA, Las Vegas
+      country: United States of America
     - title: Night traffic
       img: IMG_2176
-      tags: USA, Las Vegas
+      country: United States of America
     - title: Nighttime Primetime
       img: IMG_2355-2
-      tags: USA, Las Vegas
+      country: United States of America
     - title: Descent into the Grand Canyon 
       img: IMG_4627
-      tags: USA, Grand Canyon
+      country: United States of America
       description: Only 10% of all visitors actually go below the rim of the Grand Canyon. I hiked down South Kaibab Trail to Skeleton Point.
     - title: Descent into the Grand Canyon II
       img: IMG_4632
-      tags: USA, Grand Canyon
+      country: United States of America
     - title: Descent into the Grand Canyon III
       img: IMG_4668
-      tags: USA, Grand Canyon
+      country: United States of America
     - title: Grand Canyon
       img: IMG_4469
-      tags: USA, Grand Canyon
+      country: United States of America
     - title: Red Grand Canyon
       img: IMG_4487
-      tags: USA, Grand Canyon
+      country: United States of America
     - title: Over the cliff
       img: IMG_4494
-      tags: USA, Grand Canyon
+      country: United States of America
     - title: Freedom
       img: IMG_4516
-      tags: USA, Grand Canyon
+      country: United States of America
     - title: Sunset over the Grand Canyon
       img: IMG_4551
-      tags: USA, Grand Canyon
+      country: United States of America
     - title: Sunset over the Grand Canyon II
       img: IMG_4553
-      tags: USA, Grand Canyon
+      country: United States of America
     - title: Sunset over the Grand Canyon III
       img: IMG_4567
-      tags: USA, Grand Canyon
+      country: United States of America
     - title: Sunset over the Grand Canyon IV
       img: IMG_4583
-      tags: USA, Grand Canyon
+      country: United States of America
     - title: Monument Valley - Navajo Nation
       img: IMG_4075
-      tags: USA, Monument Valley
+      country: United States of America
       description: Navajo Nation in Monument Valley is a semi-autonomous Native American-governed territory. The rock formations there make it one of the most amazing places in the USA.
     - title: A giants sandbox
       img: IMG_4102
-      tags: USA, Monument Valley
+      country: United States of America
     - title: Tribal craftsmanship
       img: IMG_4137
-      tags: USA, Monument Valley
+      country: United States of America
     - title: Cowboys
       img: IMG_4162
-      tags: USA, Monument Valley
+      country: United States of America
     - title: The Sun Gate
       img: IMG_4165
-      tags: USA, Monument Valley 
+      country: United States of America
     - title: Cave paintings
       img: IMG_4187
-      tags: USA, Monument Valley 
+      country: United States of America
     - title: Ready to go
       img: IMG_4192
-      tags: USA, Monument Valley 
+      country: United States of America
     - title: A hole in the wall
       img: IMG_4196
-      tags: USA, Monument Valley 
+      country: United States of America
     - title: Sentinel
       img: IMG_4253
-      tags: USA, Monument Valley 
+      country: United States of America
     - title: Sunset in Monument Valley
       img: IMG_4258
-      tags: USA, Monument Valley
+      country: United States of America
     - title: Sunrise in Monument Valley
       img: IMG_4383
-      tags: USA, Monument Valley 
+      country: United States of America
     - title: Sunrise in Monument Valley II
       img: IMG_4388-HDR
-      tags: USA, Monument Valley 
+      country: United States of America
     - title: Sunrise in Monument Valley III
       img: IMG_4412
-      tags: USA, Monument Valley 
+      country: United States of America
     - title: Mesa Verde Canyon
       img: IMG_4053-Pano
-      tags: USA, Mesa Verde
+      country: United States of America
     - title: Cliff Palace
       img: IMG_4062
-      tags: USA, Mesa Verde    
+      country: United States of America
     - title: Balcony House
       img: IMG_4036
-      tags: USA, Mesa Verde
+      country: United States of America
       description: Climbing through Balcony House in Mesa Verde was like going back in time.
     - title: Balcony House II
       img: IMG_4041-Edit
-      tags: USA, Mesa Verde
+      country: United States of America
     - title: Twisting & turning through Mesa Verde
       img: IMG_3955-Pano
-      tags: USA, Mesa Verde
+      country: United States of America
       description: A pano-shot from the Mesa Verde Park Point Overlook.
     - title: Mountain road
       img: IMG_3918
-      tags: USA, Mesa Verde
+      country: United States of America
       description: Shot while travelling to the Mesa Verde National Park. The motion blur in the foreground is kinda cool because it's real and not a Photoshop effect.
     - title: On the road again
       img: IMG_3865-Edit
-      tags: USA, Santa Fe
+      country: United States of America
     - title: Trading Post in Santa Fe
       img: IMG_3851
-      tags: USA, Santa Fe
+      country: United States of America
     - title: Camping is fun
       img: IMG_3841
-      tags: USA, Santa Fe
+      country: United States of America
     - title: The aliens have landed
       img: IMG_3826
-      tags: USA, Roswell
+      country: United States of America
       description: Lots of "evidence" and "facts"! But I'm not complaining.. at least I got to use a grainy black & white filter.
     - title: UFO museum in Roswell
       img: IMG_3828
-      tags: USA, Roswell
+      country: United States of America
       description: A stroll through the Roswell UFO museum quickly proves that there are indeed Aliens. Sadly they're only made of cardboard and plastic.
     - title: Lonely mountain
       img: IMG_3627
-      tags: USA, Carlsbad
+      country: United States of America
       description: I took this picture while travelling from San Antonio to Carlsbad to see the caverns.
     - title: Endless plain
       img: IMG_3634
-      tags: USA, Carlsbad Caverns
+      country: United States of America
       description: A flat, endless horizon like this makes you feel small and insignificant. This picture is from the Carlsbad Caverns National Park, near the Visitors Center.
     - title: Carlsbad Caverns Natural Entrance
       img: IMG_3643
-      tags: USA, Carlsbad Caverns
+      country: United States of America
       description: Through the Natural Entrance you can hike down into the Carlsbad Caverns (National Park). But only until 5pm. Once it gets dark the Natural Entrance is closed for humans and only the local bat population may use it. There's a small amphitheater further up the hill from where you can watch the bats swarm out a night, which is really a sight to behold.
     - title: Carlsbad Caverns
       img: IMG_3663
-      tags: USA, Carlsbad Caverns
+      country: United States of America
     - title: Last light
       img: IMG_3675
-      tags: USA, Carlsbad Caverns
+      country: United States of America
     - title: In the dark
       img: IMG_3779
-      tags: USA, Carlsbad Caverns
+      country: United States of America
     - title: Color in the Caverns
       img: IMG_3770
-      tags: USA, Carlsbad Caverns
+      country: United States of America
     - title: Hell's mouth
       img: IMG_3697
-      tags: USA, Carlsbad Caverns
+      country: United States of America
       description: The stalagmites and stalactites inside the Carlsbad Caverns are lit beautifully.
     - title: MV Cape Kennedy moored at New Orleans
       img: IMG_3565-Edit
-      tags: USA NewOrleans
+      country: United States of America
     - title: Oil Refinery at the Mississippi
       img: IMG_3553-Edit
-      tags: USA NewOrleans
+      country: United States of America
     - title: Fraighter on the Mississippi, New Orleans
       img: IMG_3529-Pano
-      tags: USA NewOrleans
+      country: United States of America
     - title: Steamboat Natchez, New Orleans
       img: IMG_3509-Edit
-      tags: USA NewOrleans
+      country: United States of America
     - title: New Orleans Seafront
       img: IMG_3519-Pano-Edit
-      tags: USA NewOrleans
+      country: United States of America
     - title: Saint Louis Cathedral, New Orleans
       img: IMG_3470-Edit
-      tags: USA NewOrleans
+      country: United States of America
     - title: Swamp fauna
       img: IMG_3436-Edit
-      tags: USA NewOrleans Nature
+      country: United States of America
     - title: New Orleans Swamps
       img: IMG_3411-Edit
-      tags: USA NewOrleans Nature
+      country: United States of America
     - title: Nice aligator
       img: IMG_3361
-      tags: USA NewOrleans Nature
+      country: United States of America
     - title: One more chicken please!
       img: IMG_3360
-      tags: USA NewOrleans Nature
+      country: United States of America
     - title: One big gulp
       img: IMG_3356
-      tags: USA NewOrleans Nature
+      country: United States of America
     - title: Aligator looking for prey
       img: IMG_3310
-      tags: USA NewOrleans Nature
+      country: United States of America
     - title: Baby raccoon in the swamps of New Orleans
       img: IMG_3300
-      tags: USA NewOrleans Nature
+      country: United States of America
     - title: Raccoon in the swamps of New Orleans
       img: IMG_3292
-      tags: USA NewOrleans Nature
+      country: United States of America
     - title: Shenandoah National Park
       img: IMG_3185-Edit
-      tags: USA shenandoah
+      country: United States of America
     - title: Washington D.C.
       img: IMG_2965-Edit
-      tags: USA WashingtonDC
+      country: United States of America
     - title: Red townhouse
       img: IMG_2939
-      tags: USA WashingtonDC
+      country: United States of America
     - title: The Treasury Department
       img: IMG_2945-Edit
-      tags: USA WashingtonDC
+      country: United States of America
     - title: Castle in the city
       img: IMG_3008-Edit
-      tags: USA WashingtonDC
+      country: United States of America
     - title: Spacesuits
       img: IMG_3024-Edit
-      tags: USA WashingtonDC
+      country: United States of America
     - title: Washington Monument
       img: IMG_3061
-      tags: USA WashingtonDC Monument
+      country: United States of America
     - title: Photographer dude
       img: IMG_1340
-      tags: USA WashingtonDC Selfie
+      country: United States of America
     - title: Lincoln Memorial at night
       img: IMG_3128
-      tags: USA WashingtonDC Monument
+      country: United States of America
     - title: Washington Monument at night
       img: IMG_3143
-      tags: USA WashingtonDC Monument
+      country: United States of America
     - title: WW II Fountain in low light (front)
       img: IMG_3166
-      tags: USA WashingtonDC Monument
+      country: United States of America
     - title: WW II Fountain in low light (side)
       img: IMG_3177
-      tags: USA WashingtonDC Monument
+      country: United States of America
     - title: New York City - Tiny World
       img: IMG_2758-Pano-Edit-Edit
-      tags: USA NewYork
+      country: United States of America
     - title: Barnes & Noble, New York
       img: IMG_1935
-      tags: USA NewYork
+      country: United States of America
     - title: New York Squirrel
       img: IMG_1927
-      tags: USA NewYork
+      country: United States of America
     - title: World Trade Center, New York
       img: IMG_2203-Edit
-      tags: USA NewYork
+      country: United States of America
     - title: Highline, New York
       img: IMG_2167-Edit
-      tags: USA NewYork
+      country: United States of America
     - title: New York City Tilt-Shift
       img: IMG_2068-Edit
-      tags: USA NewYork
+      country: United States of America
     - title: Empire State Building, New York
       img: IMG_2019-Edit
-      tags: USA NewYork
+      country: United States of America
     - title: Central Park, New York
       img: IMG_2022-Edit
-      tags: USA NewYork
+      country: United States of America
     - title: Brooklyn Bridge, New York
       img: IMG_1240
-      tags: USA NewYork
+      country: United States of America
     - title: View from the Top of the Rock, New York
       img: IMG_2527-Edit
-      tags: USA NewYork
+      country: United States of America
     - title: Statue of Liberty, New York
       img: IMG_2716-Edit
-      tags: USA NewYork
+      country: United States of America
     - title: Golden spring
       img: lake_pano
-      tags: Switzerland
+      country: Switzerland
     - title: Moiraine
       img: IMG_0055
-      tags: Switzerland
+      country: Switzerland
     - title: Rhätische Bahn
       img: IMG_9119-Edit
-      tags: Switzerland
+      country: Switzerland
     - title: Sunset in Rapperswil
       img: IMG_8910-Edit
-      tags: Switzerland
+      country: Switzerland
     - title: Autumn valley
       img: IMG_8529-Edit
-      tags: Switzerland
+      country: Switzerland
     - title: Autumn forest
       img: IMG_8520
-      tags: Switzerland
+      country: Switzerland
     - title: Four daring pilots
       img: IMG_8188
-      tags: Switzerland
+      country: Switzerland
     - title: Free as a bird
       img: IMG_7642
-      tags: Switzerland
+      country: Switzerland
     - title: Nosedive
       img: IMG_7853
-      tags: Switzerland
+      country: Switzerland
     - title: In unison
       img: IMG_7500
-      tags: Switzerland
+      country: Switzerland
     - title: Adventure awaits
       img: IMG_7432-Edit
-      tags: Switzerland
+      country: Switzerland
     - title: In flight
       img: IMG_7310
-      tags: Switzerland
+      country: Switzerland
     - title: 1th of August
       img: IMG_8383
-      tags: Switzerland
+      country: Switzerland
     - title: Meow
       img: IMG_5449
-      tags: Switzerland
+      country: Switzerland
     - title: Hazy valley
       img: IMG_4805-Edit
-      tags: Switzerland
+      country: Switzerland
     - title: Connected..
       img: IMG_4801
-      tags: Switzerland
+      country: Switzerland
     - title: Color on a rainy day
       img: IMG_1029
-      tags: Switzerland
+      country: Switzerland
     - title: Laufenburg, Switzerland
       img: IMG_0910
-      tags: Switzerland
+      country: Switzerland
     - title: Golden crops
       img: IMG_9243
-      tags: Switzerland
+      country: Switzerland
     - title: Mr. Stork
       img: IMG_7537-Edit
-      tags: Switzerland
+      country: Switzerland
     - title: Chur, Switzerland
       img: IMG_7075_ps
-      tags: Switzerland
+      country: Switzerland
     - title: EMS Chemie, Domat Ems
       img: IMG_7035_ps
-      tags: Switzerland
+      country: Switzerland
     - title: Blue Horizon
       img: IMG_7011_ps
-      tags: Switzerland
+      country: Switzerland
     - title: Dry riverbed
       img: IMG_6994_ps
-      tags: Switzerland
+      country: Switzerland
     - title: Over the mountain
       img: IMG_6991_ps
-      tags: Switzerland
+      country: Switzerland
     - title: Path over the mountain
       img: IMG_6986_ps
-      tags: Switzerland
+      country: Switzerland
     - title: Caumasee, Switzerland
       img: IMG_6960_ps
-      tags: Switzerland
+      country: Switzerland
     - title: Rhein, Switzerland
       img: IMG_6956_ps
-      tags: Switzerland
+      country: Switzerland
     - title: Waterways
       img: IMG_6349
-      tags: Switzerland
+      country: Switzerland
     - title: Gotthard Mountain Pass, Switzerland
       img: IMG_5994
-      tags: Switzerland
+      country: Switzerland
     - title: Piazza Duomo, Milan
       img: IMG_5373-Edit
-      tags: Italy
+      country: Italy
     - title: Sforzesco Castello - Watchtower, Italy
       img: IMG_5064
-      tags: Italy
+      country: Italy
     - title: Duomo di Milano, Italy
       img: IMG_4940-Edit
-      tags: Italy
+      country: Italy
     - title: Verzasca, Ticino
       img: IMG_4601-Edit
-      tags: Switzerland
+      country: Switzerland
     - title: Lugano at dusk
       img: IMG_4444-Edit
-      tags: Switzerland
+      country: Switzerland
     - title: Skyline Amsterdam
       img: IMG_4133
-      tags: Netherland
+      country: Netherland
     - title: Google Nexus One
       img: IMG_3982
-      tags: Netherland
+      country: Netherland
       description: Ah the good old times.. of all my android phones I still like this one the best.
     - title: Sunset over the canals of Amsterdam
       img: IMG_3788-Edit
-      tags: Netherland
+      country: Netherland
     - title: Crooked Amsterdam
       img: IMG_3680
-      tags: Netherland
+      country: Netherland
     - title: Les Collons
       img: pano_snow_hut
-      tags: Switzerland
+      country: Switzerland
     - title: Sion
       img: IMG_2154-Edit
-      tags: Switzerland
+      country: Switzerland
     - title: Golden chalice
       img: IMG_1222
-      tags: Switzerland
+      country: Switzerland
     - title: Big Ben, London
       img: DSCN1526
-      tags: UnitedKingdom
+      country: United Kingdom
     - title: Worthing Pier Amusements, United Kingdom
       img: DSCN1023
-      tags: UnitedKingdom
+      country: United Kingdom
     - title: Arundel, United Kingdom
       img: DSCN0866
-      tags: UnitedKingdom
+      country: United Kingdom

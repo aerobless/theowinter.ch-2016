@@ -20,12 +20,28 @@ module Jekyll
     end
   end
 
+  class PhotoList < Page
+    def initialize(site, base, dir, photolist, title)
+      @site = site
+      @base = base
+      @dir = dir
+      @name = 'index.html'
+
+      self.process(@name)
+      self.read_yaml(File.join(base, '_layouts'), 'photolist.html')
+      self.data['photolist'] = photolist
+      self.data['title'] = title
+    end
+  end
+
   class PhotoPageGenerator < Generator
     safe true
 
     def generate(site)
       photos = YAML::load_file('_data/photos.yaml')
       dir = site.config['photo_dir'] || 'photography'
+
+      site.pages << PhotoList.new(site, site.source, File.join(dir), photos["photos"], "Photography")
 
       #Reference in site, used for sitemap
       photoSlugs = Array.new
@@ -52,6 +68,31 @@ module Jekyll
         }
       end
       site.data['photoSlugs'] = photoSlugs
+
+      #Create a array containing all countries
+      countryArray = Array.new
+      photos.each do |photo,details|
+        [nil, *details, nil].each_cons(3){|prev, curr, nxt|
+          photoCountry = curr["country"]
+          countryArray.push(photoCountry)
+        }
+      end
+      countryArray = countryArray.uniq
+
+      countryArray.each do |name|
+        photosPerCountry = Array.new
+        countrySlug = name.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+        photos.each do |photo, details|
+          [nil, *details, nil].each_cons(3){|prev, curr, nxt|
+            if(curr["country"] == name)
+              photosPerCountry.push(curr)
+            end
+          }
+        end
+
+        #Make page
+        site.pages << PhotoList.new(site, site.source, File.join(dir, countrySlug), photosPerCountry, name)
+      end
     end
   end
 end
