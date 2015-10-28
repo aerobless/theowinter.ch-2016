@@ -1,4 +1,108 @@
 photos:
+    - title: World Clock
+      img: IMG_7474
+      country: Germany
+    - title: Merry-Go-Round
+      img: IMG_7479
+      country: Germany
+    - title: TV Tower at night
+      img: IMG_7465
+      country: Germany
+    - title: Night Market
+      img: IMG_7482
+      country: Germany
+    - title: Night Market II
+      img: IMG_7488
+      country: Germany
+    - title: TV Tower
+      img: IMG_7437
+      country: Germany
+    - title: Berlin Cathedral
+      img: IMG_7396
+      country: Germany
+    - title: Brandenburger Tor
+      img: IMG_7395
+      country: Germany
+    - title: Soviet War Memorial
+      img: IMG_7382
+      country: Germany
+    - title: Tag der Deutschen Einheit
+      img: IMG_7380
+      country: Germany
+    - title: Tag der Deutschen Einheit II
+      img: IMG_7384
+      country: Germany
+    - title: Grillrunner
+      img: IMG_7431
+      country: Germany
+    - title: Holocaust Memorial
+      img: IMG_7372
+      country: Germany
+    - title: Hot-air ballon across a field of stones
+      img: IMG_7374
+      country: Germany
+    - title: Einstein Curry
+      img: IMG_7310-2
+      country: Germany
+    - title: Cabrio Dog
+      img: IMG_7303
+      country: Germany
+    - title: Anne Frank
+      img: IMG_7294
+      country: Germany
+    - title: Hackesche Höfe
+      img: IMG_7283
+      country: Germany
+    - title: Old train depot
+      img: IMG_7243
+      country: Germany
+    - title: Old train depot II
+      img: IMG_7255
+      country: Germany
+    - title: Old train depot III
+      img: IMG_7256
+      country: Germany
+    - title: 1UP
+      img: IMG_7238
+      country: Germany
+    - title: Blue mushroom
+      img: IMG_7232
+      country: Germany
+    - title: Tiny Railway
+      img: IMG_7222-Edit
+      country: Germany
+    - title: Killer Mouse Graffiti
+      img: IMG_7213-Pano
+      country: Germany
+    - title: Lion Graffiti
+      img: IMG_7212
+      country: Germany
+    - title: Wolf Graffiti
+      img: IMG_7211
+      country: Germany
+    - title: Yaamaica Bar
+      img: IMG_7210
+      country: Germany
+    - title: TV Tower Skyline
+      img: IMG_7207
+      country: Germany
+    - title: Media Spree
+      img: IMG_7204
+      country: Germany
+    - title: Refugees welcome
+      img: IMG_7203
+      country: Germany
+    - title: Baumhaus an der Mauer
+      img: baumhaus
+      description: This "tree-house" was built by Osman Kalin during the separation of east and west Berlin for his family. Although the land it was built on belonged to east Berlin, it was physically located in the West German territory since the wall had not been curved to properly follow the border. A while after the wall fell the tree house was threatend to be demolished, so Osman Kalin concreted his furniture to the ground in order to make it harder to demolish. The local population also supported Osman and he was allowed to keep the property. When I was there in October 2015 Osman Kalin, now aged 90, was still living there.
+      country: Germany
+    - title: Cafe Jenseits
+      img: IMG_7189
+      country: Germany
+    - title: Astronaut
+      img: IMG_7182
+      description: At night the flag from the car dealership is cleverly projected into the hand of the graffiti astronaut.
+      country: Germany
     - title: San Francisco Docks
       img: IMG_6080-Pano
       country: United States of America
