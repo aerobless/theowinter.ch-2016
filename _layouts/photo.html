@@ -126,15 +126,27 @@ markers=color:blue%7Clabel:S%7C{{photo_latitude}},{{photo_longitude}}
         }
     });
 
+    document.onkeydown = function(e) {
+        switch (e.keyCode) {
+            case 37: //left click
+                window.location.href = '{{ site.url }}/photography/{{page.previous_pic}}';
+                break;
+            case 39: //right click
+                window.location.href = '{{ site.url }}/photography/{{page.next_pic}}';
+                break;
+        }
+    };
+
+    if($('#photo').width()<$('#photo').height()){
+        var imageHeight = window.innerHeight/7*6;
+        $('#photo').width("auto");
+        $('#photo').height(imageHeight);
+        $('#photo').marginLeft = "auto";
+    }
+
     $(document).ready(function() {
         //TODO: Fix issues on resize when image gets larger than width would allow (need a listener etc.)
         //Image height according to window height
-        if($('#photo').width()<$('#photo').height()){
-            var imageHeight = window.innerHeight/7*6;
-            $('#photo').width("auto");
-            $('#photo').height(imageHeight);
-            $('#photo').marginLeft = "auto";   
-        }
         
         //Dynamic Transition Support
         $(".animsition").animsition({
