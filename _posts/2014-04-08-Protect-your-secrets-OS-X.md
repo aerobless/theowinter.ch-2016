@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: article
 icon: icon-apple
 title: Protect your secrets on OS X
 description: "Use the OS X Disk Utility to create a free, personal safe for your important data. You can choose between AES-128 or even AES-256bit encryption."
 category: articles
 tags: [security, HowTo, encryption, OS X, Disk Utility]
 image:
-  feature: headers/securitysafe.jpg
+  feature: securitysafe.jpg
   credit: IceSabre
   creditlink: https://www.flickr.com/photos/icesabre/2221406000
 comments: true
@@ -46,3 +46,5 @@ To mount the image again just go to the place where you saved it and double clic
 
 ##A piece of advice
 Be sure to make regular backups and do not forget your password. If you forget it there is no way to restore your data. If you're prone to be forgetful better write it down on paper. And store that paper in a real safe ;-).
+
+{% include toc.html %}

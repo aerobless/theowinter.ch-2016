@@ -1,11 +1,11 @@
 ---
-layout: post
+layout: article
 title: Does the world need yet another todo list?
 description: "ToxicTodo - Why I chose to program my own todo list instead of using one of the many productivity apps out there."
 category: articles
 tags: [programming projects, todo list, ToxicTodo, Do It Yourself, Java]
 image:
-  feature: headers/todolist_hand.jpg
+  feature: todolist_hand.jpg
   credit: Lâm HUA (CC 2.0)
   creditlink: https://www.flickr.com/photos/monsieurlam/2645956083
 comments: true
@@ -73,3 +73,5 @@ Currently ToxicTodo has the following feature set:
 I've released ToxicTodo under the MIT licence. So you can do with it as you please. If you have additions feel free to fork or submit pull requests on GitHub.  
 
 **Source on GitHub:** [https://github.com/aerobless/ToxicTodo](https://github.com/aerobless/ToxicTodo){:target="_blank"}
+
+{% include toc.html %}

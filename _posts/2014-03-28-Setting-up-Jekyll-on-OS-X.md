@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: article
 icon: icon-apple
 title: Setting up Jekyll on OS X
 description: "Learn how to install Jekyll and create your own blog on OS X or Linux. It's easy, so give it a go."
 category: articles
 tags: [tutorial, Unix, Jekyll, web development, blogging]
 image:
-  feature: headers/serverroom.jpg
+  feature: serverroom.jpg
   credit: The National Archives (UK)
   creditlink: http://commons.wikimedia.org/wiki/File:A_view_of_the_server_room_at_The_National_Archives.jpg
 comments: true
@@ -124,3 +124,5 @@ ftp_password: 'your_ftp_pass' # default read from stdin
 For security's sake be sure to not store the password in the config. Especially if you're going to upload the website to a public github repo this would be bad.
 
 And that's pretty much it. You should now know how to successfully setup a Jekyll-based blog or website. Have fun and feel free to write me a comment if you have any questions or feedback!
+
+{% include toc.html %}

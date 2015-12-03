@@ -1,5 +1,5 @@
 ---
-layout: travel
+layout: article
 icon: icon-plane
 title: New York to New Orleans
 description: "Travelling from New York to New Orleans via Washington DC, Nashville and Memphis."
@@ -15,7 +15,7 @@ share: true
 comments: true
 tags: [Travel, USA, New York, New Orleans, Washington D.C., Nashville, Memphis]
 image:
-  feature: headers/newyork_map.jpg
+  feature: newyork_map.jpg
   credit: Google Inc.
   creditlink: https://maps.google.com
 photo-list:
@@ -78,3 +78,5 @@ Another thing that kinda sucks is electricity. The van we're travelling in only 
 I do love the Wallmarts though, they literally sell everything. If it exists you can find it at Wallmart. *There's some weird people at Wallmart though ;)*
 
 That's it for now.
+
+{% include toc.html %}

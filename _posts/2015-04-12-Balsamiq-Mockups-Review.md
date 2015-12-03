@@ -1,13 +1,11 @@
 ---
-layout: post
+layout: article
 title: Review&#58; Balsamiq Mockups
 description: "Rapidly create UI mockups & wireframes. Work smarter and collaborate smoothly. But can Balsamiq keep those promises? I've had the opportunity to use it for UI2 class at HSR and here's my opinion."
 category: articles
 tags: [Review, Balsamiq, UI, Web, Mockup, User Experience]
 image:
-  feature: headers/rappi_golden_lake.jpg
-  credit: Theo Winter
-  creditlink: https://theowinter.ch
+  feature: rappi_golden_lake.jpg
 comments: true
 share: true
 ---
@@ -139,3 +137,5 @@ Switching in and out of edit-mode is distracting and remembering the correct scr
 The library of UI-elements is functional but not huge. Balsamiq isn't _bad_. But it doesn't feel good either.  
 The next time I have to design a user interface I'll probably do it the traditional way.. sketch on paper and the move to 
 the code and real UI editor (JavaFx/XCode/Visual Studio etc.) directly.
+
+{% include toc.html %}

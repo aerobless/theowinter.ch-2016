@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 icon: icon-user
 title: A rant about physics
 description: "Why do I have to take a physics class as a computer scientist? It makes no sense."
@@ -8,9 +8,7 @@ share: true
 comments: true
 tags: [physics, HSR, school, rant]
 image:
-  feature: headers/macrograss.jpg
-  credit: Theo Winter
-  creditlink: https://theowinter.ch
+  feature: macrograss.jpg
 --- 
 
 So tomorrow I have a physics exam. The subject is called "Physics 4 for computer scientists", which means it's a dumbed down 

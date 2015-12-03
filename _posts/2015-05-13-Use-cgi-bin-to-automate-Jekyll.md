@@ -1,13 +1,11 @@
 ---
-layout: post
+layout: article
 title: Automate Jekyll publishing with a cgi-bin bash script
 description: "Automate publishing your Jekyll blog posts with a simple cgi-bin bash script. This works also for other static site generators."
 category: articles
 tags: [Jekyll, blogging, cgi-bin, automation, git, web]
 image:
-  feature: headers/rappi_steg.jpg
-  credit: Theo Winter
-  creditlink: http://theowinter.ch
+  feature: rappi_steg.jpg
 comments: true
 share: true
 ---
@@ -99,3 +97,5 @@ repository. There you click on "webhooks & Services" and then on "Add webhook". 
 Leave everything else as it is and submit the form. Now you can test your setup by committing a change!
 
 Feel free to leave a comment if you need help!
+
+{% include toc.html %}

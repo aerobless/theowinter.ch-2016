@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 icon: icon-apple
 title: The epic tale of an iPad Air repair
 description: "Fixing the Front Panel Digitizer Assembly of an iPad Air isn't easy. Here's how to do it."
@@ -8,7 +8,7 @@ share: true
 comments: true
 tags: [iPad, Apple, repair]
 image:
-  feature: headers/repair.jpg
+  feature: repair.jpg
   credit: Theo Winter
   creditlink: https://theowinter.ch
 ---
@@ -86,3 +86,4 @@ So yes the iPad can be fixed... but the [Repairability-Rating of 2/10](https://w
 
 ![iPad Air Fixed]({{ site.url }}/images/iPad9.JPG) 
 
+{% include toc.html %}

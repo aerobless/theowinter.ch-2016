@@ -1,17 +1,19 @@
 ---
-layout: post
+layout: article
 icon: icon-apple
 title: My top 10 favourite apps on OS X Yosemite
 description: "A list of my 10 favourite applications on Mac OS X Yosemite. These are little-known apps that can improve your productivity."
 category: articles
 tags: [OS X, Apps, Software, Programs, top 10]
 image:
-  feature: headers/yosemite.jpg
+  feature: yosemite.jpg
   credit: Apple Inc.
   creditlink: https://www.apple.com/osx/
 comments: true
 share: true
 ---
+
+{% include toc.html %}
 
 I've made the switch to the mac world in 2012. And over the years I've found a lot of cool apps. I thought about making this list only about free software, but some of my paid apps are so essential to me that this list wouldn't really reflect my top 10 without them.
 

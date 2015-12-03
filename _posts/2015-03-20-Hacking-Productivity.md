@@ -1,13 +1,11 @@
 ---
-layout: post
+layout: article
 title: Hack your productivity by editing your hosts file
 description: "Have you ever felt like your spending to much time on 9gag and the like? Learn how to edit your hosts file and stop wasting time."
 category: articles
 tags: [HowTo, Tutorial, Productivity, Know-Your-OS, OS X, Linux, Windows]
 image:
-  feature: headers/mountainlake.jpg
-  credit: Theo Winter
-  creditlink: https://theowinter.ch
+  feature: mountainlake.jpg
 comments: true
 share: true
 ---
@@ -112,3 +110,5 @@ So you see, you gain productivity while retaining full control over your compute
 want to block any sites. You could even decided to just block some sites on your study-notebook so you can concentrate
 on the lecture and to keep them open on your home-computer. Or maybe write a bash-script to change the hosts file
 depending on the time of day? It's up to you.
+
+{% include toc.html %}

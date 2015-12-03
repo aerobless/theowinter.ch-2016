@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: article
 icon: icon-apple
 title: Review&#58; Working Copy, a Git-Client for iOS
 description: "A fully-featured git client for iOS that can: clone, commit, push, pull, merge etc. "
 category: articles
 tags: [Review, Working Copy, iOS, iPhone, App, Git, Tools]
 image:
-  feature: headers/macrograss.jpg
+  feature: macrograss.jpg
   credit: Franziska Winter
   creditlink: http://canvasart.ch
 comments: true
@@ -75,3 +75,5 @@ when you're outside cell or wifi coverage for a bit. Of course you can also comm
 the git-features I was looking for and at the moment at least there is really no alternative to this app.
 The only downside of Working Copy is its cost. The basic app (without pushing commits) is free, so you can try it, but
 to get the push functionality you have to pay $9.99. Not exactly cheap, but for me it's worth it.
+
+{% include toc.html %}

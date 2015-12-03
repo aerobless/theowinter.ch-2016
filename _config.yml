@@ -1,69 +1,43 @@
-title:            theowinter.ch
-description:      A computer science student from Switzerland who's passionate about programming and photography.
-logo:             site-logo.png
-disqus_shortname: theowinterch
-search:           true
-# Change url to your domain. Leave localhost server or blank when working locally.
-url:              https://theowinter.ch
+# Site wide configuration
 
-# Owner/author information
+title: theowinter.ch
+description: A computer science student from Switzerland who's passionate about programming and photography.
+logo: site-logo.png # 120x120 px default image used for Twitter summary card
+teaser: default_article_thumbnail.gif # 400x250 px default teaser image used in image archive grid
+locale: en
+url: http://localhost:4000
+
+# Jekyll configuration
+
+sass:
+  sass_dir: _sass
+  style: compressed
+permalink: /:categories/:title/
+kramdown:
+  toc_levels: 1..2
+highlighter: rouge
+
+# Site owner
 owner:
-  name:           Theo Winter
-  avatar:         bio-photo.png
-  email:          theo@w1nter.ch
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         aerobless
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:    https://plus.google.com/+TheoWinterCH
+  name: Theo Winter
+  email: theo@w1nter.com
+  google_plus: https://plus.google.com/+TheoWinterCH
+  github: aerobless
+  twitter:
+  google:
+    ad-client:
+    ad-slot:
+  bio: A computer science student from Switzerland who's passionate about programming and photography.
+  avatar: bio-photo.jpg # 160x160 px image for author byline
+  disqus-shortname: theowinterch
+
+exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: UA-38005810-1
-google_verify: -Nqci8py-NO2xtbUsuUEMgo1cMYeX8mDOYjgBzPXP_0     
+google_verify: -Nqci8py-NO2xtbUsuUEMgo1cMYeX8mDOYjgBzPXP_0
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify: 0B0B2020A81729A7AF0981C047A8984C
-
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: Photography
-    url: /photography/
-  - title: Archive
-    url: /articles/
-  - title: About
-    url: /about/
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Europe/Zurich
-future:      true
-highlighter:    pygments
-markdown:    kramdown
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
-
-  coderay:
-    coderay_line_numbers: 
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
 
 #ExifTag
 #https://github.com/benib/jekyll-exiftag
@@ -77,8 +51,15 @@ mini_magick:
     photography:
         source: images/photography
         destination: images/photography/thumbnails
-        resize: "800x400"
-    travel:
-        source: images/travel
-        destination: images/travel/thumbnails
-        resize: "800x400"
+        resize: "1280x720"
+    headers:
+        source: images/headers
+        destination: images/headers/thumbnails
+        resize: "400x250"
+
+#TODO:
+# .htaccess --> error404
+# timezone
+# analytics prüfen
+# google+ & github social prüfen
+# sitemap

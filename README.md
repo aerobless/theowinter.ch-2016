@@ -1,11 +1,11 @@
-![Site preview](https://raw.githubusercontent.com/aerobless/theowinter.ch/master/images/preview.png)
+<!--![Site preview](https://raw.githubusercontent.com/aerobless/theowinter.ch/master/images/preview.png)-->
 
 This repo contains the source files of my personal blog. It is made with [Jekyll](http://jekyllrb.com/), an awesome, static site
 generator for programmers. As basline template I'm using [So Simple](https://github.com/mmistakes/so-simple-theme) by Michael Rose.
 
 #Incomplete list of tools used:
- + [Jekyll](http://jekyllrb.com/)
- + [So Simple](https://github.com/mmistakes/so-simple-theme)
+ + [Jekyll 3](http://jekyllrb.com/)
+ + [Skinny Bones](https://github.com/mmistakes/skinny-bones-jekyll)
  + [JustifiedGallery](http://miromannino.github.io/Justified-Gallery/)
  + [Simple Jekyll Search](https://github.com/christian-fei/Simple-Jekyll-Search)
  + [Bower](http://bower.io/)

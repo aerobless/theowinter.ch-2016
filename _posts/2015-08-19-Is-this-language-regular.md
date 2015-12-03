@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Is this language regular?
 description: "How to find out if a language is regular with the pumping lemma algorithm."
 category: articles
@@ -7,9 +7,7 @@ share: true
 comments: true
 tags: [Automaton, Machine, HSR, Languages, CompSci, Pumping Lemma]
 image:
-  feature: headers/macrograss.jpg
-  credit: Theo Winter
-  creditlink: https://theowinter.ch
+  feature: flight.jpg
 --- 
 
  > Is the language **L={a<sup>s</sup>b<sup>t</sup>a<sup>t-s</sup> ∣ 0 ≤ s ≤ t}** using the alphabet **∑ = {a,b}** regular?
@@ -42,3 +40,5 @@ The word a<sup>N</sup>b<sup>N</sup> seems ideal. And it is part of the language 
 
 3. After pumping the word k-times w<sub>k</sub> = a<sup>N+(k-1)</sup>b<sup>N</sup> is the result. The generated word can't be
 part of L because |a| != |b|. So the language is _not regular_.
+
+{% include toc.html %}

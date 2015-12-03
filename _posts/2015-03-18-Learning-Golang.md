@@ -1,13 +1,11 @@
 ---
-layout: post
+layout: article
 title: Getting started with Golang
 description: "My first steps with Golang. Setting up a development environment, writing the obligatory 'Hello World' and learning the basics."
 category: articles
 tags: [Learning, Go, Golang, Programming, Google, DevLog]
 image:
-  feature: headers/goldencorn.jpg
-  credit: Theo Winter
-  creditlink: https://theowinter.ch
+  feature: goldencorn.jpg
 comments: true
 share: true
 ---
@@ -167,4 +165,6 @@ you curious enough to give it a try.
 
 [^1]: Search Engine Optimization
 [^2]: Go Version Manager
+
+{% include toc.html %}
  

@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Page layout
+   ========================================================================== */
+
+.centeredG {
+  height: 400px;
+  width: 400px;
+  background: #eee;
+  margin: 50px auto;
+}
+
+.photoCentre
+{
+  width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-circle {
+  border-radius: 50%;
+  width: 70%;
+  float: left;
+  margin-right: 20px
+}
+
+.photoInfo-content-right {
+  margin-left: 20px;
+  float: right;
+}
+
+.videoCentre {
+  margin-left: auto;
+  margin-right: auto;
+  display: block
+}
+
+/* Prevents scrolling in a embedded Google Maps until it is clicked */
+/* http://stackoverflow.com/a/22567753/1922505 */
+.overlay {
+  background:transparent;
+  position:relative;
+  width:100%;
+  height:400px; /* iframe height */
+  top:400px;  /* iframe height */
+  margin-top:-400px;  /* iframe height */
+}
+
+.photoInfoContainer {
+  width: 85%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  $mobile: new-breakpoint(max-width 500px 2);
+  @include outer-container;
+}
+
+.photoInfo1 {
+  @include span-columns(9);
+}
+
+.photoInfo2 {
+  @include span-columns(3);
+
+  ul{
+    font-family: $heading-font;
+    list-style-type: none;
+    margin-left: -30px;
+  }
+
+  li{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  hr{
+    padding-bottom: 0px;
+    height: 0px;
+  }
+}
+
+.photobtn{
+  margin-top: 10px;
+}
+
+
+.post__sidebar {
+  .js-toc {
+    @media (max-width: 1025px) {
+      display: none !important; // override
+    }
+  }
+
+  .toc {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0 1em 1em;
+    border: 2px solid $black;
+  }
+}
+

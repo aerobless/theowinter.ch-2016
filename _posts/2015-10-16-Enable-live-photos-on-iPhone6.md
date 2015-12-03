@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 icon: icon-apple
 title: Jailbreak&#58; Enable Live Photos on iPhone6
 description: "How to enable Live Photos and 3D Touch on a iPhone6 with Cydia and the Pangu Jailbreak for iOS9.0-9.0.2."
@@ -8,9 +8,7 @@ share: true
 comments: true
 tags: [iPhone, Apple, Jailbreak, iOS9, photography]
 image:
-  feature: headers/grandcanyon.jpg
-  credit: Theo Winter
-  creditlink: https://theowinter.ch
+  feature: grandcanyon.jpg
 ---
 
 I've never really seen a reason to jailbreak my iPhone. The disadvantages, such as voided warranty and potential security holes 
@@ -70,3 +68,5 @@ As for the EnableLivePhotos tweak. It simply does what the name says. No emulati
 iPhone6.
 
 So if you have an iPhone6, don't waste your money, install the jailbreak and you get 99% of the new 6S-functions for free.
+
+{% include toc.html %}

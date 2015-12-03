@@ -1,5 +1,5 @@
 ---
-layout: travel
+layout: article
 title: Blogging from New York to San Francisco
 description: "I added a custom travel layout with additional front matter to my Jekyll site, so that I can continue to blog while I'm travelling."
 location: Rapperswil, Switzerland
@@ -14,7 +14,7 @@ share: true
 comments: true
 tags: [Travel, USA, Jekyll]
 image:
-  feature: headers/usa_map.jpg
+  feature: usa_map.jpg
   credit: Google Inc.
   creditlink: https://maps.google.com
 photo-list:
@@ -121,3 +121,5 @@ there doesn't seem to be a progressbar when copying files from a SD card to the 
 limited to a few sd cards or lugging around a laptop.
 
 *Alright, that's it for today. I'll probably write my next post somewhere over the Atlantic Ocean.*
+
+{% include toc.html %}

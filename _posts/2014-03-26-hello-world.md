@@ -1,9 +1,13 @@
 ---
-layout: post
+layout: article
 title: Hello world
 description: "Hi there! This is the first post on my new Jekyll-based blog! I hope you have fun reading it."
 category: articles
 tags: [sample post, helloworld, highlighting]
+image:
+  feature: helloworld.jpg
+  credit: Dwayne Bent
+  creditlink: https://flic.kr/p/c9BGhf
 comments: true
 share: true
 ---

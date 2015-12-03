@@ -1,0 +1,14 @@
+# Site navigation links
+
+- title: Photography
+  url: /photography/
+  excerpt: “A picture is a secret about a secret, the more it tells you the less you know.” ― Diane Arbus
+  image:
+
+- title: About
+  url: /about/
+  excerpt: I am Theo Winter.
+
+- title: Feed
+  url: /atom.xml
+  excerpt: Subscribe to RSS feed.

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: 44 questions about automata and languages
 description: "44 questions that helped me prepare for an exam in theoretical computing, automata and languages."
 category: articles
@@ -7,9 +7,7 @@ share: true
 comments: true
 tags: [HSR, automata and languages, theoretical computing]
 image:
-  feature: headers/flight.jpg
-  credit: Theo Winter
-  creditlink: https://theowinter.ch
+  feature: rappi_steg.jpg
 --- 
 
 This post is about automata and languages that are used in theoretical computing. I was supplied 44 questions as a help 
@@ -291,3 +289,5 @@ Simplified: everyone knows everyone.
 [^13]: [Wikipedia: Pumping Lemma for regular languages](https://en.wikipedia.org/wiki/Pumping_lemma_for_regular_languages)
 [^14]: [Wikipedia: Reduction (complexity)](https://goo.gl/BPIvjl)
 [^15]: [Wikipedia: Halting problem](https://en.wikipedia.org/wiki/Halting_problem)
+
+{% include toc.html %}
