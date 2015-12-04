@@ -1,3 +1,5 @@
+---
+---
 !function ($) {
   "use strict";
   $.fn.fitVids = function (options) {
