@@ -100,3 +100,23 @@
   }
 }
 
+.phoneMenu{
+  @include media($micro) {
+    margin-top: -3.7em;
+  }
+}
+
+.phoneGone{
+  visibility: hidden;
+  @include media($small) {
+    visibility: visible;
+  }
+}
+
+.phoneOnly{
+  visibility: visible;
+  @include media($small) {
+    visibility: hidden;
+  }
+}
+

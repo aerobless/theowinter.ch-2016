@@ -11,3 +11,4 @@
 - title: Feed
   url: /atom.xml
   icon: fa fa-rss
+  onlySideMenu: true

@@ -14,8 +14,6 @@ This post is a compilation of various information security questions and topics 
 InfSi2 exam at HSR. I'm expanding this post step by step while I'm reviewing the contents of this semester. I've done
 something similar with the subject "[Automata and languages](/articles/44-questions-and-36-terms-about-automata-and-languages/)" last semester and it helped me a lot.
 
-{% include toc.html %}
-
 <script>
 var solutionVisibility = false;
 var setVisible = function () {
@@ -82,3 +80,6 @@ Source b had a good distribution between 1 and 0. However there are many gaps in
 ####Q: How can source a & b be used to build a good random number generator?
 The random values can be incorporated in a entropy pool via a hash function (e.g. SHA1, SHA256). The pool can then be used
 as a random seed for a good pseudo random number generator.
+
+
+{% include toc.html %}
