@@ -19,7 +19,7 @@ something similar with the subject "[Automata and languages](/articles/44-questi
 <script>
 var solutionVisibility = false;
 var setVisible = function () {
-  if(!solutionVisibility){
+  if(solutionVisibility){
     solutionVisibility = false;
     $( ".solution" ).css( "color", "white" );
     $(".solutionsButton").text("Show all solutions");
@@ -67,3 +67,18 @@ var setVisible = function () {
 | SHA-384      |            {{ "192" | hide }} |                                        |
 | SHA-512      |            {{ "256" | hide }} |                                        |
 
+
+##2. True Random numbers
+Here are two sources that provide random numbers:
+![Two random sequences]({{ site.url }}/images/true_randoms.png){:width="70%"}
+
+####Q: What can be said about source a?
+Source a is reliable, but it returns 1 more often then 0. So it has a bias towards 1. Sources of randomness that have a bias
+aren't ideal.
+
+####Q: What can be said about source b?
+Source b had a good distribution between 1 and 0. However there are many gaps in the data stream which is also not ideal.
+
+####Q: How can source a & b be used to build a good random number generator?
+The random values can be incorporated in a entropy pool via a hash function (e.g. SHA1, SHA256). The pool can then be used
+as a random seed for a good pseudo random number generator.
