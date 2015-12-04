@@ -5,7 +5,7 @@ description: A computer science student from Switzerland who's passionate about 
 logo: site-logo.png # 120x120 px default image used for Twitter summary card
 teaser: default_article_thumbnail.gif # 400x250 px default teaser image used in image archive grid
 locale: en
-url: http://localhost:4000
+url: https://theowinter.ch
 
 # Jekyll configuration
 
