@@ -2,13 +2,12 @@
 
 - title: Photography
   url: /photography/
-  excerpt: “A picture is a secret about a secret, the more it tells you the less you know.” ― Diane Arbus
-  image:
+  icon: fa fa-camera-retro
 
 - title: About
   url: /about/
-  excerpt: I am Theo Winter.
+  icon: fa fa-user
 
 - title: Feed
   url: /atom.xml
-  excerpt: Subscribe to RSS feed.
+  icon: fa fa-rss

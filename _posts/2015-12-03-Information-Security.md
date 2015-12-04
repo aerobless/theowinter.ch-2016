@@ -18,6 +18,8 @@ something similar with the subject "[Automata and languages](/articles/44-questi
 
 ##1. Cryptographical strength
 
+
+
 | Algorithm    | Strength (bit) | Details                                |
 |--------------|---------------:|----------------------------------------|
 | 3DES         |            112 |                                        |

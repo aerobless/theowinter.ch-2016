@@ -12,7 +12,7 @@
       transform: translateX(em(-600));
     }
     @include media($large) {
-      transform: translateX(em(-900));
+      transform: translateX(em(-400));
     }
   }
 
@@ -47,7 +47,7 @@
       transform: translateX(em(-600)); /* reset slide position */
     }
     @include media($large) {
-      transform: translateX(em(-900)); /* reset slide position */
+      transform: translateX(em(-400)); /* reset slide position */
     }
   }
 }
@@ -69,7 +69,7 @@
     width: em(600);
   }
   @include media($large) {
-    width: em(900);
+    width: em(400);
   }
   transform: translateX(100%);
   transition: $sliding-menu-animation;
@@ -116,11 +116,11 @@
   li {
     display: block;
     position: relative;
-    padding-bottom: 1em;
-    min-height: 70px;
-    @include media($small) {
-      min-height: 100px;
-    }
+    /*padding-bottom: 1em;
+   min-height: 70px;
+   @include media($small) {
+     min-height: 100px;
+   }*/
   }
   .menu-item {
     a {
@@ -134,7 +134,7 @@
       margin-bottom: 0;
       width: 50px;
       border: 2px solid $white;
-      margin-bottom: ($gutter / 2);
+      //margin-bottom: ($gutter / 2);
       opacity: 0.6;
       @include media($small) {
         width: 150px;
@@ -145,21 +145,21 @@
     }
     .title {
       display: block;
-      margin-left: 60px;
+      margin-left: 40px;
       font-family: $alt-font;
-      @include font-size(24,no);
+      @include font-size(25,no);
       font-weight: 700;
       @include media($small) {
-        margin-left: 170px;
-        @include font-size(32,no);
+        //margin-left: 170px;
+        @include font-size(25,no);
       }
     }
     .excerpt {
       margin-top: 0;
-      margin-left: 60px;
+      //margin-left: 60px;
       @include font-size(14,no);
       @include media($small) {
-        margin-left: 170px;
+        //margin-left: 170px;
         @include font-size(16,no);
       }
     }
