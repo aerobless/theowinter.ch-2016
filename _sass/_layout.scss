@@ -20,9 +20,10 @@
 }
 .site-title {
 	@include row;
-	@include media($large) {
+  @include span-columns(3);
+	/*@include media($large) {
 		@include span-columns(4);
-	}
+	}*/
 	padding: (.25 * $masthead-height) 0; // fourth the height to center vertically
 	height: $masthead-height;
 	text-decoration: none;
@@ -40,6 +41,7 @@
    ========================================================================== */
 
 .menu {
+  float: right;
 	li {
 		float: left;
 		&:last-child a {
@@ -84,22 +86,28 @@
 /* Top menu navigation */
 
 .top-menu {
-	display: none;
-	position: relative;
-	@include media($medium) {
+  float: right;
+  margin-right: 0px;
+	//display: none;
+	//position: relative;
+  //@include span-columns(4);
+	/*@include media($medium) {
 		@include span-columns(12);
-	}
-	@include media($large) {
-		@include span-columns(7);
+	}*/
+	/*@include media($large) {
+		@include span-columns(12);
 		ul {
 			position: absolute;
 			right: 0;
 		}
-	}
+	}*/
 	.home,
 	.sub-menu-item {
 		display: none;
 	}
+  .menu-item {
+    float: right;
+  }
 	li {
 		a {
 			font-weight: 700;

@@ -8,9 +8,12 @@
         {% if link.excerpt %}<p class="excerpt">{{ link.excerpt }}</p>{% endif %}
       </a>
     </li>{% endfor %}
+    <li><a id="menuCloser">
+      <div class="title"><i class="fa fa-times"> Close</i></div>
+    </a></li>
   </ul>
 </nav>
-<button type="button" id="js-menu-trigger" class="sliding-menu-button lines-button x2" role="button" aria-label="Toggle Navigation">
+<button style="visibility: hidden;" type="button" id="js-menu-trigger" class="sliding-menu-button lines-button x2" role="button" aria-label="Toggle Navigation">
   <span class="nav-lines"></span>
 </button>
 
