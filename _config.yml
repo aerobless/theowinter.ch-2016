@@ -21,9 +21,9 @@ highlighter: rouge
 owner:
   name: Theo Winter
   email: theo@w1nter.com
-  google_plus: https://plus.google.com/+TheoWinterCH
+  googleplus: +TheoWinterCH
   github: aerobless
-  twitter:
+  twitter: TheodorWinter
   google:
     ad-client:
     ad-slot:
@@ -61,6 +61,5 @@ mini_magick:
 #TODO:
 # .htaccess --> error404
 # timezone
-# analytics prüfen
 # google+ & github social prüfen
 # sitemap
