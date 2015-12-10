@@ -14,23 +14,11 @@ This post is a compilation of various information security questions and topics 
 InfSi2 exam at HSR. I'm expanding this post step by step while I'm reviewing the contents of this semester. I've done
 something similar with the subject "[Automata and languages](/articles/44-questions-and-36-terms-about-automata-and-languages/)" last semester and it helped me a lot.
 
-<script>
-var solutionVisibility = false;
-var setVisible = function () {
-  if(solutionVisibility){
-    solutionVisibility = false;
-    $( ".solution" ).css( "color", "white" );
-    $(".solutionsButton").text("Show all solutions");
-  } else {
-    solutionVisibility = true;
-    $( ".solution" ).css( "color", "black" );
-    $(".solutionsButton").text("Hide all solutions");
-  }
-};
-</script>
+{{ "init" | hide }}
 
 ##1. Cryptographical strength 
 
+Hover over the algorithm to see its solution, or press the button below to show all the solutions.
 <a class="btn-info solutionsButton" onclick="setVisible()">Show all solutions</a>
 
 | Algorithm    | Strength (bit)                | Details                                |
@@ -81,5 +69,30 @@ Source b had a good distribution between 1 and 0. However there are many gaps in
 The random values can be incorporated in a entropy pool via a hash function (e.g. SHA1, SHA256). The pool can then be used
 as a random seed for a good pseudo random number generator.
 
+
+##3. Quantum Key Cryptography
+
+Quantum Key Cryptography uses entangled Photons to distribute a secure key between two parties. It has ben successfully 
+demonstarted by three independent research groups. What makes Quantum Key Cryptography special is that due to the laws of 
+quantum physics it is possible to detect when a eavesdropper intercepts part of a quantum key. So the compromised parts of the 
+data can be discarded.
+
+####Fundamental Laws of Quantum Physics
+
++ One cannot take a measurement without perturbing the system.
++ One cannot determine simultaneously the position and the momentum of a particle with arbitrarily high accuracy.
++ One cannot simultaneously measure the polarization of a photon in the vertical-horizontal basis and simultaneously in the diagonal basis.
++ One cannot draw pictures of individual quantum processes.
++ One cannot duplicate an unkown quantum state.
+
+####Photon Yield vs Transmission Distance
+
+Attenuation in a monomode fiber with &lambda; = 1550nm: 0.2db/km
+
+| Distance | dB   | Survival rate of photons     |
+|----------|------|------------------------------|
+| 50km     | 10dB | 1 out of 10 photons survive  |
+| 100km    | 20dB | 1 out of 100 photons survive |
+| 150km    | 30dB | 1 out of 100 photons survive |
 
 {% include toc.html %}
