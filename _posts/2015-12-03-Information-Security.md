@@ -85,6 +85,22 @@ data can be discarded.
 + One cannot draw pictures of individual quantum processes.
 + One cannot duplicate an unkown quantum state.
 
+####BB84 Quantum Key Distribution Protocol [^1]
+1. Alice creates a random bit 0 or 1 and then randomly selects one of two bases (rectilinear or diagonal) to transmit it in. 
+   Alice then sends a single photon in the state specified to Bob, using the quantum channel. This process is then repeated.
+   Alice records the state, basis and time of each photon sent.
+
+2. Since Bob doesn't know the basis the photons were encoded in, he selects a basis at random to measure in, either rectilinear 
+   or diagonal. He does this for each photon, recording the time, measurement basis and result.
+   
+3. After Bob has measured all the photons, he communicates with Alice over the public channel. Alice tells Bob the basis each photon 
+   was sent in, and Bob the basis each was measured in. Both discard the photon measurements where Bob used a different basis, which 
+   is about half on average. The remaining bits are used as a shared key.
+   
+4. To check for a eavesdropper Alice and Bob now compare a certain subset of their remaining bit strings. If someone has gained any
+   information about the photons polarization, this introduces errors in Bobs measurements. If more then a certain amount (p) bits 
+   differ Bob and Alice abort the key and try again, possibly with a different quantum channel.
+
 ####Photon Yield vs Transmission Distance
 
 Attenuation in a monomode fiber with &lambda; = 1550nm: 0.2db/km
@@ -93,6 +109,9 @@ Attenuation in a monomode fiber with &lambda; = 1550nm: 0.2db/km
 |----------|------|------------------------------|
 | 50km     | 10dB | 1 out of 10 photons survive  |
 | 100km    | 20dB | 1 out of 100 photons survive |
-| 150km    | 30dB | 1 out of 100 photons survive |
+| 150km    | 30dB | 1 out of 1000 photons survive |
+
+
+[^1]: [Wikipedia: Quantum key distribution](https://en.wikipedia.org/wiki/Quantum_key_distribution)
 
 {% include toc.html %}
