@@ -19,7 +19,7 @@ something similar with the subject "[Automata and languages](/articles/44-questi
 ##1. Cryptographical strength 
 
 Hover over the algorithm to see its solution, or press the button below to show all the solutions.
-<a class="btn-info solutionsButton" onclick="setVisible()">Show all solutions</a>
+{{ "button" | hide }}
 
 | Algorithm    | Strength (bit)                | Details                                |
 |--------------|------------------------------:|----------------------------------------|
@@ -73,7 +73,7 @@ as a random seed for a good pseudo random number generator.
 ##3. Quantum Key Cryptography
 
 Quantum Key Cryptography uses entangled Photons to distribute a secure key between two parties. It has ben successfully 
-demonstarted by three independent research groups. What makes Quantum Key Cryptography special is that due to the laws of 
+demonstrated by three independent research groups. What makes Quantum Key Cryptography special is that due to the laws of 
 quantum physics it is possible to detect when a eavesdropper intercepts part of a quantum key. So the compromised parts of the 
 data can be discarded.
 
@@ -105,12 +105,32 @@ data can be discarded.
 
 Attenuation in a monomode fiber with &lambda; = 1550nm: 0.2db/km
 
-| Distance | dB   | Survival rate of photons     |
-|----------|------|------------------------------|
-| 50km     | 10dB | 1 out of 10 photons survive  |
-| 100km    | 20dB | 1 out of 100 photons survive |
+| Distance | dB   | Survival rate of photons      |
+|----------|------|-------------------------------|
+| 50km     | 10dB | 1 out of 10 photons survive   |
+| 100km    | 20dB | 1 out of 100 photons survive  |
 | 150km    | 30dB | 1 out of 1000 photons survive |
 
+####Q: Which of the following key bits are valid?
+Hover over the Validity cells to see the solution, or press the button below to show all the solutions.
+{{ "button" | hide }}
+
+| Key Bit Alice | 0 | 1 | 1 | 1 | 0 | 1 | 0 | 1 |
+|---------------|---|---|---|---|---|---|---|---|
+| Key Bit Bob   | 0 | 1 | 1 | 1 | 1 | 0 | 0 | 1 |
+| Filter Alice  | R | D | D | R | R | D | R | R |
+| Filter Bob    | R | R | D | R | D | R | R | D |
+| Validity      | {{ "✓" | hide }} | {{ "x" | hide }} | {{ "✓" | hide }} | {{ "✓" | hide }} | {{ "x" | hide }} | {{ "x" | hide }} | {{ "✓" | hide }} | {{ "x" | hide }} |
+
+####Q: With the BB84 protocol Alice sends 10'000 key bits to Bob to produce a 256bit AES key. What happens if Bob moves and the distance between Alice and Bob increases from 50km to 100km?
+
++ Because of the absorption a lot less key bits reach their target. At 50km distance 1 of 10 reach their target. At 100km only
+  1 of 100 reach their target. 
++ With 100bits (10'000/100) it's no longer possible to produce a 256bit AES key.
+
+####Q: With what method can Alice and Bob check whether a eavesdropper steals or inserts photons?
+They can insert random decoy states. These decoy states are sent with a much lower output rate so that there is a different 
+statistical distribution of the received photons. An eavesdropper can't differentiate between the two different types of photons. 
 
 [^1]: [Wikipedia: Quantum key distribution](https://en.wikipedia.org/wiki/Quantum_key_distribution)
 
