@@ -79,12 +79,15 @@
     }
   }(jQuery), $(document).ready(function () {
   $("#js-menu-trigger,#js-menu-screen").on("click touchstart", function (e) {
+    document.getElementById ( "js-menu" ).style.visibility = "visible";
     $("#js-menu, #js-menu-screen").toggleClass("is-visible"), $("#js-menu-trigger").toggleClass("slide close"), e.preventDefault()
   })
   $("#js-launch").on("click touchstart", function (e) {
+    document.getElementById ( "js-menu" ).style.visibility = "visible";
     $("#js-menu, #js-menu-screen").toggleClass("is-visible"), $("#js-menu-trigger").toggleClass("slide close"), e.preventDefault()
   })
   $("#menuCloser").on("click touchstart", function (e) {
+    document.getElementById ( "js-menu" ).style.visibility = "visible";
     $("#js-menu, #js-menu-screen").toggleClass("is-visible"), $("#js-menu-trigger").toggleClass("slide close"), e.preventDefault()
   })
 }), $(document).ready(function () {
