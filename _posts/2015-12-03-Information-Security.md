@@ -132,7 +132,7 @@ Hover over the Validity cells to see the solution, or press the button below to 
 They can insert random decoy states. These decoy states are sent with a much lower output rate so that there is a different 
 statistical distribution of the received photons. An eavesdropper can't differentiate between the two different types of photons. 
 
-##3. Generating keys with Pseudo Random Functions
+##4. Generating keys with Pseudo Random Functions
 A HMAC-based pseudo random function expands a secret and a _public_ initial seed into a key stream of arbitrary length. 
 This can be achieved iterating a SHA-1 or SHA-256 based HMAC function controlled by a secret key using the following algorithm: 
 
@@ -156,6 +156,40 @@ And then to check whether there's a plain text result through decryption and his
 
 ####Q: How many tries are needed for a brute force attack in the worst case?
 In the worst case 2<sup>256</sup> tries are needed.
+
+##5. MACsec
+
+![MACsec]({{ site.url }}/images/macsec.jpg){:width="40%"}
+MACsec stands for Media Access Layer Security, it's a technology used on the Data Link Layer.
+
+| Code  | Name                             | Description                              |
+|-------|----------------------------------|------------------------------------------|
+| PAE   | Port Access Entity               |                                          |
+| CA    | Connectivity Associtation        |                                          |
+| CAK   | Connectivity Association Key     | Pre-shared secret, strong long-term key. |
+| SC    | Secure Channel                   | Each PAE sets up a secure channel.       |
+| SA    | Secure Association               | On every SC there's an SA.               |
+| SAK   | Secure Association Key           | Short-term key.                          |
+| MKA   | MACsec Key Agreement Protocol    |                                          |
+| MKPDU | MACsec Key Agreement Protocol Data Unit | carried via EAPOL                 |
+| EAP   | Extended Authentication Protocol |                                          |
+| EAPOL | EAP over LAN                     |                                          |
+
+####Q: What's the requirement that a PAE (e.g. ethernet port) can join a CA?
+The PAE needs the CAK (shared secret) of the CA group. 
+
+####Q: How many session keys (SAK) are needed by a CA with N PAEs so that everybody can communicate with everybody?
+Each PAE has its own SAK that can be used to communicate with its N-1 peers. So N SAKs are required.
+
+####Q: How are the required keys (SAK) generated in a CA with N PAEs using the MACsec Key Agreement Protocol (MKA)?
+The N PAEs chose a key server which generates random SAK keys. Every SAK is encrypted with the CAK and distributed to the
+N PAEs.
+
+####Q: How are the MKPDUs transported over ethernet or wifi?
+They are carried via the EAPOL protocol (EAP over LAN).
+
+####Q: What's the default crypto suite of MACsec and what's its cryptographic strength?
+The MKA Key Derivation Function (KDF) is a pseudo random function (PRF) based on AES-CMAC with a 128 or 256bit key.
 
 [^1]: [Wikipedia: Quantum key distribution](https://en.wikipedia.org/wiki/Quantum_key_distribution)
 
