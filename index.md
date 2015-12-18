@@ -8,6 +8,6 @@ image:
 
 <div class="tiles">
 {% for post in site.posts %}
-	{% include post-grid.html %}
+	{% include post-grid-cards.html %}
 {% endfor %}
 </div><!-- /.tiles -->

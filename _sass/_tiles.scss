@@ -8,19 +8,27 @@
   @include media($micro) {
     @include fill-parent;
   }
-  @include media(new-breakpoint(min-width em(480) 12)) {
-    @include span-columns(3);
-    @include omega(4n);
+  @include media(new-breakpoint(min-width em(800) 12)) {
+    @include span-columns(4); //Width of card
+    @include omega(3n); //Number of cards
   }
   .entry-date {
     @include font-size(16,no);
     color: lighten($text-color,25);
   }
   .post-title {
-    @include font-size(18,no);
+    @include font-size(22,no);
+    margin-bottom: 0.5em;
   }
+
+  .post-date{
+    color: #bbb;
+    font-family: $heading-font;
+  }
+
   .post-excerpt {
     @include font-size(16);
+    //font-family: $heading-font;
   }
   .post-teaser {
     position: relative;
