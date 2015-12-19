@@ -97,7 +97,7 @@
 // move table of contents from post body to sidebar
 $(".js-toc").appendTo($(".toc--sidebar")).hide().fadeIn(400);
 
-//Enable share buttons on card view
+//Enable share buttons to card view
 $('.card__share > a').on('click', function(e){
   e.preventDefault() // prevent default action - hash doesn't appear in url
   $(this).parent().find( 'div' ).toggleClass( 'card__social--active' );

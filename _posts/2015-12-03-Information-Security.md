@@ -191,6 +191,51 @@ They are carried via the EAPOL protocol (EAP over LAN).
 ####Q: What's the default crypto suite of MACsec and what's its cryptographic strength?
 The MKA Key Derivation Function (KDF) is a pseudo random function (PRF) based on AES-CMAC with a 128 or 256bit key.
 
+##6. IPsec
+IPsec (Internet Protocol Security) is a protocol suite for secure IP communications by authenticating and encrypting each
+IP packet of a communication session. IPsec is an end-to-end security scheme operating in the Network Layer of the OSI model.
+
+| Code  | Name                                          | Description                                                                                                                                                                                       |
+|-------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| AH    | Authentication Header                         | Isn't used much in the real world.                                                                                                                                                                |
+| ESP   | Encapsulating Security Payload                | Contains the actual IP packet.                                                                                                                                                                    |
+| AEAD  | Authenticated Encryption with Associated Data | AEAD is based on special block cipher modes. Recommended AEAD Modes are AES-Galois and AES-GMAC (auth. only).                                                                                     |
+| IKE   | Internet Key Exchange                         | IKE is run on UDP port 500. There's IKEv1 (1998) and IKEv2 (2005).                                                                                                                                |
+| SA    | Security Association                          | A SA is a contract established between two IPsec endpoints. A separate IPsec SA is required for each subnet or single host. Separate IPsec SAs are required for inbound and outbound connections. |
+| PFS   | Perfect Forward Secrecy                       |                                                                                                                                                                                                   |
+| XAUTH | eXtended AUTHentication                       | Proprietary extension used by many vendors. Based on expired draft. Should not be used. EAP is better alternative. (IKEv1)                                                                        |
+| EAP   | Extensible Authentication Protocol            | Used by IKEv2.                                                                                                                                                                                    |
+
+####Reading the ipsec.conf file [^2]
+
+{% highlight bash %}
+conn net #conn <name> defines a connection, inherits from conn %default
+     also=host #includes the parameters of connection "host", which be overwritten
+     rightsubnet=10.0.0.0/14 #private subnet behind the participant, expressed as netmask
+conn host
+     left=55.1.2.2 #the IP address of the participant's public-network interface
+     leftsourceip=%config #The internal source IP to use in a tunnel, also known as virtual IP.
+     leftcert=redCert.pem
+     leftid=red@colors.net #identity of the left endpoint
+     right=55.1.2.1 #the IP address of the participant's public-network interface
+     rightid=@baran.colors.net #identity of the right endpoint (participant)
+     auto=start #operation be done automatically at IPsec startup
+                   #start:  connect immediately
+                   #add:    load connection without starting it
+                   #route:  load connection and install kernel traps
+                   #ignore: ignores the conenction, equals deleting it from the config file
+{% endhighlight %}
+
+####Q: What IKE messages are exchanged to establish two IPsec tunnels with IKEv2? How many IKEv2 packets are exchanged in total?
+
+ + IKE_SA_INIT Request & Reply
+ + IKE_AUTH Request & Reply
+ + CREATE_CHILD_SA Request & Reply
+
+So 6 packets in total.
+
+
 [^1]: [Wikipedia: Quantum key distribution](https://en.wikipedia.org/wiki/Quantum_key_distribution)
+[^2]: [StrongSwan ipsec.conf](https://wiki.strongswan.org/projects/strongswan/wiki/IpsecConf#Reusing-Existing-Parameters)
 
 {% include toc.html %}
