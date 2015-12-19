@@ -15,9 +15,9 @@
       <div class="card__content card__padding">
         <div class="card__share">
           <div class="card__social">
-            <a class="share-icon facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | replace:'index.html','' | prepend: site.url }}" target="_blank"><span class="fa fa-facebook"></span></a>
-            <a class="share-icon twitter" href="https://twitter.com/intent/tweet?text={{ page.title | escape | replace:' ','%20' }}&amp;url={{ page.url | replace:'index.html','' | prepend: site.url }}&amp;via={{ site.owner.twitter }}" target="_blank"><span class="fa fa-twitter"></span></a>
-            <a class="share-icon googleplus" href="https://plus.google.com/share?url={{ page.url | replace:'index.html','' | prepend: site.url }}" target="_blank"><span class="fa fa-google-plus"></span></a>
+            <a class="share-icon facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ post.url | replace:'index.html','' | prepend: site.url }}" target="_blank"><span class="fa fa-facebook"></span></a>
+            <a class="share-icon twitter" href="https://twitter.com/intent/tweet?text={{ post.title | escape | replace:' ','%20' }}&amp;url={{ post.url | replace:'index.html','' | prepend: site.url }}&amp;via={{ site.owner.twitter }}" target="_blank"><span class="fa fa-twitter"></span></a>
+            <a class="share-icon googleplus" href="https://plus.google.com/share?url={{ post.url | replace:'index.html','' | prepend: site.url }}" target="_blank"><span class="fa fa-google-plus"></span></a>
           </div>
 
           <a id="share" class="share-toggle share-icon" href="#"></a>
