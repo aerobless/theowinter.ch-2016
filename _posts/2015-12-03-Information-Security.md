@@ -7,7 +7,7 @@ share: true
 comments: true
 tags: [Information Security, Computer Science, HSR]
 image:
-  feature: flight.jpg
+  feature: dark_bunker.jpg
 ---
 
 This post is a compilation of various information security questions and topics that are likely to be tested in the
