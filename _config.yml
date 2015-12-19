@@ -55,8 +55,7 @@ mini_magick:
     headers:
         source: images/headers
         destination: images/headers/thumbnails
-        resize: "594x250"
-        crop: "400x250+-0.5+-0.5"
+        resize: "400x250"
 
 #TODO:
 # .htaccess --> error404
