@@ -39,15 +39,15 @@ And the latest episode "CQB" even achieved a rating of 9.3. Which is really quit
 | Based on                     | The Expanse novels by James S. A. Corey |  A Song of Ice and Fire by George R. R. Martin |
 
 
-####Story
+####Setting & Story
 
 I don't want to go too deep into the story to avoid spoilers. The general idea is that the humans who left earth and are now 
-inhabiting Mars and the astroid belt no longer think of themselves as earth-bound. People who were born in the Asteroid belt 
-aren't even capable of living on earth anymore since their bones are strong enough due to the lower gravity. So there's a sense of
+inhabiting Mars and the astroid belt no longer think of themselves as earth-bound. People who were born in the Asteroid belt, also known as "Belters", 
+aren't even capable of living on earth anymore since their bones are strong enough due to the lower gravity. There's a sense of
 nationalism and everyone is looking for themselves first. So we can sort of draw a parallel to the kingdoms of Westeros. Between 
 Mars and Earth there is sort of a cold war going. The Asteroid belt technically belongs to Earth but the people living there will
-never see Earth themselves and dislike being dependant on Earth for basic supplies such as water rations.
-So what ends up happening is that a space freighter, supplying water to the Belters, is attacked and we don't know who it was...
+never see Earth themselves and dislike being dependant on Earth for basic supplies such as water rations. The situation is quite volatile.
+And what ends up happening is that a space freighter, supplying water to the Belters, is attacked and we don't know who it was...
 
 ####Cinematography
 
