@@ -69,8 +69,8 @@ So what ends up happening is that a space freighter, supplying water to the Belt
 > If you have some spare time then give this show a try! It's seriously good! I know SyFy isn't HBO.. but with this show they've really outdone themselves!
 
 <div class="sidebar" style="padding-left: 20px;">
-    <img style="width:60%; float:both;" src="{{ site.url }}/images/expanse_keyart_final_hires.jpg"><br>
-    <span class="imdbRatingPlugin" data-user="ur64533853" data-title="tt3230854" data-style="p3"><a href="http://www.imdb.com/title/tt3230854/?ref_=plg_rt_1"><img src="http://g-ecx.images-amazon.com/images/G/01/imdb/plugins/rating/images/imdb_37x18.png" alt=" The Expanse
-    (2015) on IMDb" />
-    </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="http://g-ec2.images-amazon.com/images/G/01/imdb/plugins/rating/js/rating.min.js";stags.parentNode.insertBefore(js,stags);})(document,'script','imdb-rating-api');</script>
+    <a href="http://www.imdb.com/title/tt3230854" target="_blank"><img style="width:60%; float:both;" src="{{ site.url }}/images/expanse_keyart_final_hires.jpg"></a><br>
+    <span style="color:grey;">TV Series | 60min </span><br>
+    <b>My Rating:</b> 10/10<br>
+    <b>IMDB:</b> 8.3/10 <br>
 </div>
