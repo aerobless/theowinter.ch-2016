@@ -13,8 +13,6 @@ comments: true
 share: true
 ---
 
-{% include toc.html %}
-
 I've made the switch to the mac world in 2012. And over the years I've found a lot of cool apps. I thought about making this list only about free software, but some of my paid apps are so essential to me that this list wouldn't really reflect my top 10 without them.
 
 ##[1. Homebrew](http://brew.sh/){:target="_blank"}
@@ -77,3 +75,5 @@ Grapher is another little gem that comes preinstalled with every mac. Granted it
 ##Conclusion
 And those are some of my favourite mac apps. I chose mostly small apps & little helpers. Of course I also couldn't live without Adobe Photoshop & Lightroom, iWorks, Eclipse, WebStorm, DropBox, Google Chrome and many other applications. But those are mostly big names and everyone knows what they do and that's why I didn't put them on the list. Plus, a top 50 or so would have taken too long to write.  
 Please feel free to share your favourite app in the comments below or tell me if you've learnt something new! 
+
+{% include toc.html %}
