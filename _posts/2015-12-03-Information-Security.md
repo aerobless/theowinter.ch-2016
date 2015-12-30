@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Information Security
-description: "todo"
+description: "A handy compilation of various information security questions. Ideal to prepare for CompSci exams."
 category: articles
 share: true
 comments: true
@@ -234,8 +234,52 @@ conn host
 
 So 6 packets in total.
 
+##6. DNSSEC
+DNSSEC (Domain Name System Security Extensions) is a suite of IETF specifications for information provided by the Domain 
+Name System (DNS). It is a set of extensions to DNS which provide to DNS clients origin of authentication of the DNS data, 
+authenticated deinal of existence and data integrity, but not availability or confidentiality.[^3]
+
+| Code  | Name                                       | Description                                                                                                                                                                                                                                                              |
+|-------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| DS    | Delegation Signer                          | Holds the name of a delegated zone.                                                                                                                                                                                                                                      |
+| RRSIG | Resource Record Signature                  | Contains the DNSSEC signature for a record set. DNS resolvers verify the signature with a public key, stored in a DNSKEY-record.                                                                                                                                         |
+| RRSET | Resource Record Set                        |                                                                                                                                                                                                                                                                          |
+| ZSK   | Zone Signing Key                           | A ZSK is a public/private key pair. The ZSK private key is used to generate a digital signature, known as a Resource Record Signature (RRSIG), for each of the resource record sets (RRSET) in a zone. The ZSK public key is stored in the DNS to authenticate an RRSIG. |
+| KSK   | Key Signing Key                            | A KSK is a public/private key pair. The KSK private key is used to generate a digital signature for the ZSK.  The KSK public key is stored in the DNS to be used to authenticate the ZSK.                                                                                |
+| NSEC  | Next Owner Name                            | Authenticated denial of existence of an owner name. Proof that there is no name between x.org and y.org. Allows enumeration of complete zone data.                                                                                                                       |
+| NSEC3 | Next Owner Name in Hashed Order            | Hashed authenticated denial of existence. Proof that there is no name between hashx.org and hashy.org Does not allow straight enumeration of zone data. Dictionary attacks are possible but expensive.                                                                   |
+| DANE  | DNS-Based Authentication of Named Entities |                                                                                                                                                                                                                                                                          |
+| TLD   | Top Level Domain                           |                                                                                                                                                                                                                                                                          |
+| DoC   | Department of Commerce                     |                                                                                                                                                                                                                                                                          |
+| DSR   | Delegation Sign Record                     |      
+
+####Chain of trust
+
+Root --> Zone --> Domain
+
+
+####Q: What are the components of a DS Resource Record and how does it establish trust in the signature (RRSIG Resource Record)?
+
+{% highlight bash %}
+ch. 44153 IN DS 63261 7 2 006fad0dbe3d543e862ceb367b03ed26
+                          a3d2c5cdbeb19a5a51fcd1f6eb8241ac ;
+ch. 44153 IN RRSIG DS 8 1 86400 20101228000000
+                                20101220230000 40288 .
+                      JmPUQhViG9jg+wBVnPqOSs/NjS8747WOUDKN5amYsCc3Lclsh7l2fCpDwKf
+                      mp2uRC69byKm0HNy8DNdXG36OQID7xrLCccuWd1Lbl36TjS1Tc5c/l/RDra
+                      y15qW3jB7++53Q3fOqY+P5+M7P6y05pe4mELZl4IUtMnPbCtCbjKw= ;
+{% endhighlight %}
+
++ The DS record consists of a SHA-256 hash of the KSK.
++ the DS record of zone .ch is signed through the ZSK of the root zone.
++ The trust in the ZSK of the root zone is established through the KSK of the root zone.
++ The KSK is the root of the hierarchy and has to be imported explicitly into the DNS server.
+
+
+
 
 [^1]: [Wikipedia: Quantum key distribution](https://en.wikipedia.org/wiki/Quantum_key_distribution)
 [^2]: [StrongSwan ipsec.conf](https://wiki.strongswan.org/projects/strongswan/wiki/IpsecConf#Reusing-Existing-Parameters)
+[^3]: [Wikipedia: DNSSEC](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions)
 
 {% include toc.html %}
