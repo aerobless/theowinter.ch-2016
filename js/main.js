@@ -100,6 +100,11 @@ $(".sidebar").appendTo($(".toc--sidebar")).hide().fadeIn(400);
 
 //Enable share buttons to card view
 $('.card__share > a').on('click', function(e){
+ var socialButtons = document.querySelectorAll('.facebook, .googleplus, .twitter'), i;
+  for (var i = 0; i < socialButtons.length; i ++) {
+    socialButtons[i].className = socialButtons[i].className.replace(/\bhide\b/,'');
+  }
+
   e.preventDefault() // prevent default action - hash doesn't appear in url
   $(this).parent().find( 'div' ).toggleClass( 'card__social--active' );
   $(this).toggleClass('share-expanded');
