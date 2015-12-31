@@ -1,0 +1,29 @@
+---
+---
+[
+{% for post in site.posts %}
+{
+"title"      : "{{ post.title | escape }}",
+"category"   : "{{ post.category }}, {{ post.tags | join: ', ' }}",
+"url"        : "{{ site.url }}{{ post.url }}",
+"date"       : "{{ post.date }}",
+"shortdate"  : "{{ post.date | date: '%B %d, %Y' }}"
+} {% if forloop.last %}{% else %},{% endif %}
+{% endfor %}
+
+,{
+"title"      : "Photography",
+"category"   : "page, pictures, photo, image, travel, Canon",
+"url"        : "{{ site.url }}/photography/",
+"date"       : "2015-02-28 00:00:00 +0100",
+"shortdate"  : "February 28, 2015"
+}
+
+,{
+"title"      : "About",
+"category"   : "page, Theo Winter, Theodor, Person, Name, Identity",
+"url"        : "{{ site.url }}/about/",
+"date"       : "2015-02-28 00:00:00 +0100",
+"shortdate"  : "February 28, 2015"
+}
+]
