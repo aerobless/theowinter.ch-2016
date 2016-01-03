@@ -68,6 +68,8 @@ And what ends up happening is that a space freighter, supplying water to the Bel
 
 > If you have some spare time then give this show a try! It's seriously good! I know SyFy isn't HBO.. but with this show they've really outdone themselves!
 
+***Edit 31.12.2015:** As of today The Expanse has been renewed for a second season!* [[source]](http://www.blastr.com/2015-12-31/space-opera-expanse-officially-picked-second-season-syfy){:target="_blank"}
+
 <div class="sidebar" style="padding-left: 20px;">
     <a href="http://www.imdb.com/title/tt3230854" target="_blank"><img style="width:60%; float:both;" src="{{ site.url }}/images/expanse_keyart_final_hires.jpg"></a><br>
     <span style="color:grey;">TV Series | 60min </span><br>

@@ -43,7 +43,7 @@ Hover over the algorithm to see its solution, or press the button below to show 
 | RSA 1024     |             {{ "80" | hide }} |                                        |
 | RSA 2048     |            {{ "112" | hide }} |                                        |
 | RSA 3072     |            {{ "128" | hide }} |                                        |
-| RSA 4096     |            {{ "128-192" | hide }} |                                    |
+| RSA 4096     |            {{ "<192" | hide }} |                                    |
 | RSA 7680     |            {{ "192" | hide }} |                                        |
 | RSA 8192     |            {{ ">192" | hide }} |                                       |
 | RSA 15360    |            {{ "256" | hide }} |                                        |
@@ -275,6 +275,46 @@ ch. 44153 IN RRSIG DS 8 1 86400 20101228000000
 + The trust in the ZSK of the root zone is established through the KSK of the root zone.
 + The KSK is the root of the hierarchy and has to be imported explicitly into the DNS server.
 
+##7. VoIP Security
+
+Without security measures anyone with network access can eavesdrop on a Voice over IP (VoIP) session.
+
+| Code  | Name                         | Description                                                                                                                                                                                                                                                                                                                                            |
+|-------|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| SIP   | Session Initiation Protocol  | Used to initiated a VoIP session.                                                                                                                                                                                                                                                                                                                      |
+| SDP   | Session Description Protocol | A SDP payload is transmitted during the SIP connection setup. The SDP payload can be protected on a "hop-to-hop" basis via TLS (Transport Layer Security).                                                                                                                                                                                             |
+| RTP   | Real-time Transport Protocol | A protocol used to transmit audio & video over IP. RTP is used in conjunction with the RTP Control Protocol(RTCP).                                                                                                                                                                                                                                     |
+| SRTP  | Secure RTP                   | SRTP offers efficient encryption and authentication of multimedia packets. The main problem is the secure distribution of the session keys.The key exchange can be effected via the SDP payload that is transmitted during the connection setup. An alternative to SRTP is IPsec which can also be used to secure media streams.                       |
+| VLAN  | Virtual LAN                  |                                                                                                                                                                                                                                                                                                                                                        |
+| MIKEY | Multimedia Internet KEYing   | MIKEY allows the secure key exchange between two or more peers. Two public key methods are defined: RSA public key encryption (PKE) or Diffie Hellman (DH). Both methods required the trusted distribution of the peers public keys. The main problem is the lack of a global Public Key Infrastructure (PKI). MIKEY payloads are transmitted via SDP. |
+| SPIT  | SPam over Iternet Telephony  | Short advertising messages automatically spread in large numbers by bots.                                                                                                                                                                                                                                                                              |
+| PKI   | Public Key Infrastructure    |                                                                                                                                                                                                                                                                                                                                                        |
+| PSK   | Pre-Shared Keys              |                                                                                                                                                                                                                                                                                                                                                        |
+| DK    | Domain Keys                  | The DNS-based DomainKeys scheme was postulated by Yahoo for trusted email. It can be used for the public key operations required by the MIKEY exchange. DNS requests are not very secure but currently DNSSEC is being deployed on a global scale.                                                                                                     |
+
+A and B are clients of provider P. A calls B over the proxy server of provider P. Inside the SDP payload that is sent with the SIP INVITE the following data 
+is visible as plaintext.
+
+{% highlight bash %}
+  m=audio 49170 RTP/SAVP 0
+  a=crypto:1 AES_CM_128_HMAC_SHA1_32
+    inline:NzB4d1BINUAvLEw6UzF3WSJ+PSdFcGdUJShpX1Zj|2^20|1:32
+{% endhighlight %}
+
+####How can the SRTP master key be protected from third parties?
+Using a Hop-to-Hop encryption of the SIP protocol via TLS (SIPS).  
+A *<-- TLS -->* Proxy P *<-- TLS -->* B 
+
+####What technical precautions are necessary so that provider P can pass on the communication between A and B to government agencies (lawful inspection)?
++ The SRTP master keys of all sessions are available as plaintext on the proxy because of the Hop-to-Hop TLS security.
++ Since provider P is also the ISP of A and B it can even decrypt the SRTP multimedia channel in realtime with the SRTP master keys.
+
+####A and B want to prevent eavesdropping by government agencies. What options do they have?
+A secure End-to-End key exchange can be established by using the MIKEY protocol (DH or RSA encryption) during the SIP connection setup. 
+
+####How can A and B be sure that no "Man in the Middle (MitM)" attack is launched against them?
++ Through strong authentication based on a digitial signature.
++ And by using a RSA signature key that has a established trust relation based on a X.509 certificate, DNSSEC or other third party method.
 
 
 
