@@ -276,7 +276,6 @@ ch. 44153 IN RRSIG DS 8 1 86400 20101228000000
 + The KSK is the root of the hierarchy and has to be imported explicitly into the DNS server.
 
 ##7. VoIP Security
-
 Without security measures anyone with network access can eavesdrop on a Voice over IP (VoIP) session.
 
 | Code  | Name                         | Description                                                                                                                                                                                                                                                                                                                                            |
@@ -313,10 +312,55 @@ A *<-- TLS -->* Proxy P *<-- TLS -->* B
 A secure End-to-End key exchange can be established by using the MIKEY protocol (DH or RSA encryption) during the SIP connection setup. 
 
 ####How can A and B be sure that no "Man in the Middle (MitM)" attack is launched against them?
-+ Through strong authentication based on a digitial signature.
++ Through strong authentication based on a digital signature.
 + And by using a RSA signature key that has a established trust relation based on a X.509 certificate, DNSSEC or other third party method.
 
+##8. Network Access Control (NAC)
+NAC controls the access to a computer network with policies, including pre-admission security checks of the device that's 
+attempting to join a network. It also contains post-admission controls over where users and devices can go on a network.
 
+So when a computer attempts to connect to a network it is now permitted to access anything unless it complies with the policies that are in place.
+Such policies could be an up-to-date anti-virus protection, operating system and configuration.
+
+| Code   | Name                                          | Description                                                                                                                                                                    |
+|--------|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| NAC    | Network Access Control                        |                                                                                                                                                                                |
+| NAP    | Network Access Protection                     | Microsoft's NAC, introduced with Windows Vista and Server 2008.                                                                                                                |
+| TPM    | Trusted Platform Module                       |                                                                                                                                                                                |
+| TNC    | Trusted Network Connect                       | Emerging standard for NAC by TCG.                                                                                                                                              |
+| NEA    | Network Endpoint Assessment                   | Emerging standard for NAC by IETF.                                                                                                                                             |
+| SoH    | Statement of Health                           | Used by NAP (Microsoft).                                                                                                                                                       |
+| IF     | Interface                                     |                                                                                                                                                                                |
+| IMC    | Integrity Measurement Collector               | Collects measurements which are then sent to a IMV which verifies if the integrity of a device has been compromised.                                                           |
+| IMV    | Integrity Measurement Verifier                | Receives measurements collected by a IMC and verifies them.                                                                                                                    |
+| MAP    | Metadata Access Point                         |                                                                                                                                                                                |
+| PDP    | Policy Decision Point                         |                                                                                                                                                                                |
+| PEP    | Policy Enforcement Point                      |                                                                                                                                                                                |
+| PTS    | Platform Trust Service                        |                                                                                                                                                                                |
+| TCG    | Trusted Computing Group                       |                                                                                                                                                                                |
+| TNCCS  | TNC Client-Server                             |                                                                                                                                                                                |
+| TSS    | TCG Software Stack                            |                                                                                                                                                                                |
+| PA-TNC | Posture Attribute for Trusted Network Connect | PA-TNC attributes are transported via PA-TNC messages. There is a set of default PA-TNC attributes but every manufacturer of TNC equipment can also define his own attributes. |
+| PA     | Posture Attribute                             |                                                                                                                                                                                |
+
+##9. Buffer Overflow Protection
+A buffer overflow is an anomaly where a program overruns a buffer's boundary and overwrites adjacent memory locations. Buffer 
+overflows can be exploited to take over a computer system.
+
+The three most effective ways to prevent buffer overflow exploits are:
+
+1. **Address Space Layout Randomization (ASLR)**  
+The start address of libraries, heap and stack are randomly distributed in a large area of the address space. So that 
+determining absolute addresses is a lot more difficult.
+
+2. **Canaries**  
+Canaries are known values that are placed between a buffer and control data on the stack, such as the return address, to monitor 
+buffer overflows. When the buffer overflows, the first data to be corrupted will usually be the canary. When a canary cannot be 
+verified the systems knows that there has been a buffer overflow, which can then be handled (e.g. invalidating the corrupted data).
+
+3. **Executable Space Protection (NX Bit) / Tagging**  
+Certain area of the memory are marked as non-executable. The processor will then refuse to execute any code residing in 
+these areas of memory.
 
 [^1]: [Wikipedia: Quantum key distribution](https://en.wikipedia.org/wiki/Quantum_key_distribution)
 [^2]: [StrongSwan ipsec.conf](https://wiki.strongswan.org/projects/strongswan/wiki/IpsecConf#Reusing-Existing-Parameters)
