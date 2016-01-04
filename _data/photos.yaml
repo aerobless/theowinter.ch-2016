@@ -1,4 +1,34 @@
 photos:
+    - title: Blooddrop Leaves
+      img: IMG_7511
+      country: Switzerland
+    - title: Blackroot Forest
+      img: IMG_7516
+      country: Switzerland
+    - title: Forest Fortress
+      img: IMG_7530
+      country: Switzerland
+    - title: Golden Mist Road
+      img: IMG_7532
+      country: Switzerland
+    - title: To Nowhere
+      img: IMG_7557
+      country: Switzerland
+    - title: Intricate Web
+      img: IMG_7565
+      country: Switzerland
+    - title: Autumn River
+      img: IMG_7576
+      country: Switzerland
+    - title: Autumn River II
+      img: IMG_7577
+      country: Switzerland
+    - title: Autumn River III
+      img: IMG_7587-Pano
+      country: Switzerland
+    - title: Fields of Gold
+      img: IMG_7596
+      country: Switzerland
     - title: World Clock
       img: IMG_7474
       country: Germany
@@ -322,7 +352,7 @@ photos:
     - title: Nighttime Primetime
       img: IMG_2355-2
       country: United States of America
-    - title: Descent into the Grand Canyon 
+    - title: Descent into the Grand Canyon
       img: IMG_4627
       country: United States of America
       description: Only 10% of all visitors actually go below the rim of the Grand Canyon. I hiked down South Kaibab Trail to Skeleton Point.
