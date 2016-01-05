@@ -362,6 +362,72 @@ verified the systems knows that there has been a buffer overflow, which can then
 Certain area of the memory are marked as non-executable. The processor will then refuse to execute any code residing in 
 these areas of memory.
 
+##10. Contactless Proximity Cards
+
+| Code   | Name                                   | Description                                                                                                                                                                                                                                                                                                      |
+|--------|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| DH     | Diffie Hellman                         | Public Key Cryptosystem                                                                                                                                                                                                                                                                                          |
+| RSA    | Rivest-Shamir-Adlemann                 | Public Key Cryptosystem                                                                                                                                                                                                                                                                                          |
+| IV     | Initialisation Vector                  | Required to initialise symmetric encryption algorithms                                                                                                                                                                                                                                                           |
+| Nonce  | Nonce                                  | Random number, used in challenge-response protocols                                                                                                                                                                                                                                                              |
+| MAC    | Message Authentication Code            | Cryptographically secured checksum                                                                                                                                                                                                                                                                               |
+| MIC    | Message Integrity Code                 | Synonym for MAC                                                                                                                                                                                                                                                                                                  |
+| PC     | Proximity Cards (ISO 14443)            | Distance <10cm                                                                                                                                                                                                                                                                                                   |
+| VC     | Vicinity Cards (ISO 15693)             | Distance between 10cm and 1m                                                                                                                                                                                                                                                                                     |
+| OTP    | One Time Password                      |                                                                                                                                                                                                                                                                                                                  |
+| NFC    | Near Field Communication               | NFC uses ISO 14443 proximity standard (f=13.56MHz). NFC supports two modes, active and passive. In active mode both devices generate a RF field (d < 20cm). In passive mode only the initiating device generates a RF field. The responding device applies load modulation by varying the impedance (d < 10cm).  |
+| MF     | Master File                            | Root directory in the Smart Card File System, must always be present.                                                                                                                                                                                                                                            |
+| DF     | Dedicated File                         | Directory file in the Smart Card File System, can contain directory and data files.                                                                                                                                                                                                                              |
+| EF     | Elementary File                        | Data file in the Smart Card File System.                                                                                                                                                                                                                                                                         |
+| FID    | File Identifier                        |                                                                                                                                                                                                                                                                                                                  |
+| AID    | Application Identifier                 | An AID consists of a 5byte Registered Identifier (RID) containing a country code, an application category and a provider identifier plus an optional Proprietary Application Identifier (PIX). AIDs must be registered with an appointed national registration authority and are usually kept confidential.      |
+| RID    | Registered Identifier                  |                                                                                                                                                                                                                                                                                                                  |
+| APDU   | Application Protocol Data Units        |                                                                                                                                                                                                                                                                                                                  |
+| PKCS   | Public Key Cryptography Standards      | PKCS is a group of public-key cryptography standards devised and published by RSA Security Inc.                                                                                                                                                                                                                  |
+| PKCS15 | Cryptographic Token Information Format |                                                                                                                                                                                                                                                                                                                  |
+| EMV    | Europay, Mastercard and Visa           | EMV is a technical standard for smart payment cards as well as for payment terminal and ATMs.                                                                                                                                                                                                                    |
+| CSP    | Cryptographic Service Provider         |                                                                                                                                                                                                                                                                                                                  |
+
+####Why is the maximal range for conctactless chipcards like LEGIC or MIFARE limited to 10cm?
+The chip on the card receives its power wireless through the built-in antenna. Since this technique uses magnetic coupling 
+the distance between the card and the reader has to be relatively small. 
+
+##11. PKCS #15 Cryptographical Token Information Format
+
+| Code   | Name                                 | Description                                                                                                                                 |
+|--------|--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| DIR    | Reference File                       | This optional EF provides a link to one or several PKCS#15 directories.                                                                     |
+| TokInf | Token Info File                      | This EF contains card information relevant to the PKCS#15 application.                                                                      |
+| ODF    | Object Directory File                | This EF contains pointers to EFs, each containing a directory over PKCS#15 objects of a particular class..                                  |
+| AODF   | Authentication Object Directory File | This EF contains pointers to one or several authentication objects, e.g. PINs.                                                              |
+| PrKDF  | Private Key Directory File           | This EF contains pointers to one or several private key files.                                                                              |
+| CDF    | Certificate Directory File           | This EF contains pointers to one or several certificate files.                                                                              |
+| PuKDF  | Public Key Directory File            | This EF contains pointers to one or several public key files.                                                                               |
+| SDF    | Secret Key Directory File            | This EF contains pointers to one or several secret key files.                                                                               |
+| DODF   | Data Object Directory File           | This EF contains pointers to one or several data object files.                                                                              |
+| CHV    | Card Holder Verification             | Also called the PIN. Typically a 4 to 8 digit number entered by the cardholder to verify that the cardholder is authorized to use the card. |
+| EF     | Elementary File                      |                                                                                                                                             |
+
+
+####How can a application find the certificate in the following PKCS#15 topology and what's the absolute path to access the certificate?
+
+<figure class="half">
+	<img src="{{ site.url }}/images/pkcs15.png">
+<p markdown="block">
+1. The file `/3F00/2F00` has a link to the directory `/3F00/5015/`.
+2. The directory `5015` has a Object Directory File (ODF) called `5031`.
+3. The ODF `5031` has a link to the Certificate Directory File (CDF) `/3F00/5015/4404`.
+4. The CDF `4404` has a link to the certificate file `/3F00/5015/5501`.
+</p>
+</figure>
+
+So the absolute path to the certificate file is `/3F00/5015/5501`.
+
+####What's the absolute path of the PIN file that is used to write-protect the certificate file?
+
+The pin file used to protect the certificate is located at `/3F00/0000`.
+
+
 [^1]: [Wikipedia: Quantum key distribution](https://en.wikipedia.org/wiki/Quantum_key_distribution)
 [^2]: [StrongSwan ipsec.conf](https://wiki.strongswan.org/projects/strongswan/wiki/IpsecConf#Reusing-Existing-Parameters)
 [^3]: [Wikipedia: DNSSEC](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions)
