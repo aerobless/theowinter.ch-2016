@@ -214,7 +214,8 @@ conn net #conn <name> defines a connection, inherits from conn %default
      rightsubnet=10.0.0.0/14 #private subnet behind the participant, expressed as netmask
 conn host
      left=55.1.2.2 #the IP address of the participant's public-network interface
-     leftsourceip=%config #The internal source IP to use in a tunnel, also known as virtual IP.
+     leftsubnet=10.1.0.0/16 #private subnet behind the participant, can be restricted for protocol/port by adding [tcp/http], [6/80] etc.
+     leftsourceip=%config #internal source IP to use in a tunnel, also known as virtual IP.
      leftcert=redCert.pem
      leftid=red@colors.net #identity of the left endpoint
      right=55.1.2.1 #the IP address of the participant's public-network interface
@@ -226,13 +227,30 @@ conn host
                    #ignore: ignores the conenction, equals deleting it from the config file
 {% endhighlight %}
 
-####Q: What IKE messages are exchanged to establish two IPsec tunnels with IKEv2? How many IKEv2 packets are exchanged in total?
+####Q: What IKEv1 messages are exchanged to establish two IPsec tunnels with IKEv1? How many IKEv2 packets are exchanged in total?
 
- + IKE_SA_INIT Request & Reply
- + IKE_AUTH Request & Reply
- + CREATE_CHILD_SA Request & Reply
+ + ISAKMP_SA_Proposal Request & Reply +2
+ + DH Key Exchange Request & Reply +2
+ + Identity Exchange (encrypted) Request & Reply +2
+ + Quick Mode Traffic Selectors Request, Response, Agreement +3
+ + Quick Mode Additional Tunnel Request, Response, Agreement +3
+ 
+ So 15 packets in total.
+
+####Q: What IKEv2 messages are exchanged to establish two IPsec tunnels with IKEv2? How many IKEv2 packets are exchanged in total?
+
+ + IKE_SA_INIT Request & Reply +2
+ + IKE_AUTH Request & Reply +2
+ + CREATE_CHILD_SA Request & Reply +2
 
 So 6 packets in total.
+
+####Q: Two subnets are connected by a successfully established IPsec tunnel. A ping works perfectly but a large FTP download stagnates. Where is the problem?
+
+ICMP (ping) packets are small, where as the FTP downloaded fills packets with to the MTU (Maximum Transmission Unit). Since the packets are
+tunneled there's the addtional IPsec header added which apperently makes the packet larger then the MTU supported by the connection. The packets are then 
+fragmented which causes the dected problem when large files are transfered.  
+In this case the dynamic MTU discovery doesn't work properly so it (the MTU discovery) should be fixed or set manually.
 
 ##6. DNSSEC
 DNSSEC (Domain Name System Security Extensions) is a suite of IETF specifications for information provided by the Domain 
@@ -244,14 +262,35 @@ authenticated deinal of existence and data integrity, but not availability or co
 | DS    | Delegation Signer                          | Holds the name of a delegated zone.                                                                                                                                                                                                                                      |
 | RRSIG | Resource Record Signature                  | Contains the DNSSEC signature for a record set. DNS resolvers verify the signature with a public key, stored in a DNSKEY-record.                                                                                                                                         |
 | RRSET | Resource Record Set                        |                                                                                                                                                                                                                                                                          |
-| ZSK   | Zone Signing Key                           | A ZSK is a public/private key pair. The ZSK private key is used to generate a digital signature, known as a Resource Record Signature (RRSIG), for each of the resource record sets (RRSET) in a zone. The ZSK public key is stored in the DNS to authenticate an RRSIG. |
-| KSK   | Key Signing Key                            | A KSK is a public/private key pair. The KSK private key is used to generate a digital signature for the ZSK.  The KSK public key is stored in the DNS to be used to authenticate the ZSK.                                                                                |
+| ZSK   | Zone Signing Key                           | Has flag 256. A ZSK is a public/private key pair. The ZSK private key is used to generate a digital signature, known as a Resource Record Signature (RRSIG), for each of the resource record sets (RRSET) in a zone. The ZSK public key is stored in the DNS to authenticate an RRSIG. |
+| KSK   | Key Signing Key                            | Has flag 257. A KSK is a public/private key pair. The KSK private key is used to generate a digital signature for the ZSK.  The KSK public key is stored in the DNS to be used to authenticate the ZSK.                                                                                |
 | NSEC  | Next Owner Name                            | Authenticated denial of existence of an owner name. Proof that there is no name between x.org and y.org. Allows enumeration of complete zone data.                                                                                                                       |
 | NSEC3 | Next Owner Name in Hashed Order            | Hashed authenticated denial of existence. Proof that there is no name between hashx.org and hashy.org Does not allow straight enumeration of zone data. Dictionary attacks are possible but expensive.                                                                   |
 | DANE  | DNS-Based Authentication of Named Entities |                                                                                                                                                                                                                                                                          |
 | TLD   | Top Level Domain                           |                                                                                                                                                                                                                                                                          |
 | DoC   | Department of Commerce                     |                                                                                                                                                                                                                                                                          |
 | DSR   | Delegation Sign Record                     |      
+
+####Reading a DNSSEC Resource Record
+
+{% highlight bash %}
+
+switch.ch. 81154 IN DNSKEY 256 3 5 AwEAAeCDWwjJO4mXBzayiKf4p7waJ7Ew
+                              eUnsTsAWkxpfELci4iaVdBugzYPfsZIg
+                              9R6TIPky3LoPAPmIjCc2fbFkKnrGI7hJ
+                              jXAGMRwRJIBprFx4BXZSsjsvGb6MGC+e
+                              xHSlXw==
+                              ;{id = 64608 (zsk), size = 768b}
+{% endhighlight %}
+
+| Flag  | Description                       |
+|-------|-----------------------------------|
+| 256   | Zone Signing Key (ZSK)            |
+| 257   | Key Signing Key (KSK)             |
+| 5     | SHA-1 with RSA                    |
+| 7     | SHA-1 with RSA & NSEC3 with SHA-1 |
+| 8     | SHA-256 with RSA                  |
+| 10    | SHA-512                           |
 
 ####Chain of trust
 
@@ -427,6 +466,13 @@ So the absolute path to the certificate file is `/3F00/5015/5501`.
 
 The pin file used to protect the certificate is located at `/3F00/0000`.
 
+##12. Anonymizing Mixes
+
+####Typical problems
+
+ + not encrypted (input = output)
+ + duplicated packets are not recognized and handed to the next mix node
+ + packets are handed to the next mix node with none or minimal delay
 
 [^1]: [Wikipedia: Quantum key distribution](https://en.wikipedia.org/wiki/Quantum_key_distribution)
 [^2]: [StrongSwan ipsec.conf](https://wiki.strongswan.org/projects/strongswan/wiki/IpsecConf#Reusing-Existing-Parameters)
