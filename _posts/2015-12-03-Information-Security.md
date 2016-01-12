@@ -468,11 +468,45 @@ The pin file used to protect the certificate is located at `/3F00/0000`.
 
 ##12. Anonymizing Mixes
 
+Anonymizing Mixes are for example the TOR network. It allows users to access websites anonymously and content providers to 
+provide their services anonymously via so-called [hidden services](https://www.torproject.org/docs/hidden-services.html.en){:target="_blank"}. 
+
+####Why should a TOR server (hidden service) chose a number of Introductory Points and not publish a Rendezvous Point (RP) directly?
+
++ The Rendezvous Point (RP) might not be willing to serve as RP if it knew what content the server (hidden service) distributes.
++ The RP could be attacked with DoS (Denial of Service) attacks to keep the server and its contents offline.
+
+####For what reason does the server (providing a hidden service) deposit a public key at a number of introduction points? What's the purpose of this public key?
+The public key is used by clients to contact the server and exchange encrypted connection details.
+
+####What is a "Rendezvous Cookie"?
+A rendezvous cookie is used by a client to establish a connection to a server providing a hidden service. It is first sent to a
+random Rendezvous Point (RP). Then it is forwarded to the server containing the name of the RP. Now the server shows the 
+cookie to the RP (imagine a entry ticket) and the RP builds a circuit to the client. Client and server can now communicate.
+
+####Why does the client send a (public) Diffie-Hellman (DH) factor to a hidden service server on connection establishment?
+The public DH factor is used for the End-to-End encryption of the client and server via the RP. The server also sends a DH factor to the client via
+the RP.
+
 ####Typical problems
 
  + not encrypted (input = output)
  + duplicated packets are not recognized and handed to the next mix node
  + packets are handed to the next mix node with none or minimal delay
+
+##13. Cryptographical Speed
+
+####Rank the following Crypto Suites by their performance on a 64bit linux platform
+**Note:** The ranking is independent of whether the Intel AES-NI instruction are available or not.
+{{ "button" | hide }}
+
+| Crypto Suite     | Rank | Comment                                                                                                       |
+|------------------|------|---------------------------------------------------------------------------------------------------------------|
+| AES-128, SHA-256 | {{ "3" | hide }} | SHA-256 is slower then SHA-512 on 64bit platforms because it uses 32bit words instead of native 64bit words.  |
+| AES-128, SHA-384 | {{ "2" | hide }} | SHA-384 has the same speed as SHA-512 because it is just a abridged 512bit hash with a different init vector. |
+| AES-128, SHA-512 | {{ "2" | hide }} | SHA-512 is faster than SHA-128 on 64bit platforms because it uses native 64bit words instead of 32bit words.  |
+| AES-GCM-128      | {{ "1" | hide }} | AES-GCM is very efficient.                                                                                    |
+
 
 [^1]: [Wikipedia: Quantum key distribution](https://en.wikipedia.org/wiki/Quantum_key_distribution)
 [^2]: [StrongSwan ipsec.conf](https://wiki.strongswan.org/projects/strongswan/wiki/IpsecConf#Reusing-Existing-Parameters)
