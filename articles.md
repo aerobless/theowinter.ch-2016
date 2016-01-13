@@ -20,12 +20,14 @@ image:
 {% assign postsWordCount = 0 %}
 {% assign longestWordCount = 0 %}
 {% assign longestPost = none %}
+{% assign longestPostUrl = none %}
 {% for posts in getPosts %}
 {% assign postWordCount = posts.content | number_of_words %}
 {% assign postsWordCount = postsWordCount | plus:postWordCount %}
 {% if postWordCount > longestWordCount %}
 {% assign longestWordCount = postWordCount %}
 {% assign longestPost = posts.title %}
+{% assign longestPostUrl = posts.url %}
 {% endif %}
 {% endfor %}
 
@@ -33,7 +35,7 @@ image:
 
 This blog contains <b>{{ postsCount }}</b> posts and <b>{{ pagesCount }}</b> pages. Those <b>{{ postsCount }}</b>
 posts contain a total of <b>{{ postsWordCount }}</b> words. That's an average of <b>{{ averageWordCount }}</b>
-words per post. The longest post is <b>"{{longestPost}}"</b>, it has a length of <b>{{ longestWordCount }}</b> words.
+words per post. The longest post is <b>"<a href="{{longestPostUrl}}">{{longestPost}}</a>"</b>, it has a length of <b>{{ longestWordCount }}</b> words.
 
 
 <div>
