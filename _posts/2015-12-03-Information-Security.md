@@ -259,7 +259,7 @@ authenticated deinal of existence and data integrity, but not availability or co
 
 | Code  | Name                                       | Description                                                                                                                                                                                                                                                              |
 |-------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DS    | Delegation Signer                          | Holds the name of a delegated zone.                                                                                                                                                                                                                                      |
+| DS    | Delegation Signer                          | Holds the name of a delegated zone. Is a signed hash computed over KSK of child zone.                                                                                                                                                                                                                                      |
 | RRSIG | Resource Record Signature                  | Contains the DNSSEC signature for a record set. DNS resolvers verify the signature with a public key, stored in a DNSKEY-record.                                                                                                                                         |
 | RRSET | Resource Record Set                        |                                                                                                                                                                                                                                                                          |
 | ZSK   | Zone Signing Key                           | Has flag 256. A ZSK is a public/private key pair. The ZSK private key is used to generate a digital signature, known as a Resource Record Signature (RRSIG), for each of the resource record sets (RRSET) in a zone. The ZSK public key is stored in the DNS to authenticate an RRSIG. |
@@ -269,7 +269,8 @@ authenticated deinal of existence and data integrity, but not availability or co
 | DANE  | DNS-Based Authentication of Named Entities |                                                                                                                                                                                                                                                                          |
 | TLD   | Top Level Domain                           |                                                                                                                                                                                                                                                                          |
 | DoC   | Department of Commerce                     |                                                                                                                                                                                                                                                                          |
-| DSR   | Delegation Sign Record                     |      
+| DSR   | Delegation Sign Record                     |      |
+| DNSKEY | DNS Public Key                            | Contains a public key used to sign RRsets of a zone |
 
 ####Reading a DNSSEC Resource Record
 
@@ -292,10 +293,27 @@ switch.ch. 81154 IN DNSKEY 256 3 5 AwEAAeCDWwjJO4mXBzayiKf4p7waJ7Ew
 | 8     | SHA-256 with RSA                  |
 | 10    | SHA-512                           |
 
-####Chain of trust
+####Chain of Trust
 
-Root --> Zone --> Domain
+With the chain of trust model, a Delegation Signer (DS) resource record in a parent domain can be used to verify a DNSKEY 
+record in a subdomain, which can then contain ohter DS records to verify further subdomains.[^3]
 
+![DNSSEC Chain of Trust]({{ site.url }}/images/dnssec_chainOfTrust.png){:width="100%"}
+
+
+####DNS resolution
+
+1. the client asks its configured dns server (ISP, Google Public DNS etc.) to resolve a address.
+2. The dns server recursively asks
+	 1. Root server which tells it the TLD server (.com)
+	 2. TLD server (.com) which tells it the name server (ns.someserver.com)
+	 3. The nameserver (ns.someserver.com) is responsible and kept in the cache.
+6. The dns server responds to the client
+
+####DNS Cache Poisoning
+The idea behind DNS Cache poisoning is to respond to a DNS requests faster than the real server. The difficulty to do this is
+that the fake responder needs to guess the QID (Query ID) of the request in order to respond with the same ID. If a fake responder is
+successful then there's a wrong entry in the cache of the originator and so its cache is poisoned. 
 
 ####Q: What are the components of a DS Resource Record and how does it establish trust in the signature (RRSIG Resource Record)?
 
@@ -507,9 +525,23 @@ the RP.
 | AES-128, SHA-512 | {{ "2" | hide }} | SHA-512 is faster than SHA-128 on 64bit platforms because it uses native 64bit words instead of 32bit words.  |
 | AES-GCM-128      | {{ "1" | hide }} | AES-GCM is very efficient.                                                                                    |
 
+##14. VPN (Virtual Private Network)
+
+A virtual private network (VPN) extends a private network across a public network such as the internet.[^4]
+
+VPN connections can be established on the following three layers of the OSI model:
+
++ Transport Layer
++ Network Layer
++ Data Link Layer
+
+
+
+
 
 [^1]: [Wikipedia: Quantum key distribution](https://en.wikipedia.org/wiki/Quantum_key_distribution)
 [^2]: [StrongSwan ipsec.conf](https://wiki.strongswan.org/projects/strongswan/wiki/IpsecConf#Reusing-Existing-Parameters)
 [^3]: [Wikipedia: DNSSEC](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions)
+[^4]: [Wikipedia: VPN](https://en.wikipedia.org/wiki/Virtual_private_network)
 
 {% include toc.html %}
