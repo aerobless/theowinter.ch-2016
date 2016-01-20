@@ -400,6 +400,13 @@ Such policies could be an up-to-date anti-virus protection, operating system and
 | PA-TNC | Posture Attribute for Trusted Network Connect | PA-TNC attributes are transported via PA-TNC messages. There is a set of default PA-TNC attributes but every manufacturer of TNC equipment can also define his own attributes. |
 | PA     | Posture Attribute                             |                                                                                                                                                                                |
 
+####What are the two main duties of the PB-TNC/IF-TNCCS 2.0 protocol, which is used between TNC client & server?
+
++ The PA-TNC messages between IMCs (Integrity Measurement Collector) and IMVs (Integrity Measurement Verifier) are multiplexed by the TNC client or server in 
+PB-TNC batches.
++ Information messages (e.g. language preferences), error messages as well as results (recommendation/evaluation) are exchanged between 
+TNC client & server through PB-TNC batches.
+
 ##9. Buffer Overflow Protection
 A buffer overflow is an anomaly where a program overruns a buffer's boundary and overwrites adjacent memory locations. Buffer 
 overflows can be exploited to take over a computer system.
@@ -535,8 +542,44 @@ VPN connections can be established on the following three layers of the OSI mode
 + Network Layer
 + Data Link Layer
 
+##15. Platform Trust Services (TPM)
+
+####Is it possible to delete & regenerate the 2048bit RSA Endorsement Key (EK) of a TPM?
+No, the EK is used to distinctly identify a TPM. It is set by the TPM manufacturer during the production of the chip. The 
+EK is stored permanently in the TPM chip and cannot be deleted or changed. (Physical TPM 1.2)
 
 
+##16. Elliptic Curve Diffie-Hellman Algorithm
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yDXiDOJgxmg" frameborder="0" allowfullscreen></iframe>
+
+####Example
+Alice and Bob want to use ECC (Elliptic Curve Cryptography) to establish a common DH (Diffie-Hellman) secret. The parameters of
+the elliptic curve and point P on the curve are known publicly.
+
++ Alice chooses a random secret number a=400 and executes a-1 (399) times a point addition of P with a to get point Qa. Alice sends 
+point Qa to Bob over a insecure channel.
+
++ Bob choses a random secret number b = 640 and executes b-1 (639) times a point addition of P with b to get point Qb. Bob sends 
+point Qb to Alice over a insecure channel.
+
+####How can Alice and Bob use Qa and Qb to get the common DH secret?
+
++ Alice executes the point addition A+Qb (a-1) times to get point S.  
+_S = aQb_
+
++ Bob executes the point addition B+Qa (b-1) times to get point S.  
+_S = bQa_
+
+S is the common DH secret. 
+
+####What's the geometric relation between the DH secret S and the publicly known point P?
+Point S can be reached by executing a*b-1 point additions of P with itself. So 255999 point additions of P.  
+Alternative: _S = a*b*P = 256000_
+
+####On what is the cryptographical strength of ECC DH based?
+It is very difficult to determine how many point additions were used to get point Qa and Qb. If they secret keys a & b are 
+sufficiently large it is impossible to do in reasonable time. This is also called the "[Discrete Log Problem](https://en.wikipedia.org/wiki/Discrete_logarithm){:target="_blank"}". 
 
 
 [^1]: [Wikipedia: Quantum key distribution](https://en.wikipedia.org/wiki/Quantum_key_distribution)
