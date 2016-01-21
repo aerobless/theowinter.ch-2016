@@ -11,7 +11,7 @@ image:
 ---
 
 This post is a compilation of various information security questions and topics that are likely to be tested in the
-InfSi2 exam at HSR. I'm expanding this post step by step while I'm reviewing the contents of this semester. I've done
+InfSi2[^5] exam at HSR. I'm expanding this post step by step while I'm reviewing the contents of this semester. I've done
 something similar with the subject "[Automata and languages](/articles/44-questions-and-36-terms-about-automata-and-languages/)" last semester and it helped me a lot.
 
 {{ "init" | hide }}
@@ -300,6 +300,7 @@ record in a subdomain, which can then contain ohter DS records to verify further
 
 ![DNSSEC Chain of Trust]({{ site.url }}/images/dnssec_chainOfTrust.png){:width="100%"}
 
+The delegation signer (DS) resource record consists of a hash of the KSK, but it is signed with the ZSK.
 
 ####DNS resolution
 
@@ -515,9 +516,9 @@ the RP.
 
 ####Typical problems
 
- + not encrypted (input = output)
+ + not encrypted (input == output)
  + duplicated packets are not recognized and handed to the next mix node
- + packets are handed to the next mix node with none or minimal delay
+ + packets are handed to the next mix node with none or minimal delay / no re-shuffling
 
 ##13. Cryptographical Speed
 
@@ -586,5 +587,6 @@ sufficiently large it is impossible to do in reasonable time. This is also calle
 [^2]: [StrongSwan ipsec.conf](https://wiki.strongswan.org/projects/strongswan/wiki/IpsecConf#Reusing-Existing-Parameters)
 [^3]: [Wikipedia: DNSSEC](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions)
 [^4]: [Wikipedia: VPN](https://en.wikipedia.org/wiki/Virtual_private_network)
+[^5]: [Module "Informationssicherheit2" by Prof. Dr. Steffen at HSR (Hochschule für Technik Rapperswil)](http://studien.hsr.ch/allModules/22611_M_InfSi2.html)
 
 {% include toc.html %}
