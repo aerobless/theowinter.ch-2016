@@ -1,6 +1,6 @@
 ---
 layout: article
-icon: icon-apple
+icon: fa-apple
 title: The epic tale of an iPad Air repair
 description: "Fixing the Front Panel Digitizer Assembly of an iPad Air isn't easy. Here's how to do it."
 category: articles

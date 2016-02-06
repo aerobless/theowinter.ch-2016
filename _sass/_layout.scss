@@ -154,6 +154,7 @@
 	.inner-wrap {
 		@include media($medium) {
 			@include span-columns(9);
+      word-wrap:break-word;
 		}
 	}
 	.page-title {

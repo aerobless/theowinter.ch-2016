@@ -1,6 +1,6 @@
 ---
 layout: article
-icon: icon-apple
+icon: fa-apple
 title: Jailbreak&#58; Enable Live Photos on iPhone6
 description: "How to enable Live Photos and 3D Touch on a iPhone6 with Cydia and the Pangu Jailbreak for iOS9.0-9.0.2."
 category: articles

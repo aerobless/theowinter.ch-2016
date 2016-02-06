@@ -14,13 +14,7 @@
 
       <div class="card__content card__padding">
         <div class="card__share">
-          <div class="card__social">
-            <a class="share-icon facebook hide" href="https://www.facebook.com/sharer/sharer.php?u={{ post.url | replace:'index.html','' | prepend: site.url }}" target="_blank"><span class="fa fa-facebook"></span></a>
-            <a class="share-icon twitter hide" href="https://twitter.com/intent/tweet?text={{ post.title | escape | replace:' ','%20' }}&amp;url={{ post.url | replace:'index.html','' | prepend: site.url }}&amp;via={{ site.owner.twitter }}" target="_blank"><span class="fa fa-twitter"></span></a>
-            <a class="share-icon googleplus hide" href="https://plus.google.com/share?url={{ post.url | replace:'index.html','' | prepend: site.url }}" target="_blank"><span class="fa fa-google-plus"></span></a>
-          </div>
-
-          <a id="share" class="share-toggle share-icon" href="#"></a>
+          <a class="share-icon" href="{{ site.url }}/tags/"><span class="fa {% if post.icon %} {{post.icon}} {% else %} fa-file-text {% endif %}"></span></a>
         </div>
 
         <div class="post-date">

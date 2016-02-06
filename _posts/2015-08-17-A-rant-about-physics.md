@@ -1,6 +1,6 @@
 ---
 layout: article
-icon: icon-user
+icon: fa-user
 title: A rant about physics
 description: "Why do I have to take a physics class as a computer scientist? It makes no sense."
 category: articles
