@@ -5,8 +5,14 @@ layout: default
 {% if page.image.feature %}
 <div class="page-feature">
   <div class="page-image">
+    {% if page.image.video %}
+    <video width="100%" autoplay loop>
+      <source src="{{ site.url }}/videos/{{page.image.video}}" type="video/mp4">
+      <img src="{{ site.url }}/images/headers/{{ page.image.feature }}" class="page-feature-image" alt="{{ page.title }}" itemprop="image">
+    </video>
+    {% else %}
     <img src="{{ site.url }}/images/headers/{{ page.image.feature }}" class="page-feature-image" alt="{{ page.title }}" itemprop="image">
-    {% if page.image.credit %}{% include image-credit.html %}{% endif %}
+    {% if page.image.credit %}{% include image-credit.html %}{% endif %}{% endif %}
   </div><!-- /.page-image -->
 </div><!-- /.page-feature -->
 {% endif %}
