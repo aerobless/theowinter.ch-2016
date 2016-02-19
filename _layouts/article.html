@@ -3,6 +3,8 @@ layout: default
 ---
 
 {% if page.image.feature %}
+<!-- Makes sure that reddit/facebook use the article image -->
+<meta property="og:image" content="{{ site.url }}/images/headers/{{ page.image.feature }}" />
 <div class="page-feature">
   <div class="page-image">
     {% if page.image.video %}
