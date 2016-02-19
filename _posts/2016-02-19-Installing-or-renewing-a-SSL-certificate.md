@@ -19,7 +19,7 @@ digital ocean Ubuntu droplet with Apache2. The SSL certificate is from Comodo RS
 
 
 1. Buy or renew the certificate.
-2. Go to [Domains/DomainList](https://ap.www.namecheap.com/Domains/DomainList) and click `activate`.
+2. Go to [Domains/DomainList](https://ap.www.namecheap.com/Domains/DomainList){:target="_blank"} and click `activate`.
 3. Connect to your server via SSH and use `openssl req -new -newkey rsa:2048 -nodes -keyout server.key -out server.csr` to generate a new CSR (Certificate Sigining Request). 
 If you have multiple domains with SSL certificates it's recommended to replace "server" with your domain name.
 4. Make sure to fill in all the information requested by the CSR utility. If company name, organisation unit don't apply to you, use "NA". The most important information is the common name which 
