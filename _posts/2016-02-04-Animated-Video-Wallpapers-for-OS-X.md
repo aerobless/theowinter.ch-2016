@@ -6,7 +6,7 @@ description: "With this simple bash command you can use any screensaver as a ani
 category: articles
 share: true
 comments: true
-tags: [Apple, OS X]
+tags: [Apple, OS X, HowTo]
 image:
   feature: live_wallpaper.jpg
   video: liveWallpaperHeader.mp4

@@ -6,7 +6,7 @@ description: "How to enable Live Photos and 3D Touch on a iPhone6 with Cydia and
 category: articles
 share: true
 comments: true
-tags: [iPhone, Apple, Jailbreak, iOS9, photography]
+tags: [iPhone, Apple, iOS, Jailbreak, photography]
 image:
   feature: grandcanyon.jpg
 ---

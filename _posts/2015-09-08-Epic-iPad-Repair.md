@@ -6,7 +6,7 @@ description: "Fixing the Front Panel Digitizer Assembly of an iPad Air isn't eas
 category: articles
 share: true
 comments: true
-tags: [iPad, Apple, repair]
+tags: [iPad, Apple, Repair]
 image:
   feature: repair.jpg
   credit: Theo Winter

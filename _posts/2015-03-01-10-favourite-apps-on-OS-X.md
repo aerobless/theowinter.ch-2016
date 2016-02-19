@@ -4,7 +4,7 @@ icon: fa-apple
 title: My top 10 favourite apps on OS X Yosemite
 description: "A list of my 10 favourite applications on Mac OS X Yosemite. These are little-known apps that can improve your productivity."
 category: articles
-tags: [OS X, Apps, Software, Programs, top 10]
+tags: [OS X, Applications]
 image:
   feature: yosemite.jpg
   credit: Apple Inc.

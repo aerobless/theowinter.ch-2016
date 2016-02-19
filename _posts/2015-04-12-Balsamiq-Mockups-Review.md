@@ -3,7 +3,7 @@ layout: article
 title: Review&#58; Balsamiq Mockups
 description: "Rapidly create UI mockups & wireframes. Work smarter and collaborate smoothly. But can Balsamiq keep those promises? I've had the opportunity to use it for UI2 class at HSR and here's my opinion."
 category: articles
-tags: [Review, Balsamiq, UI, Web, Mockup, User Experience]
+tags: [Review, DevLog, Applications]
 image:
   feature: rappi_golden_lake.jpg
 comments: true

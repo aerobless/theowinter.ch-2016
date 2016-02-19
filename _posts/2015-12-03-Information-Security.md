@@ -5,7 +5,7 @@ description: "A handy compilation of various information security questions. Ide
 category: articles
 share: true
 comments: true
-tags: [Information Security, Computer Science, HSR]
+tags: [Security, CompSci, HSR]
 image:
   feature: dark_bunker.jpg
 ---

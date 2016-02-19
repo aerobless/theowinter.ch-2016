@@ -13,7 +13,7 @@ mobileWarning: true
 category: articles
 share: true
 comments: true
-tags: [Travel, USA, New York, New Orleans, Washington D.C., Nashville, Memphis]
+tags: [Travel, USA]
 image:
   feature: newyork_map.jpg
   credit: Google Inc.

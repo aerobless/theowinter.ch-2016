@@ -3,7 +3,7 @@ layout: article
 title: Hack your productivity by editing your hosts file
 description: "Have you ever felt like your spending to much time on 9gag and the like? Learn how to edit your hosts file and stop wasting time."
 category: articles
-tags: [HowTo, Tutorial, Productivity, Know-Your-OS, OS X, Linux, Windows]
+tags: [HowTo, Productivity, OS X, Linux, Windows]
 image:
   feature: mountainlake.jpg
 comments: true

@@ -5,7 +5,7 @@ description: "44 questions that helped me prepare for an exam in theoretical com
 category: articles
 share: true
 comments: true
-tags: [HSR, automata and languages, theoretical computing]
+tags: [HSR, CompSci]
 image:
   feature: rappi_steg.jpg
 --- 

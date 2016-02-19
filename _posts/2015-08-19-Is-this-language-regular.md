@@ -5,7 +5,7 @@ description: "How to find out if a language is regular with the pumping lemma al
 category: articles
 share: true
 comments: true
-tags: [Automaton, Machine, HSR, Languages, CompSci, Pumping Lemma]
+tags: [HSR, CompSci]
 image:
   feature: flight.jpg
 --- 

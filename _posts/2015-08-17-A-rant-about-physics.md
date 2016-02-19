@@ -6,7 +6,7 @@ description: "Why do I have to take a physics class as a computer scientist? It 
 category: articles
 share: true
 comments: true
-tags: [physics, HSR, school, rant]
+tags: [HSR]
 image:
   feature: macrograss.jpg
 --- 

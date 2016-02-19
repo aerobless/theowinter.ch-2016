@@ -6,7 +6,7 @@ description: "How to install or renew a SSL certificate on a Linux Apache server
 category: articles
 share: true
 comments: true
-tags: [Server, HowTo, SSL]
+tags: [Server, HowTo, WebDev]
 image:
   feature: monument_valley.jpg
 ---

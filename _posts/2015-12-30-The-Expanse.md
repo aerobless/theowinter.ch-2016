@@ -5,7 +5,7 @@ description: "The Expanse is a gritty, realistic and has a high production value
 category: articles
 share: true
 comments: true
-tags: [TV show, entertainment, SciFi]
+tags: [TV Show, Entertainment, SciFi, Review]
 image:
   feature: the_expanse.jpg
   credit: SyFy - The Expanse
