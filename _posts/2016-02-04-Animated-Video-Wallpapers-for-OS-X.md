@@ -2,7 +2,7 @@
 layout: article
 icon: fa-apple
 title: Live/Video Wallpapers for OS X
-description: " "
+description: "With this simple bash command you can use any screensaver as a animated live wallpaper on OS X."
 category: articles
 share: true
 comments: true
@@ -27,8 +27,8 @@ In order to have a bit more comfortable access to this command I've added the fo
 
 ####Cool "Live Wallpaper" screensavers
 
-+ My absolute favourite live wallpaper is the "[Apple TV Aerial](https://github.com/JohnCoates/Aerial)" screensaver. It consists of beautiful 1080p video flyovers of 
++ My absolute favourite live wallpaper is the "[Apple TV Aerial](https://github.com/JohnCoates/Aerial){:target="_blank"}" screensaver. It consists of beautiful 1080p video flyovers of 
 cities like New York and London.
-+ Another cool screensaver is "[SaveHollywood](http://s.sudre.free.fr/Software/SaveHollywood/about.html)". You can specify a folder and it will play the videos in there.
++ Another cool screensaver is "[SaveHollywood](http://s.sudre.free.fr/Software/SaveHollywood/about.html){:target="_blank"}". You can specify a folder and it will play the videos in there.
 
 There's probably a ton of other screensavers that might be cool as animated desktop background. So let me know if you find some!
