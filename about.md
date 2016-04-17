@@ -3,28 +3,27 @@ layout: page
 permalink: /about/
 title: Hello
 tags: [about, Theo Winter, website]
-description: Theo Winter is studying Computer Science at Hochschule für Technik Rapperswil in Switzerland. Some of his hobbies are programming, photography, cycling and more.
+description: Theo studied computer science at HSR and works now as a software engineer @ Zühlke CH. He's passionate about programming, travelling and photography.
 modified: 2014-03-26
 image:
   feature: switzerland.jpg
 ---
 
-
-My name is Theo Winter and I'm studying computer science at [HSR](http://www.hsr.ch){:target="_blank"} in [Switzerland](https://www.google.com/maps/place/Switzerland){:target="_blank"}.
-Some of my hobbies are programming, [photography]({{ site.url }}/photography/), cycling, skiing and more. My tools of choice are OS X,
-Canon, GitHub and everything from Google.
-I'm levelheaded and I don't participate in flamewars. I believe in open source and I've made most of my projects freely available on
+Hey! I'm Theo and I work as software engineer at [Zühlke](http://www.zuehlke.com/ch/en/){:target="_blank"} in [Switzerland](https://www.google.com/maps/place/Switzerland){:target="_blank"}. 
+Before that I've studied computer science at [HSR](http://www.hsr.ch){:target="_blank"} in [Rapperswil](https://www.google.com/maps/place/HSR+Rapperswil){:target="_blank"}.
+Some of my hobbies are programming, travelling, [photography]({{ site.url }}/photography/), cycling and skiing. My tools of choice are OS X,
+Canon, GitHub and everything from Google. I believe in open source and I've made most of my projects freely available on
 [GitHub](https://github.com/aerobless){:target="_blank"}. Yes, you can find the repository of this site on GitHub as well.  
-If you'd like to know more feel free to contact me or visit my
-[G+ profile](https://plus.google.com/+TheoWinterCH){:target="_blank"}.
+If you'd like to know more feel free to contact me or visit my [G+ profile](https://plus.google.com/+TheoWinterCH){:target="_blank"}.
 
-This page is my personal blog and I use it as a place to show off some of my projects. Enjoy :)
+This page is my personal blog and I use it as a place to show off some of my projects, photos and so on. Enjoy :)
 
 ## Skills
  + **Programming Languages:** Java, Go, C# & .NET, JavaScript
     + **Supporting Skills:** Continuous Integration, Test-Driven Development, Patterns of Enterprise Application Architecture,
      Enterprise Integration Patterns, GoF Patterns
  + **Web:** HTML, CSS, JavaScript, WordPress, Jekyll
+ + **Mobile:** Android Studio, Xamarin
  + **Graphics:** Adobe Photoshop, Adobe Lightroom
  + **Databases:** Postgres, Oracle, MSSQL
  + **Cloud Services & Servers:** Amazon AWS, Digital Ocean, OVH
@@ -46,7 +45,7 @@ If you want to send me a file you can drop it in the marked area below.
   "givenName": "Theo",
   "familyName": "Winter",
   "alternateName": "Theodor Winter",
-  "description": "Theo Winter is studying Computer Science at Hochschule für Technik Rapperswil in Switzerland. Some of his hobbies are programming, photography, cycling and more.",
+  "description": "Theo studied computer science at HSR and works now as a software engineer @ Zühlke CH. He's passionate about programming, travelling and photography.",
   "gender": "male",
   "nationality": "Switzerland",
   "image": "{{ site.url }}/images/bio-photo.png",

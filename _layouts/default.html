@@ -21,6 +21,7 @@
   <meta http-equiv="cleartype" content="on">
 
   <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+  <link rel="stylesheet" href="{{ site.url }}/css/justifiedGallery.min.css">
   <!-- HTML5 Shiv and Media Query Support for IE -->
   <!--[if lt IE 9]>
     <script src="{{ site.url }}/js/vendor/html5shiv.min.js"></script>
@@ -41,6 +42,25 @@
 
 <script src="{{ site.url }}/js/vendor/jquery-1.9.1.min.js"></script>
 <script src="{{ site.url }}/js/main.js"></script>
+
+{% if page.gallery %}
+<script src="{{ site.url }}/js/plugins/jquery.justifiedGallery.min.js"></script>
+<script>
+  window.onload=function(){
+    $("#gallery").justifiedGallery({
+      rowHeight : 220,
+      maxRowHeight: 340,
+      margins : 5,
+      border : 0,
+      fixedHeight: false,
+      lastRow : 'nojustify',
+      captions: true
+    });
+    $("#gallery").fadeIn(500);
+  }
+</script>
+{% endif %}
+
 
 </body>
 

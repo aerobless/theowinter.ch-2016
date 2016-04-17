@@ -1,0 +1,119 @@
+---
+layout: default
+---
+
+{% if page.image.feature %}
+<!-- Makes sure that reddit/facebook use the article image -->
+<meta property="og:image" content="{{ site.url }}/images/headers/{{ page.image.feature }}" />
+<div class="page-feature">
+  <div class="page-image">
+    {% if page.image.video %}
+    <video width="100%" autoplay loop>
+      <source src="{{ site.url }}/videos/{{page.image.video}}" type="video/mp4">
+      <img src="{{ site.url }}/images/headers/{{ page.image.feature }}" class="page-feature-image" alt="{{ page.title }}" itemprop="image">
+    </video>
+    {% else %}
+    <img src="{{ site.url }}/images/headers/{{ page.image.feature }}" class="page-feature-image" alt="{{ page.title }}" itemprop="image">
+    {% if page.image.credit %}{% include image-credit.html %}{% endif %}{% endif %}
+  </div><!-- /.page-image -->
+</div><!-- /.page-feature -->
+{% endif %}
+<div id="main" role="main">
+	<article class="wrap" itemscope itemtype="http://schema.org/Article">
+		{% include breadcrumbs.html %}
+		<div class="page-title">
+			<h1>{{ page.title }}</h1>
+		</div>
+		<!--<div class="inner-wrap">-->
+			<div id="content" class="page-content" itemprop="articleBody">
+        <div>
+          <p>{{page.description}}</p>
+        </div>
+
+        <div>
+          <div class="leftCol" style="background-color: #efefdc;">
+            <div>
+              <div id="notes">
+
+                {%if page.startAirport%}
+                <div class="note">
+                  <div class="line">
+                    {{page.startAirport}} <i class="red fa fa-plane"></i>
+                    <div class="flight-line"></div> {{page.endAirport}}
+                  </div>
+                  <div class="line small mt"><span class="red">{{page.airCarrier}}</span> &mdash; {{page.airCarrierReview}}</div>
+                </div>
+                {% endif %}
+
+                {% if page.hotel %}
+                <div class="note">
+                  <div class="line"><span class="green">{{page.hotel}}</span></div>
+                  <div class="line small mt"><i class="fa fa-plus" aria-hidden="true"></i> {{page.hotelReviewPos}}</div>
+                  <div class="line small mt"><i class="fa fa-minus" aria-hidden="true"></i> {{page.hotelReviewNeg}}</div>
+                </div>
+                {% endif %}
+
+                {% if page.maxTemp %}
+                <div class="double group">
+                  <div class="note">
+                    <div class="line small">{{page.endLocation}} (avg.)</div>
+                    <div class="weather">
+                      <div class="sun"></div>
+                      <div class="degrees">{{page.avgTemp}}</div>
+                    </div>
+                  </div>
+
+                  <div class="note">
+                    <div class="line small">{{page.endLocation}} (max.)</div>
+                    <div class="weather">
+                      <div class="sun"></div>
+                      <div class="degrees">{{page.maxTemp}}</div>
+                    </div>
+                  </div>
+                </div>
+                {% endif %}
+
+                {% if page.customCardTitle %}
+                <div class="note">
+                  <div class="line">{{page.customCardTitle}}</div>
+                  <div class="line small">{{page.customCardDescription}}</div>
+                </div>
+                {% endif %}
+
+              </div>
+            </div>
+          </div>
+          {% if page.startLocation and page.endLocation %}
+          <!--<div class="overlay" onClick="style.pointerEvents='none'"></div>-->
+          <div id="mapbox-journey" class="rightCol">
+            <iframe
+              width="100%"
+              height="{{page.mapHeight}}"
+              frameborder="0" style="border:0"
+              src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyCMXdSigC-sBHJOrGakSxjGi2uMMq_N7RY
+                      &origin={{ page.startLocation }}
+                      &destination={{ page.endLocation }}
+                      {% if page.satellite %}&maptype=satellite{% endif %}{% if page.travelMode %}&mode={{page.travelMode}}{% endif %}
+                      {% if page.waypoints %}&waypoints={{page.waypoints}}{% endif %}
+                    ">
+            </iframe>
+          </div>
+          {% endif %}
+        </div>
+
+				{{ content }}
+				<hr />
+				<footer class="page-footer">
+					{% if page.categories %}{% include page-author.html %}{% endif %}
+					{% if page.share != false %}{% include share-this.html %}{% endif %}
+					{% include page-meta.html %}
+				</footer><!-- /.footer -->
+				<aside>
+					{% if page.comments == true %}{% include comments.html %}{% endif %}
+				</aside>
+			</div><!-- /.content -->
+		<!--</div><!-- /.inner-wrap -->
+    <div class="toc--sidebar"></div>
+
+	</article><!-- ./wrap -->
+</div><!-- /#main -->

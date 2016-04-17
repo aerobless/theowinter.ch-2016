@@ -1,7 +1,7 @@
 # Site wide configuration
 
 title: theowinter.ch
-description: A computer science student from Switzerland who's passionate about programming and photography.
+description: "Theo studied computer science at HSR and works now as a software engineer @ Zühlke CH. He's passionate about programming, travelling and photography."
 logo: site-logo.png # 120x120 px default image used for Twitter summary card
 teaser: default_article_thumbnail.gif # 400x250 px default teaser image used in image archive grid
 locale: en
@@ -19,7 +19,7 @@ highlighter: rouge
 
 # Site owner
 owner:
-  name: Theo Winter
+  name: Theodor Winter
   email: theo@w1nter.com
   googleplus: +TheoWinterCH
   github: aerobless
@@ -27,7 +27,7 @@ owner:
   google:
     ad-client:
     ad-slot:
-  bio: A computer science student from Switzerland who's passionate about programming and photography.
+  bio: "Theo studied computer science at HSR and works now as a software engineer @ Zühlke CH.<br> He's passionate about programming, travelling and photography."
   avatar: bio-photo.jpg # 160x160 px image for author byline
   disqus-shortname: theowinterch
 

@@ -43,9 +43,22 @@
         {% if page.image.credit %}{% include image-credit.html %}{% endif %}
       </div><!-- /.page-image -->
     </div><!-- /.page-feature -->
+    <div class="page-title">
+      <h1>Recent trips</h1>
+    </div>
+
+    <div>
+      <div class="tiles">
+        {% for post in site.posts %}
+          {% if post.layout == 'trip' %}
+            {% include post-grid-cards.html %}
+          {% endif %}
+        {% endfor %}
+      </div><!-- /.tiles -->
+    </div>
 
     <div class="page-title" style="clear:left;">
-      <h1>Latest pictures</h1>
+      <h1>Photo Stream</h1>
       {% if page.excerpt %}<h2>{{ page.excerpt }}</h2>{% endif %}
     </div>
     <div class="archive-wrap">
@@ -70,6 +83,16 @@
     thumbnail: "/images/photography/thumbnails/{{ photo.img }}.jpg",
     date: "{% exiftag date_time_original,, %}{{ photo.img }}.jpg{% endexiftag %}"
   });
+
+  /**
+   * If you want to sort the pictures by date you can use this function. I personally don't use it because the gallery
+   * _can_ look really bad when it sorts multiple panoramas after each other, so I'd rather have a not entirely correctly
+   * sorted gallery that I can manipulate via the photos.yaml.
+   */
+
+  /*photos.sort(function(a,b) {
+    return new Date(b.date).getTime() - new Date(b.date).getTime()
+  });*/
 
   //DON'T REMOVE, JEKYLL FUNCTION
   //{% endfor %}

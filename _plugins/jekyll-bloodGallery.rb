@@ -28,7 +28,7 @@ module Jekyll
       @name = 'index.html'
 
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), 'photolist.html')
+      self.read_yaml(File.join(base, '_layouts'), 'photoIndex.html')
       self.data['photolist'] = photolist
       self.data['title'] = title
     end
@@ -91,7 +91,7 @@ module Jekyll
         end
 
         #Make page
-        site.pages << PhotoList.new(site, site.source, File.join(dir, countrySlug), photosPerCountry, name)
+        site.pages << PhotoList.new(site, site.source, File.join('_generated', countrySlug), photosPerCountry, name)
       end
     end
   end
@@ -104,3 +104,38 @@ module TextFilter
 end
 
 Liquid::Template.register_filter(TextFilter)
+
+module Jekyll
+  class IncludeGalleryTag < Liquid::Tag
+
+    def initialize(tag_name, text, tokens)
+      super
+      @result = '<div id="gallery" style="display:none; margin-bottom: 20px;">'
+      photos = YAML::load_file('_data/photos.yaml')
+      photos.each do |photo, details|
+        [nil, *details, nil].each_cons(3){|prev, curr, nxt|
+          if(curr["trip"] == text.strip)
+            @result = @result+'<div itemscope itemtype="http://schema.org/Photograph">
+                                      <a itemprop="image" class="swipebox" title="'+curr["title"]+'" href="/photography/'+curr["title"].strip.gsub(' ', '-').gsub(/[^\w-]/, '')+'/">
+                                        <img alt="'+curr["title"]+'" itemprop="thumbnailUrl" src="/images/photography/thumbnails/'+curr["img"]+'.jpg"/>
+                                        <meta itemprop="name" content="'+curr["title"]+'" />
+                                        <meta itemprop="isFamilyFriendly" content="true" />
+                                        <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                                          <div itemprop="sameAs" href="http://theowinter.ch/about">
+                                            <meta itemprop="name" content="Theo Winter"/>
+                                          </div>
+                                        </div>
+                                      </a>
+                                    </div>'
+          end
+        }
+      end
+      @result = @result + '</div>'
+    end
+
+    def render(context)
+      "#{@result}"
+    end
+  end
+end
+Liquid::Template.register_tag('includeGallery', Jekyll::IncludeGalleryTag)

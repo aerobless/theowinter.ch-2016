@@ -194,3 +194,181 @@
   display: none;
   visibility: hidden;
 }
+
+/* ---------- Trip Info Splitter */
+.leftCol
+{
+  @include media($micro) {
+    margin-bottom: 10px;
+  }
+  @include media($small) {
+    @include col-with-gutter(5, 10px);
+  }
+  @include media($medium) {
+    @include col-with-gutter(5, 10px);
+  }
+  @include media($large) {
+    @include col-with-gutter(5, 10px);
+  }
+}
+
+.rightCol
+{
+  @include media($small) {
+    @include span-columns(7);
+  }
+  @include media($medium) {
+    @include span-columns(7.1);
+  }
+  @include media($large) {
+    @include col-with-gutter(7.15, 10px);
+  }
+}
+
+/* --------- Trip Info Tools --*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+
+/*body {
+  background-image: url('http://unandroideperamico.files.wordpress.com/2012/11/android_4-2_jellybean_background.png');
+  background-size: cover;
+
+  color: hsl(0, 0%, 44%);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}*/
+#notes {
+  background-color: hsla(0, 0%, 100%, .7);
+  border-radius: 2px;
+  overflow: hidden;
+  padding: 6px;
+}
+.note {
+  font-family: 'Roboto', sans-serif;
+  min-height: 45px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 2px;
+  box-shadow: 0 2px 1px hsla(0, 0%, 40%, .1);
+  cursor: pointer;
+  transition: transform .5s;
+
+  padding: 10px;
+}
+#notes > div:nth-child(n+1) {
+  margin-bottom: 6px;
+}
+#notes > div:nth-last-child(2) {
+  margin-bottom: 0;
+}
+.note span {
+  font-weight: 400;
+}
+.note span.green {
+  color: hsl(90, 55%, 44%);
+}
+.note span.blue {
+  color: hsl(194, 73%, 51%);
+}
+.note span.red,
+i.red {
+  color: hsl(350, 55%, 49%);
+}
+.note span.small {
+  font-size: 12px;
+}
+.note span.offset {
+  margin-left: 25px;
+}
+.note .line.small {
+  color: hsl(0, 0%, 55%);
+  font-size: 12px;
+  font-weight: 400;
+}
+.note .line.large {
+  margin-top: 2px;
+
+  font-size: 20px;
+  font-weight: 400;
+}
+.note .mt {
+  margin-top: 7px;
+}
+.double {
+  transition: transform .5s;
+}
+.double .note {
+  @include media($micro) {
+    width: 49%;
+  }
+  @include media($small) {
+    width: 48%;
+  }
+  @include media($medium) {
+    width: 49%;
+  }
+  @include media($large) {
+    width: 49%;
+  }
+  float: left;
+  margin-bottom: 0;
+}
+.double .note:first-child {
+  margin-right: 6px;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tr {
+  transform: translate(350px, 0);
+}
+.weather .sun {
+  width: 25px;
+  height: 25px;
+  background-color: hsl(50, 93%, 62%);
+  border-radius: 100%;
+  margin: 4px 10px 0 0;
+  float: left;
+}
+.weather .degrees {
+  margin-bottom: -3px;
+  font-size: 24px;
+  font-weight: 300;
+}
+.weather .degrees:after {
+  content:'\00BA C';
+  font-size: 20px;
+  vertical-align: top;
+}
+.stocks .line:last-child {
+  margin-top: 2px;
+}
+.flight-line {
+  display: inline-block;
+  @include media($small) {
+    width: 55%;
+  }
+  @include media($medium) {
+    width: 75%;
+  }
+  @include media($large) {
+    width: 75%;
+  }
+  height: 2px;
+  background-color: hsl(0, 0%, 44%);
+  margin: 0 5px 5px 0;
+}
+i.fa-plane {
+  transform: rotate(45deg);
+}
+#no-cards {
+  display: none;
+  margin-top: 5px;
+}
+#no-cards .line {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  text-shadow: 0 2px 1px hsla(0, 0%, 40%, .1);
+}

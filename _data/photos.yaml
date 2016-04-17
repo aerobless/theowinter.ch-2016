@@ -1,4 +1,141 @@
 photos:
+    - title: Sunset over Budapest castle
+      img: IMG_9256
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Baro Etvos Jozseff
+      img: IMG_9265
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Sunset over Budapest Panorama
+      img: IMG_9257-Pano
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Blue Bridge
+      img: IMG_9268
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Budapest Castle at dusk
+      img: IMG_9281
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Alluring Tunnel
+      img: IMG_9286
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: The Bridge (Széchenyi Chain Bridge)
+      img: IMG_9287
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Looking over to the Pest-side
+      img: IMG_9288-Pano
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: The Lights of Budapest
+      img: IMG_9303-Pano
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Budapest Castle illuminated
+      img: IMG_9320
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Budapest Nighttime
+      img: IMG_9321
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Pest seen from Buda castle
+      img: IMG_9331-Pano
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Rider watching over the city
+      img: IMG_9381
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: The Chain Bridge & Parliament Building
+      img: IMG_9337-Edit
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Buda Castle Gardens
+      img: IMG_9346-Pano
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Grof Bethlen Istvan
+      img: IMG_9388
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: District Buda
+      img: IMG_9390
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Fisherman's Bastion
+      img: IMG_9392-Pano
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Falcon dude
+      description: A medieval dude and his falcon are chilling at the fountain.
+      img: IMG_9409
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: A short walk down the back roads
+      img: IMG_9415
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Central Market Hall I
+      img: IMG_9421-Pano
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Central Market Hall II
+      img: IMG_9426
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Central Market Hall III
+      img: IMG_9429-Pano
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Shoes at the Danube
+      img: IMG_9449
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Shoes at the Danube II
+      img: IMG_9452
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Hungarian Parliament
+      img: IMG_9471
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+    - title: Fisherman's Bastion from across the Danube
+      img: IMG_9473
+      city: Budapest
+      country: Hungary
+      trip: budapest2016
+
     - title: Blooddrop Leaves
       img: IMG_7511
       country: Switzerland
@@ -32,107 +169,140 @@ photos:
     - title: World Clock
       img: IMG_7474
       country: Germany
+      trip: berlin2015
     - title: Merry-Go-Round
       img: IMG_7479
       country: Germany
+      trip: berlin2015
     - title: TV Tower at night
       img: IMG_7465
       country: Germany
+      trip: berlin2015
     - title: Night Market
       img: IMG_7482
       country: Germany
+      trip: berlin2015
     - title: Night Market II
       img: IMG_7488
       country: Germany
+      trip: berlin2015
     - title: TV Tower
       img: IMG_7437
       country: Germany
+      trip: berlin2015
     - title: Berlin Cathedral
       img: IMG_7396
       country: Germany
+      trip: berlin2015
     - title: Brandenburger Tor
       img: IMG_7395
       country: Germany
+      trip: berlin2015
     - title: Soviet War Memorial
       img: IMG_7382
       country: Germany
+      trip: berlin2015
     - title: Tag der Deutschen Einheit
       img: IMG_7380
       country: Germany
+      trip: berlin2015
     - title: Tag der Deutschen Einheit II
       img: IMG_7384
       country: Germany
+      trip: berlin2015
     - title: Grillrunner
       img: IMG_7431
       country: Germany
+      trip: berlin2015
     - title: Holocaust Memorial
       img: IMG_7372
       country: Germany
+      trip: berlin2015
     - title: Hot-air ballon across a field of stones
       img: IMG_7374
       country: Germany
+      trip: berlin2015
     - title: Einstein Curry
       img: IMG_7310-2
       country: Germany
+      trip: berlin2015
     - title: Cabrio Dog
       img: IMG_7303
       country: Germany
+      trip: berlin2015
     - title: Anne Frank
       img: IMG_7294
       country: Germany
+      trip: berlin2015
     - title: Hackesche Höfe
       img: IMG_7283
       country: Germany
+      trip: berlin2015
     - title: Old train depot
       img: IMG_7243
       country: Germany
+      trip: berlin2015
     - title: Old train depot II
       img: IMG_7255
       country: Germany
+      trip: berlin2015
     - title: Old train depot III
       img: IMG_7256
       country: Germany
+      trip: berlin2015
     - title: 1UP
       img: IMG_7238
       country: Germany
+      trip: berlin2015
     - title: Blue mushroom
       img: IMG_7232
       country: Germany
     - title: Tiny Railway
       img: IMG_7222-Edit
       country: Germany
+      trip: berlin2015
     - title: Killer Mouse Graffiti
       img: IMG_7213-Pano
       country: Germany
+      trip: berlin2015
     - title: Lion Graffiti
       img: IMG_7212
       country: Germany
+      trip: berlin2015
     - title: Wolf Graffiti
       img: IMG_7211
       country: Germany
+      trip: berlin2015
     - title: Yaamaica Bar
       img: IMG_7210
       country: Germany
+      trip: berlin2015
     - title: TV Tower Skyline
       img: IMG_7207
       country: Germany
+      trip: berlin2015
     - title: Media Spree
       img: IMG_7204
       country: Germany
+      trip: berlin2015
     - title: Refugees welcome
       img: IMG_7203
       country: Germany
+      trip: berlin2015
     - title: Baumhaus an der Mauer
       img: baumhaus
       description: This "tree-house" was built by Osman Kalin during the separation of east and west Berlin for his family. Although the land it was built on belonged to east Berlin, it was physically located in the West German territory since the wall had not been curved to properly follow the border. A while after the wall fell the tree house was threatend to be demolished, so Osman Kalin concreted his furniture to the ground in order to make it harder to demolish. The local population also supported Osman and he was allowed to keep the property. When I was there in October 2015 Osman Kalin, now aged 90, was still living there.
       country: Germany
+      trip: berlin2015
     - title: Cafe Jenseits
       img: IMG_7189
       country: Germany
+      trip: berlin2015
     - title: Astronaut
       img: IMG_7182
       description: At night the flag from the car dealership is cleverly projected into the hand of the graffiti astronaut.
       country: Germany
+      trip: berlin2015
     - title: San Francisco Docks
       img: IMG_6080-Pano
       country: United States of America
