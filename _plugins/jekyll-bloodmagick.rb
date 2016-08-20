@@ -17,7 +17,7 @@ module Jekyll
       def initialize(site, base, dir, name, preset)
         @site = site
         @base = base
-        @dir  = dir
+        @dir = dir
         @name = name
         @dst_dir = preset.delete('destination')
         @src_dir = preset.delete('source')
@@ -42,7 +42,7 @@ module Jekyll
 
         return false if File.exist? dest_path and !modified?
 
-        @@mtimes[path] = mtime
+        #@@mtimes[path] = mtime
 
         FileUtils.mkdir_p(File.dirname(dest_path))
         image = ::MiniMagick::Image.open(path)
